@@ -1,0 +1,81 @@
+artist,album,track_name,track_id,danceability,energy,key,loudness,mode,speechiness,instrumentalness,liveness,valence,tempo,duration_ms,time_signature
+Dean Lewis,How Do I Say Goodbye,How Do I Say Goodbye,5hnGrTBaEsdukpDF6aZg8a,0.4,0.641,8,-6.303,1,0.0674,0,0.0656,0.393,81.552,163603,4
+Cat Burns,go,go,4VtRHZ4tBDHaWltVAytlLY,0.663,0.251,6,-9.87,0,0.0435,0,0.0932,0.528,90.272,215000,4
+James Arthur,YOU,Car's Outside,0otRX6Z89qKkHkQ9OqJpKt,0.338,0.562,9,-7.181,1,0.029,0,0.107,0.259,149.907,248373,4
+Becky Hill,Remember (Acoustic),Remember - Acoustic,5aXfGM7WVcqyAvqnL7k0y3,0.62,0.379,3,-8.675,1,0.0412,0,0.195,0.509,118.899,178627,4
+Benson Boone,In The Stars,In The Stars,1ei3hzQmrgealgRKFxIcWn,0.362,0.54,10,-6.031,1,0.0528,0,0.139,0.3,78.007,216410,3
+Birdy,Birdy,Skinny Love,4RL77hMWUq35NYnPLXBpih,0.379,0.29,4,-8.485,1,0.051,0.00106,0.118,0.169,166.467,201080,4
+Gracie Abrams,minor,"I miss you, I’m sorry",4nyF5lmSziBAt7ESAUjpbx,0.445,0.455,7,-6.405,1,0.0575,1.47e-06,0.124,0.151,109.885,167538,5
+Ruth B.,Safe Haven,Dandelions,2eAvDnpXP5W0cVtiI0PUxV,0.609,0.692,1,-2.958,1,0.0259,0,0.0864,0.454,116.959,233720,3
+Conan Gray,Kid Krow,Heather,4xqrdfXkTW4T0RauPLv3WA,0.357,0.425,5,-7.301,1,0.0333,0,0.322,0.27,102.078,198040,3
+d4vd,Romantic Homicide,Romantic Homicide,1xK59OXxi2TAAAbmZK0kBL,0.571,0.544,6,-10.613,1,0.0299,0.00805,0.322,0.216,132.052,132631,4
+Tate McRae,all the things i never said,that way,7l97ElWmIdVHWUaOeeU5ZC,0.453,0.383,0,-11.015,1,0.163,0,0.387,0.333,105.029,175027,4
+Tom Odell,Long Way Down (Deluxe),Another Love,3JvKfv6T31zO0ini8iNItO,0.445,0.537,4,-8.532,0,0.04,1.65e-05,0.0944,0.131,122.769,244360,4
+Lauren Spencer Smith,Fingers Crossed,Fingers Crossed,3yMC1KsTwh0ceXdIe4QQAQ,0.56,0.473,5,-7.23,1,0.0533,0,0.31,0.441,109.414,175345,4
+Coldplay,Parachutes,Sparks,7D0RhFcb3CrfPuTJ0obrod,0.371,0.268,1,-10.506,1,0.0281,0.0517,0.104,0.165,102.617,227093,3
+Luz,we'll be fine,we'll be fine,7KKamdf8oLVz1eFcNRjvnq,0.563,0.382,10,-11.138,1,0.0404,0,0.0714,0.197,120.802,262960,4
+Maddie Zahm,Fat Funny Friend (sadder),Fat Funny Friend (sadder),3J2k478GV4E9GbFzN7ndgv,0.547,0.222,0,-8.709,1,0.0458,9.31e-05,0.101,0.528,106.28,202320,4
+Cian Ducrot,I'll Be Waiting (Sad At Christmas),I'll Be Waiting,0JIhRhZPF5j5dx0FGqTWxy,0.509,0.619,1,-4.102,1,0.0391,0,0.0739,0.544,155.955,172547,4
+Haley Joelle,Two Places at Once (Part I),Two Places at Once,0l8p1TkaVgcwIUS0xwm6Y5,0.497,0.278,2,-9.959,1,0.0464,0,0.308,0.237,104.84,199395,5
+Chance Peña,In My Room,In My Room,7CiDwKE62N6ey3LyG6s7xc,0.408,0.338,4,-13.626,1,0.0431,0.000639,0.0732,0.1,133.943,177609,3
+Seafret,Tell Me It's Real (Expanded Edition),Atlantis,1Fid2jjqsHViMX6xNH70hE,0.4,0.479,8,-7.989,0,0.0308,2.14e-06,0.115,0.213,166.159,229173,4
+Reneé Rapp,Everything To Everyone,In The Kitchen,2VFetGqLYq0Pc8ZtRYCaeL,0.364,0.294,0,-6.578,0,0.0504,0,0.264,0.125,79.477,227749,3
+Tom Rosenthal,Z-Sides,Lights Are On,4IhTXiZLKATmwhMZIb1GQN,0.44,0.04,3,-16.887,1,0.0322,0.465,0.111,0.249,135.965,193749,4
+Dylan Conrique,Birthday Cake,Birthday Cake,7dDrR6vMK1JAwZZ5MIWgme,0.436,0.255,3,-8.623,1,0.0364,3.28e-05,0.106,0.15,113.265,205280,4
+Jessica Baio,trust issues,trust issues,5jQVx40dbpDsstcwlhpk9u,0.587,0.453,9,-9.357,1,0.129,0.00205,0.0812,0.352,161.146,134263,4
+Sam Tompkins,Lose It All,Lose It All,1mBtrVS6hLeqcVecvpAqBJ,0.45,0.33,11,-8.481,1,0.0295,0.0042,0.108,0.174,86.788,205493,3
+Anson Seabra,Peter Pan Was Right,Peter Pan Was Right,2At18rPHOuTEjGEppwGV0A,0.661,0.517,5,-7.74,1,0.0406,0,0.116,0.241,84.014,192498,4
+Jessie Murph,How Could You,How Could You,7fkxcbBBsV7keJPnNfNf2L,0.573,0.17,11,-10.576,1,0.0555,3.08e-06,0.108,0.28,146.749,187813,3
+Sabrina Carpenter,emails i can't send,emails i can’t send,2qLyo5FeWquE7HBUbcVnEy,0.515,0.387,7,-10.614,1,0.192,0,0.622,0.408,86.313,104408,3
+Phoebe Bridgers,Stranger in the Alps (Deluxe Edition),Scott Street,21uFPefbgeR3QLVJWATlrr,0.508,0.417,10,-9.632,1,0.0296,0.0928,0.0887,0.483,134.944,305001,4
+Adele,Easy On Me,Easy On Me,0gplL1WMoJ6iYaPgMCL0gX,0.604,0.366,5,-7.519,1,0.0282,0,0.133,0.13,141.981,224695,4
+Dermot Kennedy,Something to Someone,Something to Someone - Piano,5LMMHLhxyicdWm3uEdbNrV,0.416,0.436,0,-5.878,1,0.035,0,0.075,0.179,99.41,183789,3
+Mimi Webb,Goodbye,Goodbye,5b6enCVP67LsqqrfTs6rxr,0.5,0.373,0,-6.191,1,0.0335,0,0.137,0.158,118.943,184167,4
+Taylor Swift,folklore,august,3hUxzQpSfdDqwM3ZTFQY0K,0.532,0.623,5,-9.208,1,0.0331,7.28e-05,0.0925,0.403,89.937,261923,4
+Sigrid,Bad Life (acoustic),Bad Life - acoustic,5DwJKJ3Gg5UlzsTMpYXkwT,0.542,0.358,4,-8.641,1,0.0544,0,0.369,0.434,189.826,220240,4
+Jamie Grey,Songs They Told Me Weren't Singles - Part 1,Shouldn't Be Thinking About You,3Inj1eHMvEhwUFej1LYR0d,0.708,0.298,6,-8.704,1,0.0483,0,0.101,0.399,86.838,171724,4
+Noah Cyrus,THE END OF EVERYTHING,Lonely,6U1iuA5QfzYRPJxvdcxqtf,0.53,0.281,5,-8.274,1,0.0577,0,0.0928,0.341,122.442,144377,4
+Bradley Marshall,Hurts The Most,Hurts The Most,6SO2o0mJhtbsfwdwJfXKkk,0.443,0.409,11,-9.006,1,0.0335,0,0.107,0.592,84.388,202643,4
+Cat Burns,emotionally unavailable,we're not kids anymore,43ZTfozcXRTukqENA3TXqe,0.816,0.213,6,-12.952,0,0.0529,4.02e-06,0.0916,0.323,121.916,182958,4
+Harry Styles,Harry's House,Matilda,6uvh0In7u1Xn4HgxOfAn8O,0.507,0.294,2,-10.0,1,0.04,1.97e-05,0.0966,0.386,114.199,245964,4
+Katie Gregson-MacLeod,complex (demo),complex (demo),1ovZe7upcqycTuPFfOg6kB,0.384,0.167,0,-9.92,1,0.0375,0,0.118,0.258,95.102,256108,4
+Benson Boone,GHOST TOWN,GHOST TOWN,135Lf4Q0CzlMNfOxbEUsLH,0.391,0.335,0,-10.064,1,0.0763,0,0.102,0.116,174.185,193733,3
+Bellah Mae,Boyfriend Of The Year (Sadder),Boyfriend Of The Year (Sadder),07vp6uxlDyqDPhjLWhFbSI,0.485,0.396,1,-6.855,1,0.0594,0,0.0801,0.42,94.668,201290,5
+Omar Apollo,Ivory,Evergreen (You Didn’t Deserve Me At All),2TktkzfozZifbQhXjT6I33,0.697,0.336,9,-10.395,1,0.0424,0.00528,0.107,0.31,82.029,216680,3
+Cian Ducrot,All For You,All For You,29Co9NKhOM5R9vWCrpkPPK,0.551,0.268,2,-9.954,1,0.0427,0,0.0977,0.335,77.079,219381,3
+Ed Sheeran,Visiting Hours,Visiting Hours,44V6EzbUSYgyfsNiP0FrlA,0.471,0.396,8,-6.654,1,0.0336,0,0.0729,0.263,149.609,215507,4
+Holly Humberstone,London Is Lonely,London Is Lonely,5dXiKFepHXZktud7z5635H,0.482,0.43,10,-7.224,1,0.0481,2.79e-06,0.344,0.113,143.23,234760,4
+Tate McRae,she's all i wanna be (Acoustic),she's all i wanna be - Acoustic,3iJVCCW5equhyyZcxrMABz,0.537,0.17,6,-12.391,1,0.0673,0,0.0976,0.185,137.613,198706,4
+Lewis Capaldi,Spotify Singles,drivers license - Spotify Singles,10wk4XQdba4QpHgFb28Ktk,0.543,0.23,4,-12.532,1,0.0417,0,0.11,0.307,127.357,262544,4
+Adele,25,Love In The Dark,7B5Npv8NjjTCzk8PLpU66h,0.331,0.341,9,-6.057,0,0.0309,0,0.109,0.152,109.821,285935,4
+Jessie Murph,Pray,Pray,2gbRKKSyW7e7vAkyvrJkte,0.588,0.39,8,-7.753,1,0.0578,1.26e-05,0.0965,0.206,96.571,146267,4
+Lauren Spencer Smith,Flowers,Flowers,6Z165JvPnS8PYvGW8oLGLc,0.684,0.449,3,-9.738,1,0.611,0,0.0881,0.341,66.165,157373,4
+charli d'amelio,if you ask me to,if you ask me to,63XZMpI9z3Grrd5YH5sl5L,0.5,0.375,0,-13.723,1,0.062,0.0147,0.115,0.17,129.388,192000,4
+David Kushner,Miserable Man,Miserable Man,6gPPoRYJwCsoB2VVdPJfmo,0.632,0.349,10,-10.289,1,0.0346,7.5e-05,0.294,0.307,109.981,232992,4
+Lexi Jayde,closer to closure,drunk text me,5gukv8x9eP58gFy2OcZEBQ,0.534,0.493,0,-6.818,1,0.0316,0,0.0889,0.232,79.97,213133,4
+Billie Eilish,Guitar Songs,TV,3GYlZ7tbxLOxe6ewMNVTkw,0.412,0.236,4,-15.159,0,0.0379,0.00653,0.147,0.119,140.214,281381,4
+Jamie Miller,Broken Memories,I Lost Myself In Loving You,3PhzwF9SOkkMIoUSIxFtwo,0.456,0.615,1,-5.454,1,0.0529,0,0.0908,0.416,78.461,201307,4
+Joji,Glimpse of Us,Glimpse of Us,6xGruZOHLs39ZbVccQTuPZ,0.44,0.317,8,-9.258,1,0.0531,4.78e-06,0.141,0.268,169.914,233456,3
+Ruth B.,Safe Haven,If By Chance,21dpBHPTV7ythCHBI6Slcw,0.405,0.279,10,-8.099,1,0.0334,0,0.0933,0.256,119.85,303653,4
+Griff,Black Hole (Acoustic Version),Black Hole - Acoustic Version,1cpVLszZnKUHUjsJDTEi3D,0.824,0.3,1,-6.678,0,0.0565,0,0.174,0.227,112.867,175980,4
+Shawn Mendes,It'll Be Okay,It'll Be Okay,2KnLkZ3z7PO3kgVGHGqDpD,0.398,0.286,7,-11.881,1,0.033,0.000146,0.0912,0.0666,78.262,222800,4
+Moncrieff,Warm,Talk,1r5MwvQZLff9Y2o1QCMY9N,0.46,0.554,5,-6.737,1,0.0858,0,0.0868,0.33,87.706,172667,4
+Sadie Jean,WYD Now?,WYD Now?,3ZBeHiRJUj1vdiU8zzGPgb,0.378,0.334,1,-10.993,1,0.304,0,0.115,0.496,181.296,144667,4
+Lewis Capaldi,Before You Go (Piano Version),Before You Go - Piano Version,7slfeXbuzr9RYXX6XS6Npi,0.467,0.359,3,-6.892,1,0.0815,0,0.0913,0.21,173.318,218769,3
+Sarah Cothran,As the World Caves In,As the World Caves In,2xXNLutYAOELYVObYb1C1S,0.422,0.25,0,-6.836,1,0.0351,0,0.35,0.246,124.026,161613,4
+Harry Styles,Fine Line,Falling,1ZMiCix7XSAbfAJlEZWMCp,0.567,0.267,4,-6.502,1,0.0299,1.46e-06,0.089,0.0592,110.011,240133,4
+Olivia Rodrigo,SOUR,drivers license,5wANPM4fQCJwkGd4rN57mH,0.561,0.431,10,-8.81,1,0.0578,1.42e-05,0.106,0.137,143.875,242013,4
+James Arthur,Back from the Edge,Train Wreck,55Am8neGJkdj2ADaM3aw5H,0.311,0.485,6,-5.726,0,0.0365,0,0.0726,0.225,77.355,208827,4
+Olivia Dean,The Hardest Part (Acoustic),The Hardest Part - Acoustic,0rYhl022XHl0RPay00dGdh,0.512,0.204,5,-8.376,1,0.036,0,0.106,0.296,129.947,175987,3
+Nina Nesbitt,Älskar,When You Lose Someone,1CAZgVyNgA9pR4e6GHALhq,0.387,0.372,3,-5.849,1,0.0339,0,0.0927,0.318,130.074,201827,4
+Anson Seabra,Songs I Wrote in My Bedroom,Trying My Best,6hjh2phISvfR1Ib6S0FK7b,0.691,0.0682,5,-18.186,1,0.0645,0,0.0916,0.352,76.94,222468,4
+Caity Baser,X&Y (What I Didn’t Say),X&Y (What I Didn’t Say),4cg1yntWrBdhCSh9atw6rk,0.473,0.31,11,-7.482,1,0.0358,0,0.107,0.154,122.893,141694,4
+Ashley Singh,Keep Me (Acoustic),Keep Me - Acoustic,1ayOMuDEULRqZ4QYVwSNV7,0.785,0.318,7,-7.794,0,0.0316,0,0.115,0.424,120.117,163000,4
+Dean Lewis,Hurtless,Hurtless,6HJizCbaqaEQG1eLjn341Z,0.37,0.559,0,-5.589,1,0.0526,0,0.121,0.316,162.816,180274,4
+Bea Stewart,Screaming At Traffic,Screaming At Traffic,3xlV9ddro4IMk92Ti0cHc1,0.383,0.32,4,-11.863,1,0.0568,0,0.0883,0.319,83.057,235652,4
+Dermot Kennedy,Sonder,Innocence and Sadness,1nJatkqxWH7TQwBrP39yNd,0.505,0.397,11,-8.032,1,0.0661,0,0.109,0.653,65.054,252658,4
+James Smith,My Oh My,My Oh My,2okt1sEb4uh6OkLJ4cgMWx,0.398,0.493,10,-6.988,0,0.0728,0,0.121,0.345,92.548,159382,5
+Tate McRae,lie to me,lie to me,4f9IfFvBFm7Gsf1IVEudyf,0.642,0.392,4,-7.846,0,0.0372,0,0.352,0.0479,138.065,177440,4
+Deyaz,"Don't Leave, Don't Go / Bleed","Don't Leave, Don't Go",07nd9H2REZKIhVgp3n36YL,0.683,0.138,7,-11.778,1,0.0478,3.79e-06,0.105,0.264,99.028,184242,4
+Caity Baser,Virtually,Virtually,3agFpBb8vzrMVSqTEMLTBa,0.581,0.266,0,-7.815,1,0.0307,0,0.0705,0.183,129.962,227308,4
+Sam Smith,In The Lonely Hour,I'm Not The Only One,7795WJLVKJoAyVoOtCWqXN,0.677,0.485,5,-5.795,1,0.0361,2.04e-05,0.0766,0.493,82.001,239317,4
