@@ -1,77 +1,77 @@
 artist,album,track_name,track_id,danceability,energy,key,loudness,mode,speechiness,instrumentalness,liveness,valence,tempo,duration_ms,time_signature
-Post Malone,Twelve Carat Toothache,I Like You (A Happier Song) (with Doja Cat),0O6u0VJ46W86TxN9wgyqDj,0.733,0.67,5,-6.009,1,0.0751,0,0.121,0.472,100.964,192841,4
 NEIKED,Better Days (NEIKED x Mae Muller x Polo G),Better Days (NEIKED x Mae Muller x Polo G),6f5ExP43esnvdKPddwKXJH,0.717,0.671,0,-5.077,0,0.0337,2.54e-06,0.0921,0.699,110.054,160657,4
-Sabrina Carpenter,emails i can't send,Nonsense,6dgUya35uo964z7GZXM07g,0.74,0.697,8,-4.912,1,0.034,0,0.224,0.732,138.992,163648,4
+Post Malone,Twelve Carat Toothache,I Like You (A Happier Song) (with Doja Cat),0O6u0VJ46W86TxN9wgyqDj,0.733,0.67,5,-6.009,1,0.0751,0.0,0.121,0.472,100.964,192841,4
+Sabrina Carpenter,emails i can't send,Nonsense,6dgUya35uo964z7GZXM07g,0.74,0.697,8,-4.912,1,0.034,0.0,0.224,0.732,138.992,163648,4
 Khalid,Skyline,Skyline,1QxIFMs4M8qd5cbJJu80v4,0.733,0.653,11,-6.094,1,0.0391,0.0218,0.184,0.752,119.996,182895,5
 Taylor Swift,Midnights,Lavender Haze,5jQI2r1RdgtuT8S3iG8zFC,0.733,0.436,10,-10.489,1,0.08,0.000573,0.157,0.0976,96.985,202396,4
-Harry Styles,Harry's House,Late Night Talking,1qEmFfgcLObUfQm0j1W2CK,0.714,0.728,10,-4.595,1,0.0468,0,0.106,0.901,114.996,177955,4
+Harry Styles,Harry's House,Late Night Talking,1qEmFfgcLObUfQm0j1W2CK,0.714,0.728,10,-4.595,1,0.0468,0.0,0.106,0.901,114.996,177955,4
 Hailee Steinfeld,Coast,Coast (feat. Anderson .Paak),1l4iQsOZ5sOXZPMQLvouaB,0.701,0.875,11,-4.1,1,0.0757,7.32e-06,0.137,0.84,111.976,166720,4
-Beyoncé,RENAISSANCE,CUFF IT,3IHaiorYWOcr8Kzs85PWF7,0.745,0.729,4,-5.573,0,0.221,0,0.0589,0.629,115.028,225389,4
-Peach Tree Rascals,Mariposa,Mariposa,4ja2gzrNh9VNigzoXfmbwD,0.676,0.525,9,-5.88,1,0.028,0,0.356,0.421,112.011,210000,4
-Stephen Sanchez,Until I Found You (Em Beihold Version),Until I Found You (with Em Beihold) - Em Beihold Version,1Y3LN4zO1Edc2EluIoSPJN,0.551,0.55,10,-5.339,1,0.0286,0,0.202,0.342,101.19,176440,3
+Beyoncé,RENAISSANCE,CUFF IT,3IHaiorYWOcr8Kzs85PWF7,0.745,0.729,4,-5.573,0,0.221,0.0,0.0589,0.629,115.028,225389,4
+Peach Tree Rascals,Mariposa,Mariposa,4ja2gzrNh9VNigzoXfmbwD,0.676,0.525,9,-5.88,1,0.028,0.0,0.356,0.421,112.011,210000,4
+Macklemore,BEN,NO BAD DAYS (feat. Collett),5C8ySsx3AT121g24uYR823,0.769,0.858,8,-6.01,1,0.15,0.0186,0.157,0.86,160.049,173453,4
+Stephen Sanchez,Until I Found You (Em Beihold Version),Until I Found You (with Em Beihold) - Em Beihold Version,1Y3LN4zO1Edc2EluIoSPJN,0.551,0.55,10,-5.339,1,0.0286,0.0,0.202,0.342,101.19,176440,3
 Ritt Momney,Put Your Records On,Put Your Records On,6AGOKlMZWLCaEJGnaROtF9,0.399,0.491,6,-10.778,0,0.0538,0.00089,0.11,0.151,91.066,210463,4
-Surfaces,Wave of You,Wave of You,5Ne1q9Hv3l2NHBA3Agt8WT,0.695,0.656,1,-6.038,1,0.0489,0,0.267,0.346,90.986,213842,4
-Niall Horan,Heaven,Heaven,1yHVHoz6Ny29gbbWJYVnFt,0.571,0.761,5,-3.485,1,0.0261,0,0.331,0.681,91.991,186043,4
 Harry Styles,As It Was,As It Was,4LRPiXqCikLlN15c3yImP7,0.52,0.731,6,-5.338,0,0.0557,0.00101,0.311,0.662,173.93,167303,4
-LANY,dancing in the kitchen,dancing in the kitchen,0ohcCrxZkBfFbkuRPOZQZX,0.619,0.736,11,-7.651,1,0.0425,0,0.0864,0.299,93.993,208600,4
 The Weeknd,Save Your Tears (Remix),Save Your Tears (with Ariana Grande) (Remix),37BZB0z9T8Xu7U3e65qxFy,0.65,0.825,0,-4.645,1,0.0325,2.44e-05,0.0936,0.593,118.091,191014,4
+Surfaces,Wave of You,Wave of You,5Ne1q9Hv3l2NHBA3Agt8WT,0.695,0.656,1,-6.038,1,0.0489,0.0,0.267,0.346,90.986,213842,4
+Niall Horan,Heaven,Heaven,1yHVHoz6Ny29gbbWJYVnFt,0.571,0.761,5,-3.485,1,0.0261,0.0,0.331,0.681,91.991,186043,4
+Mae Stephens,If We Ever Broke Up,If We Ever Broke Up,6maTPqynTmrkWIralgGaoP,0.898,0.732,7,-3.982,1,0.0427,1.29e-05,0.0908,0.96,115.955,142759,4
 Glass Animals,Dreamland (+ Bonus Levels),Heat Waves,02MWAaffLxlfxAUY7c5dvx,0.761,0.525,11,-6.9,1,0.0944,6.7e-06,0.0921,0.531,80.87,238805,4
+Ruth B.,Safe Haven,Dandelions,2eAvDnpXP5W0cVtiI0PUxV,0.609,0.692,1,-2.958,1,0.0259,0.0,0.0864,0.454,116.959,233720,3
 BØRNS,Dopamine,Electric Love,2GiJYvgVaD2HtM8GqD9EgQ,0.611,0.797,6,-7.627,0,0.0533,0.00137,0.26,0.518,120.041,218107,4
-Ruth B.,Safe Haven,Dandelions,2eAvDnpXP5W0cVtiI0PUxV,0.609,0.692,1,-2.958,1,0.0259,0,0.0864,0.454,116.959,233720,3
-Tai Verdes,TV,AOK,1sx0XsWUusUoPstbvokZjP,0.731,0.626,11,-6.919,1,0.0805,0,0.183,0.862,82.488,173640,4
-Nicky Youre,Sunroof,Sunroof,4h4QlmocP3IuwYEj2j14p8,0.768,0.714,10,-5.11,1,0.0401,0,0.15,0.842,131.443,163026,4
+Nicky Youre,Sunroof,Sunroof,4h4QlmocP3IuwYEj2j14p8,0.768,0.714,10,-5.11,1,0.0401,0.0,0.15,0.842,131.443,163026,4
+Tai Verdes,TV,AOK,1sx0XsWUusUoPstbvokZjP,0.731,0.626,11,-6.919,1,0.0805,0.0,0.183,0.862,82.488,173640,4
 OneRepublic,"I Ain’t Worried (Music From The Motion Picture ""Top Gun: Maverick"")",I Ain't Worried,4h9wh7iOZ0GGn8QVp4RAOB,0.704,0.797,0,-5.927,1,0.0475,0.000745,0.0546,0.825,139.994,148486,4
 Charlie Puth,CHARLIE,Light Switch,1jEBSDN5vYViJQr78W7jr2,0.689,0.627,6,-5.692,1,0.308,0.000321,0.0905,0.905,184.008,187704,4
-Latto,Big Energy,Big Energy,5lHxARJJrZc3ss4ZVmGWfz,0.935,0.81,11,-3.838,0,0.117,0,0.349,0.787,106.028,173182,4
-Lizzo,About Damn Time,About Damn Time,1PckUlxKqWQs3RlWXVBLw3,0.836,0.743,10,-6.305,0,0.0656,0,0.335,0.722,108.966,191822,4
-John Legend,LEGEND,Wonder Woman,3BLWGYOcy1svvsBByeFxLh,0.628,0.476,0,-4.947,1,0.0352,0,0.121,0.336,147.915,168562,4
-Dua Lipa,Levitating (feat. DaBaby),Levitating (feat. DaBaby),463CkQjx2Zk1yXoBuierM9,0.702,0.825,6,-3.787,0,0.0601,0,0.0674,0.915,102.977,203064,4
-Lil Nas X,MONTERO,THATS WHAT I WANT,0e8nrvls4Qqv5Rfa2UhqmO,0.737,0.846,1,-4.51,0,0.22,0,0.0486,0.546,87.981,143901,4
-MAX,Butterflies,Butterflies,7eQHxigpuDJjCG50JyzU8v,0.7,0.613,11,-4.041,1,0.0408,0,0.0887,0.42,88.084,191250,4
-Rema,Calm Down (with Selena Gomez),Calm Down (with Selena Gomez),0WtM2NBVQNNJLh6scP13H8,0.801,0.806,11,-5.206,1,0.0381,0.000669,0.114,0.802,106.999,239318,4
-Dan + Shay,Good Things,You,2xPV95cfbyusygMTxpa3SW,0.544,0.572,0,-6.205,1,0.0319,0,0.234,0.52,169.885,196253,4
-PUBLIC,Make You Mine,Make You Mine,5iFwAOB2TFkPJk8sMlxP8g,0.606,0.799,9,-4.452,1,0.0261,0,0.15,0.638,103.014,232907,4
+Latto,Big Energy,Big Energy,5lHxARJJrZc3ss4ZVmGWfz,0.935,0.81,11,-3.838,0,0.117,0.0,0.349,0.787,106.028,173182,4
+Lil Nas X,MONTERO,THATS WHAT I WANT,0e8nrvls4Qqv5Rfa2UhqmO,0.737,0.846,1,-4.51,0,0.22,0.0,0.0486,0.546,87.981,143901,4
+Lizzo,About Damn Time,About Damn Time,1PckUlxKqWQs3RlWXVBLw3,0.836,0.743,10,-6.305,0,0.0656,0.0,0.335,0.722,108.966,191822,4
+MAX,Butterflies,Butterflies,7eQHxigpuDJjCG50JyzU8v,0.7,0.613,11,-4.041,1,0.0408,0.0,0.0887,0.42,88.084,191250,4
+John Legend,LEGEND,Wonder Woman,3BLWGYOcy1svvsBByeFxLh,0.628,0.476,0,-4.947,1,0.0352,0.0,0.121,0.336,147.915,168562,4
+Dua Lipa,Levitating (feat. DaBaby),Levitating (feat. DaBaby),463CkQjx2Zk1yXoBuierM9,0.702,0.825,6,-3.787,0,0.0601,0.0,0.0674,0.915,102.977,203064,4
+Dan + Shay,Good Things,You,2xPV95cfbyusygMTxpa3SW,0.544,0.572,0,-6.205,1,0.0319,0.0,0.234,0.52,169.885,196253,4
 Charlie Puth,Left and Right (Feat. Jung Kook of BTS),Left and Right (Feat. Jung Kook of BTS),0mBP9X2gPCuapvpZ7TGDk3,0.881,0.592,2,-4.898,1,0.0324,1.32e-05,0.0901,0.719,101.058,154487,4
 Marshmello,Numb,Numb,10xV5l9nhLvFpR8mqzs0bL,0.912,0.774,0,-4.673,0,0.0455,0.0127,0.101,0.632,119.966,155589,4
-Lizzo,Special,2 Be Loved (Am I Ready),2rmwqU7yzTvzkiaRV53DpT,0.721,0.769,7,-4.111,1,0.105,0,0.0817,0.915,155.932,187108,4
-The Kid LAROI,STAY (with Justin Bieber),STAY (with Justin Bieber),5HCyWlXZPP0y6Gqq8TgA20,0.591,0.764,1,-5.484,1,0.0483,0,0.103,0.478,169.928,141806,4
-MisterWives,SUPERBLOOM,SUPERBLOOM,2HvtedoEeymVWrBPyAMNwZ,0.558,0.889,8,-3.945,1,0.102,0.000387,0.328,0.716,170.102,213547,4
-Sam Smith,Gloria,I'm Not Here To Make Friends,3i0FkJYlU4MFfYkjFHXXAM,0.698,0.895,0,-4.439,1,0.0628,1.45e-05,0.409,0.838,114.914,229605,4
+PUBLIC,Make You Mine,Make You Mine,5iFwAOB2TFkPJk8sMlxP8g,0.606,0.799,9,-4.452,1,0.0261,0.0,0.15,0.638,103.014,232907,4
+The Kid LAROI,STAY (with Justin Bieber),STAY (with Justin Bieber),5HCyWlXZPP0y6Gqq8TgA20,0.591,0.764,1,-5.484,1,0.0483,0.0,0.103,0.478,169.928,141806,4
+Lizzo,Special,2 Be Loved (Am I Ready),2rmwqU7yzTvzkiaRV53DpT,0.721,0.769,7,-4.111,1,0.105,0.0,0.0817,0.915,155.932,187108,4
 Justin Bieber,Anyone,Anyone,31qCy5ZaophVA81wtlwLc4,0.686,0.538,2,-8.026,1,0.0345,3.13e-06,0.113,0.584,115.884,190779,4
-Vance Joy,Clarity,Clarity,5c6lM2zjAF6MFoD8C1hiBr,0.552,0.873,0,-6.065,1,0.0464,0.000273,0.0966,0.62,125.059,227240,4
-AJR,OK ORCHESTRA,World's Smallest Violin,3jHBgKdLCf46aP3HRI0WYv,0.68,0.696,5,-6.977,1,0.051,0,0.607,0.684,115.962,180743,4
+Sam Smith,Gloria,I'm Not Here To Make Friends,3i0FkJYlU4MFfYkjFHXXAM,0.698,0.895,0,-4.439,1,0.0628,1.45e-05,0.409,0.838,114.914,229605,4
+MisterWives,SUPERBLOOM,SUPERBLOOM,2HvtedoEeymVWrBPyAMNwZ,0.558,0.889,8,-3.945,1,0.102,0.000387,0.328,0.716,170.102,213547,4
 Kane Brown,Be Like That (feat. Swae Lee & Khalid),Be Like That - feat. Swae Lee & Khalid,5f1joOtoMeyppIcJGZQvqJ,0.727,0.626,7,-8.415,1,0.0726,2.58e-05,0.126,0.322,86.97,191406,4
+Vance Joy,Clarity,Clarity,5c6lM2zjAF6MFoD8C1hiBr,0.552,0.873,0,-6.065,1,0.0464,0.000273,0.0966,0.62,125.059,227240,4
 Marshmello,Leave Before You Love Me,Leave Before You Love Me (with Jonas Brothers),4qu63nuBpdn0qHUHuObEj1,0.721,0.738,7,-4.77,1,0.0403,4.41e-06,0.118,0.637,119.976,154983,4
 Shawn Mendes,Summer Of Love,Summer of Love (Shawn Mendes & Tainy),0z8hI3OPS8ADPWtoCjjLl6,0.776,0.808,11,-4.501,1,0.117,0.000127,0.103,0.494,123.988,184104,4
-Maroon 5,JORDI (Deluxe),Beautiful Mistakes (feat. Megan Thee Stallion),5zFglKYiknIxks8geR8rcL,0.713,0.676,10,-5.483,1,0.027,0,0.154,0.721,99.048,227395,4
+AJR,OK ORCHESTRA,World's Smallest Violin,3jHBgKdLCf46aP3HRI0WYv,0.68,0.696,5,-6.977,1,0.051,0.0,0.607,0.684,115.962,180743,4
 Miley Cyrus,Flowers,Flowers,0yLdNVWF3Srea0uzk55zFn,0.707,0.681,0,-4.325,1,0.0668,5.15e-06,0.0322,0.646,117.999,200455,4
-Adele,30,Can I Get It,6w8ZPYdnGajyfPddTWdthN,0.703,0.68,9,-6.118,0,0.0431,0,0.178,0.536,97.985,210384,4
-Em Beihold,Numb Little Bug,Numb Little Bug,3o9kpgkIcffx0iSwxhuNI2,0.742,0.527,8,-6.892,0,0.0769,0,0.25,0.638,84.974,169238,4
-OneRepublic,Sunshine,Sunshine,5r43qanLhUCdBj8HN3fa6B,0.697,0.875,5,-4.621,1,0.034,0,0.28,0.774,140.069,163855,4
+Maroon 5,JORDI (Deluxe),Beautiful Mistakes (feat. Megan Thee Stallion),5zFglKYiknIxks8geR8rcL,0.713,0.676,10,-5.483,1,0.027,0.0,0.154,0.721,99.048,227395,4
+Adele,30,Can I Get It,6w8ZPYdnGajyfPddTWdthN,0.703,0.68,9,-6.118,0,0.0431,0.0,0.178,0.536,97.985,210384,4
+Em Beihold,Numb Little Bug,Numb Little Bug,3o9kpgkIcffx0iSwxhuNI2,0.742,0.527,8,-6.892,0,0.0769,0.0,0.25,0.638,84.974,169238,4
+OneRepublic,Sunshine,Sunshine,5r43qanLhUCdBj8HN3fa6B,0.697,0.875,5,-4.621,1,0.034,0.0,0.28,0.774,140.069,163855,4
+Coldplay,My Universe,My Universe,3FeVmId7tL5YN8B7R3imoM,0.588,0.701,9,-6.39,1,0.0402,0.0,0.2,0.443,104.988,228000,4
 Elton John,Hold Me Closer,Hold Me Closer,72yP0DUlWPyH8P7IoxskwN,0.667,0.75,0,-4.602,1,0.0906,0.000198,0.197,0.486,126.041,202246,4
-Coldplay,My Universe,My Universe,3FeVmId7tL5YN8B7R3imoM,0.588,0.701,9,-6.39,1,0.0402,0,0.2,0.443,104.988,228000,4
-Kygo,Woke Up in Love,Woke Up in Love,21H0pUV2uPIPcFnFhgTBjo,0.643,0.585,2,-5.994,1,0.0369,0,0.0927,0.188,106.015,216873,4
-Maren Morris,The Bones (with Hozier),The Bones - with Hozier,1yTTMcUhL7rtz08Dsgb7Qb,0.561,0.597,11,-6.0,0,0.0405,0,0.0979,0.355,76.826,197299,4
-Ava Max,Diamonds & Dancefloors,Ghost,7LbhIjYNfCguxjAw43Mkff,0.715,0.931,11,-3.548,0,0.0426,0.00185,0.0549,0.615,119.971,181648,4
-Harry Styles,Fine Line,Watermelon Sugar,6UelLqGlWMcVH1E5c4H7lY,0.548,0.816,0,-4.209,1,0.0465,0,0.335,0.557,95.39,174000,4
-Elton John,Cold Heart (PNAU Remix),Cold Heart - PNAU Remix,6zSpb8dQRaw0M1dK8PBwQz,0.796,0.798,1,-6.312,1,0.0317,4.19e-05,0.0952,0.942,116.032,202735,4
-Meghan Trainor,Don't I Make It Look Easy,Don't I Make It Look Easy,0Bm2kjXM4w6JlwS6jpTmfO,0.628,0.742,0,-4.51,1,0.0668,0,0.274,0.829,148.756,154888,4
-Jason Mraz,I Feel Like Dancing,I Feel Like Dancing,4xYlpJPENfM4DT0rUYFqSP,0.812,0.706,4,-6.054,0,0.0709,0,0.107,0.621,112.002,218702,4
+Kygo,Woke Up in Love,Woke Up in Love,21H0pUV2uPIPcFnFhgTBjo,0.643,0.585,2,-5.994,1,0.0369,0.0,0.0927,0.188,106.015,216873,4
+Harry Styles,Fine Line,Watermelon Sugar,6UelLqGlWMcVH1E5c4H7lY,0.548,0.816,0,-4.209,1,0.0465,0.0,0.335,0.557,95.39,174000,4
+Maren Morris,The Bones (with Hozier),The Bones - with Hozier,1yTTMcUhL7rtz08Dsgb7Qb,0.561,0.597,11,-6.0,0,0.0405,0.0,0.0979,0.355,76.826,197299,4
+Imagine Dragons,Mercury - Acts 1 & 2,Bones,54ipXppHLA8U4yqpOFTUhr,0.772,0.75,5,-3.67,0,0.0455,0.0,0.074,0.587,114.061,165265,4
 Rosa Linn,SNAP,SNAP,76OGwb5RA9h4FxQPT33ekc,0.565,0.636,0,-8.198,1,0.0638,9.9e-06,0.447,0.525,170.01,179551,4
-Imagine Dragons,Mercury - Acts 1 & 2,Bones,54ipXppHLA8U4yqpOFTUhr,0.772,0.75,5,-3.67,0,0.0455,0,0.074,0.587,114.061,165265,4
+Meghan Trainor,Don't I Make It Look Easy,Don't I Make It Look Easy,0Bm2kjXM4w6JlwS6jpTmfO,0.628,0.742,0,-4.51,1,0.0668,0.0,0.274,0.829,148.756,154888,4
 Dua Lipa,Future Nostalgia,Love Again,1imMjt1YGNebtrtTAprKV7,0.659,0.667,11,-4.668,0,0.0339,2.85e-05,0.1,0.468,115.982,258004,4
-Meghan Trainor,Takin' It Back,Made You Look,0QHEIqNKsMoOY5urbzN48u,0.838,0.525,10,-3.562,1,0.0665,1.92e-06,0.0771,0.884,144.981,134256,4
-George Ezra,Gold Rush Kid,Green Green Grass,4N5s8lPTsjI9EGP7K4SXzB,0.685,0.738,8,-4.413,1,0.0595,0,0.128,0.8,112.972,167614,4
-BANNERS,Where The Shadow Ends,Someone To You,2f0pn9DkEJwAzXApnFh5cr,0.52,0.903,2,-5.497,1,0.042,0,0.254,0.652,74.988,219801,4
+Jason Mraz,I Feel Like Dancing,I Feel Like Dancing,4xYlpJPENfM4DT0rUYFqSP,0.812,0.706,4,-6.054,0,0.0709,0.0,0.107,0.621,112.002,218702,4
+Elton John,Cold Heart (PNAU Remix),Cold Heart - PNAU Remix,6zSpb8dQRaw0M1dK8PBwQz,0.796,0.798,1,-6.312,1,0.0317,4.19e-05,0.0952,0.942,116.032,202735,4
+George Ezra,Gold Rush Kid,Green Green Grass,4N5s8lPTsjI9EGP7K4SXzB,0.685,0.738,8,-4.413,1,0.0595,0.0,0.128,0.8,112.972,167614,4
+Andy Grammer,Joy,Joy,4Hn4zAkBUaNnT8m9p7cYaf,0.675,0.793,2,-6.0,1,0.157,0.0,0.103,0.233,111.907,193621,4
 Lost Frequencies,Where Are You Now,Where Are You Now,3uUuGVFu1V7jTQL60S1r8z,0.671,0.636,6,-8.117,0,0.103,0.000411,0.172,0.262,120.966,148197,4
-Nelly,Lil Bit,Lil Bit,0NmuYnjETG3u3qx0OmEJev,0.707,0.689,4,-7.097,0,0.0387,0,0.383,0.41,119.987,195962,4
 David Guetta,I'm Good (Blue),I'm Good (Blue),4uUG5RXrOk84mYEfFvj3cK,0.561,0.965,7,-3.673,0,0.0343,7.07e-06,0.371,0.304,128.04,175238,4
-Andy Grammer,Joy,Joy,4Hn4zAkBUaNnT8m9p7cYaf,0.675,0.793,2,-6.0,1,0.157,0,0.103,0.233,111.907,193621,4
-Jax,Victoria’s Secret,Victoria's Secret,4svaKoxMMP7ImmKrD5hfQu,0.586,0.556,6,-7.639,1,0.0592,0,0.0836,0.517,167.018,176125,4
-Ed Sheeran,Celestial,Celestial,4zrKN5Sv8JS5mqnbVcsul7,0.574,0.852,2,-1.248,1,0.0397,0,0.161,0.501,123.038,209027,4
-Alesso,When I’m Gone (with Katy Perry),When I’m Gone (with Katy Perry),5902W4uHWzhtOff1UK7the,0.685,0.886,0,-4.179,1,0.034,0,0.481,0.615,125.034,161267,4
-Tones And I,Welcome To The Madhouse,Fly Away,2zBDKzqa6sdxeI0fC6OWIC,0.806,0.513,4,-6.208,1,0.0685,0,0.217,0.503,124.988,178157,4
-Camila Cabello,Bam Bam (feat. Ed Sheeran),Bam Bam (feat. Ed Sheeran),0QBzMgT7NIeoCYy3sJCof1,0.756,0.697,8,-6.377,1,0.0401,0,0.333,0.956,94.996,206071,4
-P!nk,Never Gonna Not Dance Again,Never Gonna Not Dance Again,6sZo5nJIsFWXefRCCexpx0,0.668,0.802,5,-4.005,0,0.0917,0,0.163,0.769,113.796,225789,4
-Tom Grennan,Little Bit of Love (Acoustic),Little Bit of Love,78q4ESvMkPVJzHAV11LAGE,0.689,0.706,1,-4.48,0,0.0312,0,0.105,0.623,106.52,226268,4
-Shania Twain,Giddy Up!,Giddy Up!,4NdJlsPyvXz15LySCNoL2W,0.779,0.692,3,-3.59,0,0.0598,0,0.482,0.67,103.99,162665,4
+Alesso,When I’m Gone (with Katy Perry),When I’m Gone (with Katy Perry),5902W4uHWzhtOff1UK7the,0.685,0.886,0,-4.179,1,0.034,0.0,0.481,0.615,125.034,161267,4
+Meghan Trainor,Takin' It Back,Made You Look,0QHEIqNKsMoOY5urbzN48u,0.838,0.525,10,-3.562,1,0.0665,1.92e-06,0.0771,0.884,144.981,134256,4
+Nelly,Lil Bit,Lil Bit,0NmuYnjETG3u3qx0OmEJev,0.707,0.689,4,-7.097,0,0.0387,0.0,0.383,0.41,119.987,195962,4
+Jax,Victoria’s Secret,Victoria's Secret,4svaKoxMMP7ImmKrD5hfQu,0.586,0.556,6,-7.639,1,0.0592,0.0,0.0836,0.517,167.018,176125,4
+Ed Sheeran,Celestial,Celestial,4zrKN5Sv8JS5mqnbVcsul7,0.574,0.852,2,-1.248,1,0.0397,0.0,0.161,0.501,123.038,209027,4
+Camila Cabello,Bam Bam (feat. Ed Sheeran),Bam Bam (feat. Ed Sheeran),0QBzMgT7NIeoCYy3sJCof1,0.756,0.697,8,-6.377,1,0.0401,0.0,0.333,0.956,94.996,206071,4
+Tones And I,Welcome To The Madhouse,Fly Away,2zBDKzqa6sdxeI0fC6OWIC,0.806,0.513,4,-6.208,1,0.0685,0.0,0.217,0.503,124.988,178157,4
+Tom Grennan,Little Bit of Love (Acoustic),Little Bit of Love,78q4ESvMkPVJzHAV11LAGE,0.689,0.706,1,-4.48,0,0.0312,0.0,0.105,0.623,106.52,226268,4
+P!nk,Never Gonna Not Dance Again,Never Gonna Not Dance Again,6sZo5nJIsFWXefRCCexpx0,0.668,0.802,5,-4.005,0,0.0917,0.0,0.163,0.769,113.796,225789,4
+Sia,This Is Acting (Deluxe Version),Unstoppable,1yvMUkIOTeUNtNWlWRgANS,0.468,0.779,9,-4.839,1,0.0779,0.000373,0.101,0.26,173.799,217747,4
+Rema,Calm Down (with Selena Gomez),Calm Down (with Selena Gomez),0WtM2NBVQNNJLh6scP13H8,0.801,0.806,11,-5.206,1,0.0381,0.000669,0.114,0.802,106.999,239318,4
+BANNERS,Where The Shadow Ends,Someone To You,2f0pn9DkEJwAzXApnFh5cr,0.52,0.903,2,-5.497,1,0.042,0.0,0.254,0.652,74.988,219801,4

@@ -1,0 +1,101 @@
+artist,album,track_name,track_id,danceability,energy,key,loudness,mode,speechiness,instrumentalness,liveness,valence,tempo,duration_ms,time_signature
+Durand Jones & The Indications,Private Space,Ride or Die,6KNV6L3b7beomEUnzWgw0X,0.607,0.629,2,-10.509,1,0.0406,0.0806,0.0844,0.688,101.974,254722,4
+Pharrell Williams,Just A Cloud Away,Just A Cloud Away,0DGTcMqvVR7fmBXgiG6jz4,0.89,0.46,2,-8.155,1,0.0359,0.0,0.11,0.677,112.555,176078,3
+The Main Squeeze,Sunday Morning,Sunday Morning,5N7s7nhywtONPI5FJhabAP,0.49,0.569,1,-8.401,1,0.246,0.0,0.365,0.43,147.369,229600,3
+Jalen Ngonda,Just Like You Used To,Just Like You Used To,4zi12vnfemTW9sYo3XoJ2y,0.386,0.569,4,-6.861,1,0.0344,0.00044,0.304,0.551,174.281,188155,4
+Joel Culpepper,Black Boy,Black Boy,01H6EVBkDRIIICVpciXOHC,0.618,0.518,6,-5.122,1,0.156,0.000286,0.131,0.466,169.966,243625,4
+Swamp Dogg,Cheating in the Daylight,Cheating in the Daylight,70wmWSlvCFeoYHSgoGsbpk,0.496,0.614,0,-9.82,1,0.0582,0.00287,0.0968,0.857,91.768,327680,4
+Durand Jones & The Indications,American Love Call,Don't You Know,0jecTSpHjOy5CyqEdfod5c,0.676,0.657,4,-4.185,0,0.0333,4.95e-05,0.107,0.727,96.034,200687,4
+Leon Bridges,Coming Home (Deluxe),Coming Home,65GbQI9VDTs7vo6MJL2iJA,0.424,0.465,6,-6.595,1,0.0297,5.52e-05,0.154,0.462,112.418,206387,3
+Khruangbin,Texas Moon,B-Side,2DccHqTquzubziHAPZRdct,0.732,0.734,7,-10.574,1,0.0541,0.172,0.327,0.687,104.764,274391,4
+Carl Douglas,Love Peace and Happiness,What's Good for the Goose,11SrvCEGNPmdhqVFnpruZf,0.825,0.565,2,-8.263,1,0.159,0.00071,0.0659,0.821,92.469,232229,4
+Lady Wray,Piece of Me,Come On In,6HwVmEL610Sd9QtZ96Ysmr,0.61,0.564,5,-6.086,0,0.0258,0.00109,0.155,0.551,80.734,218409,4
+Sam Cooke,A Cupid's Valentine,You Send Me,24lvdbt9pS7DFEjhEWSl49,0.558,0.311,4,-9.582,0,0.0288,0.0,0.118,0.415,95.978,163480,4
+The Miracles,The Fabulous Miracles,You've Really Got A Hold On Me,7wLRmjiDYI6flIVzboUqSV,0.68,0.448,0,-8.398,1,0.0302,0.0,0.227,0.567,118.461,177707,3
+Marvin Brooks,I'll Be Fine,Shake What Your Mama,7pgO6bfDy6RbM87aTzzyoK,0.852,0.704,2,-8.529,1,0.172,0.0,0.305,0.777,120.025,167667,4
+Swamp Dogg,Sorry You Couldn't Make It,"Good, Better, Best",5xJ2iRDQ7jKJl2DLsYJPYD,0.84,0.405,10,-11.72,0,0.161,0.0236,0.111,0.823,90.038,170040,4
+Lady Wray,Queen Alone,In Love (Don't Mess Things Up),4SgWwPLqJ08Y1HuoIpFJX4,0.758,0.364,9,-7.491,0,0.0548,5.96e-06,0.138,0.533,95.619,137320,4
+The Dip,The Dip Delivers,Sure Don't Miss You,0lEWIegMNMQ7W1ooB1zWT2,0.667,0.586,4,-7.985,0,0.0283,2.96e-06,0.16,0.727,102.988,174520,4
+Kool & The Gang,Perfect Union,Hold On,3GrTxDPEBPyofDy06rO9mj,0.793,0.601,4,-8.179,1,0.0317,0.00351,0.105,0.703,103.003,215404,4
+Lee Fields & The Expressions,It Rains Love,Blessed with the Best,6Tn9J7LOj5CuytqzORpkrz,0.596,0.652,1,-4.703,1,0.0483,0.000866,0.071,0.898,162.675,229720,4
+Monophonics,It's Only Us,Last One Standing,7DFA3k0QQtvAkItuNAwKh4,0.588,0.576,6,-6.945,0,0.0367,0.0357,0.172,0.66,129.155,436840,4
+Mel Carter,You Can Count On Me,You Can Count On Me,0SShdjTlefnYkLOqlVzGZH,0.45,0.74,1,-3.716,1,0.0577,0.0,0.106,0.904,131.941,196520,4
+Brenton Wood,The Very Best Of,The Oogum Boogum Song,7fp41IDi1dqARoX0Nuvz5O,0.885,0.64,7,-5.305,1,0.0431,0.0,0.247,0.851,112.658,153413,4
+Sugaray Rayford,No Limit to My Love,Gonna Lift You Up,1UIeLWeNp3Vx0Ge3NLUggt,0.76,0.706,9,-5.789,1,0.0499,0.00131,0.127,0.801,116.006,210644,4
+Al Green,Let's Stay Together,Let's Stay Together,63xdwScd1Ai1GigAwQxE8y,0.756,0.401,7,-10.702,0,0.0526,0.011,0.0541,0.514,101.954,199396,4
+John Legend,Once Again,Save Room,3sTc75CCyIw4FPs6cXkOe7,0.69,0.572,7,-6.131,1,0.0264,0.0,0.0969,0.375,111.92,235667,4
+The Temptations,The Temptations Sing Smokey,My Girl,745H5CctFr12Mo7cqa1BMH,0.572,0.418,0,-10.738,1,0.0349,0.0,0.0961,0.694,104.566,165000,4
+Emanuel Harrold,I Think,I Think,0KubmI0koWzdKaZdqLaXNj,0.636,0.745,0,-6.293,1,0.0777,0.000374,0.104,0.421,120.105,345307,4
+Sharon Jones & The Dap-Kings,Naturally,How Long Do I Have to Wait for You?,113bLFbp3F9MVN0w2KJ1ma,0.674,0.909,10,-3.369,0,0.0464,0.0131,0.105,0.969,103.942,243760,4
+Lee Fields & The Expressions,My World,Ladies,6iNHWlOLt4NuDi9iSvtznO,0.48,0.751,1,-5.702,0,0.0383,1.69e-05,0.163,0.789,177.371,257387,4
+Johnny Adams,Only Want To Be With You,It's Been So Long - Remastered,3zmnOK1Z6udSwe2hhkYVcC,0.534,0.725,5,-7.045,1,0.0423,2.48e-05,0.253,0.648,96.328,244920,4
+Sly Stone,I'm Back! Family & Friends,Family Affair,1XvCs8az0V297Ex0I9VAPu,0.748,0.719,2,-11.172,0,0.0421,0.139,0.114,0.737,107.962,199427,4
+All-4-One,Good Start,Good Start,5MkuGkaEQzvhUMOeJZ8wsA,0.613,0.889,10,-4.807,1,0.0566,0.0,0.298,0.873,78.518,228667,4
+The Spinners,The Best Of The Spinners,It's A Shame,6cpNEgirhi0QmLDA2cVSHO,0.411,0.788,8,-10.197,0,0.109,0.0,0.175,0.612,198.435,191960,4
+Smokey Robinson,Where There's Smoke...,Cruisin',2gliw3L0oa4w8LqaHploje,0.498,0.63,6,-5.808,0,0.0276,0.0,0.238,0.822,169.115,352920,4
+Jonny P,Good To You,Good To You,7t7VTdIZS01AfR2w2SHb17,0.789,0.38,1,-10.662,1,0.0362,0.0207,0.0928,0.702,92.028,158855,4
+Lee Fields & The Expressions,My World,Honey Dove,1emxi7e5EWFsJmwSKTuUDH,0.487,0.497,4,-5.776,0,0.064,0.167,0.109,0.195,160.317,246573,4
+The Jackson 5,Anthology: Jackson 5,I Want You Back,3tSi6iFO9yLGIYIqMEgjC9,0.67,0.584,8,-8.325,1,0.034,0.00614,0.178,0.944,98.185,179227,4
+Otis Redding,Complete & Unbelievable: The Otis Redding Dictionary of Soul,Try a Little Tenderness,36AlMHDBFwSsD3FQOy1R81,0.587,0.133,9,-15.151,0,0.0565,2.26e-05,0.258,0.068,102.938,201733,4
+Charles Bradley,Victim of Love,Strictly Reserved for You,2aWr9QRr0pSmYFH04zngiP,0.631,0.726,5,-6.079,1,0.0296,9.6e-05,0.11,0.623,87.067,222371,4
+Funkadelic,Maggot Brain,Can You Get To That,5lc9L9FeLBwlJPgEbq9uEw,0.681,0.897,8,-5.44,1,0.0874,0.0,0.1,0.852,140.803,169856,4
+Bill Withers,Menagerie,Lovely Day,0bRXwKfigvpKZUurwqAlEh,0.692,0.651,9,-8.267,1,0.0324,0.00241,0.105,0.706,97.923,254560,4
+Lee Fields & The Expressions,Big Crown Vaults Vol. 1 - Lee Fields & The Expressions,Thinking About You,2vroaTJq214LCxTtRGzrFf,0.81,0.76,7,-4.368,1,0.0411,0.002,0.101,0.945,133.251,160701,4
+The Foundations,From the Foundations (Expanded Edition),Build Me Up Buttercup,4eGlvsFXmFqdJrVXe9FbgD,0.564,0.555,0,-9.07,1,0.0293,0.0,0.244,0.882,67.082,177520,4
+Penny & The Quarters,Penny & the Quarters EP,You And Me,39FFlqltctkj6vkIcVgkec,0.578,0.178,5,-7.812,1,0.033,8.65e-06,0.121,0.256,111.555,160813,4
+Raphael Saadiq,The Way I See It,Love That Girl,4ZKGarvWsSOruOaw40cFNz,0.71,0.674,1,-5.393,1,0.0352,1.73e-05,0.0366,0.7,124.033,184413,4
+Al Green,Gets Next to You,Tired of Being Alone,10vkYRKw6Jjr7try1ir50G,0.772,0.397,7,-8.585,1,0.0391,0.00541,0.0753,0.617,97.964,172320,4
+St. Paul & The Broken Bones,Half The City,Call Me,5Z0MrFDEIDB075We9w9276,0.573,0.786,7,-4.354,1,0.0352,0.212,0.117,0.612,110.289,171267,4
+Bettye Swann,The Money Recordings,Make Me Yours,2u0TWxcEOhIwSzyIAwxdIs,0.715,0.491,3,-8.126,1,0.0322,1.19e-05,0.124,0.875,107.941,195293,4
+The Isley Brothers,It's Your Thing: The Story Of The Isley Brothers,That Lady - Pt. 1 & 2,5hTyIlRYTc0sNHk5wDk6Xl,0.339,0.809,5,-8.902,0,0.0649,4.08e-05,0.349,0.922,126.539,334333,4
+Heatwave,Too Hot to Handle (Expanded Edition),Boogie Nights,4NTSDu34al733aIuUWVJHo,0.629,0.615,11,-10.972,0,0.0433,7.23e-05,0.132,0.673,118.805,303640,4
+Various Artists,Nigeria 70 - Lagos Jump,You Are My Heart,5r2cbcTE0HhvRO2avP8GAh,0.675,0.681,7,-7.458,1,0.0364,0.0232,0.225,0.604,97.442,193000,4
+Curtis Mayfield,Superfly: Deluxe 25th Anniversary Edition,Pusherman,7zrPswSV1yxrill5OyCuaU,0.851,0.669,10,-9.562,1,0.0379,0.0852,0.108,0.911,126.624,300693,4
+Stevie Wonder,Songs In The Key Of Life,Sir Duke,4pNiE4LCVV74vfIBaUHm1b,0.588,0.568,6,-9.766,1,0.0672,0.0,0.0792,0.952,106.938,232760,4
+Sly & The Family Stone,Fresh,If You Want Me to Stay,2BydLQAh7CUIFvSEqAMc4x,0.843,0.48,11,-11.574,0,0.0492,0.000782,0.108,0.762,101.993,180493,4
+Natalie Cole,Natalie Cole Anthology,This Will Be (An Everlasting Love) - 2003 Remaster,241RmK77gecJ1y7jOoQ5lu,0.682,0.605,8,-10.771,1,0.0403,0.00326,0.0469,0.914,125.96,171360,4
+Jon Batiste,WE ARE,FREEDOM,2QOB5UiRKggr2j9uMD3GYK,0.873,0.651,1,-4.179,1,0.0374,0.000107,0.213,0.828,115.002,178290,4
+Marvin Gaye,Every Great Motown Hit Of Marvin Gaye,Got To Give It Up - Pt. 1,7ohR0qPH6f2Vuj2pUNanJG,0.855,0.847,2,-9.019,1,0.042,0.00062,0.345,0.89,122.644,255133,4
+Leon Bridges,Coming Home (Deluxe),Smooth Sailin',3jpeI1goQHPIwwCMxrLrwx,0.641,0.721,11,-6.788,0,0.0451,7.15e-06,0.246,0.753,67.055,183333,4
+Cymande,Cymande,Bra,6i34WfBMN1PHXLgkCESgSD,0.676,0.769,7,-10.142,1,0.0535,0.0256,0.131,0.891,117.733,306360,4
+Stevie Wonder,For Once In My Life,For Once In My Life,4kP69y3GKHi9tXckfgp4bK,0.524,0.519,6,-11.903,1,0.043,0.0,0.523,0.847,110.121,169800,4
+Cornelius Brothers & Sister Rose,The Story Of Cornelius Brothers & Sister Rose,Too Late To Turn Back Now,2OyaNAq8BcGstyzueloqpE,0.516,0.73,7,-7.136,1,0.0494,0.0,0.425,0.907,115.126,198693,4
+Curtis Harding,If Words Were Flowers,Can't Hide It,6cJZx1AeXC7CIi6xZrJQq7,0.704,0.841,4,-5.732,0,0.0303,0.00283,0.11,0.769,119.98,199640,4
+Kool & The Gang,Wild And Peaceful,Hollywood Swinging,6igsoAR6Co9u7Rq3U7mlOD,0.623,0.824,6,-8.971,0,0.0479,0.13,0.0491,0.574,111.356,279933,4
+Commodores,The Commodores: The Definitive Collection,Lady (You Bring Me Up),7l3QyhptrvjiNS5dOcUQvr,0.88,0.702,0,-6.657,0,0.0336,0.000303,0.0742,0.833,120.844,290440,4
+RuthAnne,Matters of the Heart,Love Again,1rbykFoRXzj8yEG1Wyu6FC,0.582,0.424,8,-6.367,1,0.0702,0.0,0.099,0.478,92.286,210454,4
+The O'Jays,Back Stabbers,Love Train,28285KFbyCq8sJofn58qlD,0.743,0.572,0,-9.627,1,0.0493,1.44e-05,0.163,0.675,122.658,178400,4
+The Ronettes,Be My Baby: The Very Best of The Ronettes,Be My Baby,2G2YzndIA6jeWFPBXhUjh5,0.511,0.769,4,-7.032,1,0.042,0.0,0.0921,0.818,129.657,160907,4
+Stevie Wonder,"Signed, Sealed And Delivered","Signed, Sealed, Delivered (I'm Yours)",2eF8pWbiivYsYRpbntYsnc,0.675,0.597,5,-11.329,1,0.0337,0.0,0.0986,0.828,108.875,161160,4
+The Brothers Johnson,Right On Time,Strawberry Letter 23,00kvKlIvfzQLSi6T2zwXuS,0.73,0.622,7,-11.7,0,0.0532,0.00874,0.111,0.752,90.973,299067,4
+Four Mints,Gently Down Your Stream,Keep On Loving You,1uU8KgP0ny5yxRzYuKaz3i,0.643,0.74,5,-7.7,1,0.0371,0.0,0.0783,0.935,123.659,206893,4
+Curtis Mayfield,Curtis (Expanded Edition),Move on Up - Extended Version,01gDLZsi0j5fWC28FLPNO8,0.584,0.975,11,-6.534,0,0.0651,0.501,0.101,0.876,138.341,535333,4
+Bill Withers,Lean on Me: The Best of Bill Withers,Use Me,2WVz9Mtp3E8HCblGiu3nCv,0.748,0.638,11,-12.028,0,0.0537,0.0014,0.0751,0.961,154.709,228507,4
+Denise LaSalle,On The Loose / Trapped By A Thing Called Love,Trapped by a Thing Called Love,4hSrsPJxHOrGTD6I3HcCRe,0.719,0.486,5,-9.489,0,0.0538,3.19e-05,0.0718,0.824,141.515,160627,3
+Ben E. King,Don't Play That Song (Mono),Stand by Me,3SdTKo2uVsxFblQjpScoHy,0.65,0.306,9,-9.443,1,0.0393,7.07e-06,0.0707,0.605,118.068,180056,4
+Martha Reeves & The Vandellas,Watchout!,Jimmy Mack,7N3UAu6FkwdBg9J7OONBBP,0.701,0.517,2,-7.951,1,0.0357,0.0,0.385,0.688,127.401,163733,4
+The Spinners,Spinners,I'll Be Around,2vLaES21zwbX1Rnmj56Bbb,0.593,0.791,8,-8.698,0,0.068,0.0,0.0976,0.63,112.295,188800,4
+Yola,Walk Through Fire (Deluxe Edition),I Don't Wanna Lie,6CgsttSWDA2sISZQp1upXK,0.562,0.821,5,-5.082,1,0.0277,0.0,0.519,0.893,105.512,181535,4
+Rufus & Chaka Khan,The Very Best Of Rufus Featuring Chaka Khan,Tell Me Something Good,0AECVMjxepWdsjDb49JFRd,0.724,0.404,1,-9.186,1,0.231,0.0,0.116,0.794,73.983,280040,4
+The Isley Brothers,This Old Heart Of Mine,This Old Heart Of Mine (Is Weak For You),5c33j1xFVOL4G24zxYhssB,0.632,0.59,5,-10.206,1,0.0305,0.0,0.24,0.953,130.287,172733,4
+James Brown,Black Caesar,The Boss,6LzjgzpVl0hB3YrBU1b8Z1,0.736,0.354,1,-14.709,1,0.0475,0.0103,0.0757,0.62,97.924,194867,4
+Marvin Gaye,United,Ain't No Mountain High Enough,7tqhbajSfrz2F7E1Z75ASX,0.663,0.6,7,-10.87,1,0.032,0.0,0.184,0.8,129.991,151667,4
+The Five Stairsteps,The First Family of Soul: The Best of The Five Stairsteps,O-o-h Child,74JdR9aXE6I74oS1BVRsvb,0.488,0.754,5,-7.95,0,0.0381,2.42e-05,0.678,0.664,88.368,197160,4
+The Bamboos,Hard Up (Deluxe Version),Hard Up,2PdrcHhYBZdzP4yhkgpuhw,0.782,0.922,11,-4.028,0,0.0497,0.0118,0.0728,0.761,104.015,255228,4
+Jimmy Barnes,Soothe Me,Soothe Me,4yWQloUilvaSqhFhOpV6oX,0.661,0.831,6,-4.187,1,0.0665,1.35e-06,0.102,0.666,128.021,211813,4
+Stealth,Bury Me,Black Heart,6lTZctflz7IxPbWKXGJVVS,0.852,0.761,1,-4.026,1,0.0846,3.05e-05,0.151,0.585,121.672,174688,4
+The Jackson 5,Anthology: Jackson 5,ABC,01gwPP2h3ajRnqiIphUtR7,0.725,0.804,8,-7.84,1,0.0393,0.000504,0.108,0.961,93.668,177427,4
+The Marvelettes,"Forever: The Complete Motown Albums, Volume 1",Please Mr. Postman - Stereo Version,5fNDP3NTdE69szQHUl4fFr,0.781,0.837,2,-5.245,1,0.0325,6.69e-06,0.0565,0.961,120.586,149400,4
+Harold Melvin & The Blue Notes,Black & Blue (Expanded Edition) (feat. Teddy Pendergrass),The Love I Lost (feat. Teddy Pendergrass),4mumFsUDQXpQts1Y7Zjw5H,0.665,0.859,2,-4.532,1,0.0671,0.0,0.0769,0.639,123.387,384613,4
+Various Artists,Hitsville: The Making Of Motown (Original Motion Picture Soundtrack),Heaven Must Have Sent You,6cy84k8xqRXe2II7DQ1XVj,0.632,0.569,2,-5.75,0,0.0307,0.00131,0.145,0.584,139.914,156307,4
+Don Covay & The Goodtimers,Mercy!,"Mercy, Mercy",1LrLR6D1dfnwIETjb8dsKg,0.858,0.465,9,-13.434,1,0.0727,0.00056,0.0753,0.704,117.964,146707,4
+Four Tops,Four Tops Second Album,"I Can't Help Myself (Sugar Pie, Honey Bunch)",6b6IMqP565TbtFFZg9iFf3,0.667,0.599,0,-8.894,1,0.0291,0.0,0.107,0.971,127.935,160280,4
+King Floyd,Choice Cuts,Groove Me,0gtTfaz5zzbJA28Ypu7k0W,0.913,0.481,11,-8.459,1,0.0998,7.48e-05,0.0279,0.878,103.62,184467,4
+The Impressions,People Get Ready,People Get Ready,6AeG6jSoAVbmUFO6LyYmBf,0.414,0.249,1,-12.674,1,0.0369,8.37e-06,0.188,0.341,142.442,163360,3
+The Supremes,Where Did Our Love Go,Baby Love,5uES1C2NgkdrNHiCwf9jRr,0.595,0.643,5,-9.275,1,0.0365,0.0,0.538,0.73,135.633,158040,4
+Jr. Walker & The All Stars,20th Century Masters: The Millennium Collection: Best of Jr. Walker & The All Stars,How Sweet It Is (To Be Loved By You),16ZNz0wXDJERo4zquNPw7x,0.575,0.731,1,-7.876,1,0.168,3.97e-06,0.351,0.694,125.44,179640,4
+Patty & The Emblems,"Mixed-Up, Shook-Up Girl","Mixed-Up, Shook-Up Girl",1pVFchEqnrpIEtuGrB4srT,0.597,0.47,5,-10.207,1,0.033,0.0,0.127,0.615,128.8,126920,4
+Martha Reeves & The Vandellas,Heat Wave,(Love Is Like A) Heat Wave,3VgrSJEKBRT3xmwzpaxxEF,0.514,0.624,0,-9.287,0,0.0842,0.00517,0.307,0.755,166.726,163053,4
+Yola,Stand For Myself,Diamond Studded Shoes,5SfM1f729pv1DdiEcyDiex,0.522,0.817,0,-6.17,1,0.0512,1.6e-06,0.0807,0.562,151.106,204693,4
+Al Green,Al Green Explores Your Mind,Take Me to the River,62r1CS9zL1FL5Ilb7hLX7n,0.786,0.418,9,-11.115,1,0.0432,0.000158,0.134,0.94,119.101,225373,4
+The Supremes,Where Did Our Love Go,Come See About Me,307kcWJQNMdiYYKj1LgClU,0.732,0.506,7,-11.735,1,0.0462,1.04e-06,0.146,0.867,126.325,163093,4
