@@ -1,0 +1,76 @@
+artist,album,track_name,track_id,danceability,energy,key,loudness,mode,speechiness,instrumentalness,liveness,valence,tempo,duration_ms,time_signature
+Mark Ronson,Late Night Feelings,Nothing Breaks Like a Heart (feat. Miley Cyrus),02dRkCEc8Q5ch4TTcnLxOn,0.601,0.794,7,-5.844,0,0.0671,1.36e-06,0.418,0.244,114.066,217099,4
+Ava Max,Diamonds & Dancefloors,One Of Us,1ItdTDx23yt7tIJOZv5iLQ,0.626,0.842,0,-3.827,0,0.0357,0.0,0.235,0.55,145.03,178010,4
+ABBA,Arrival,"Knowing Me, Knowing You",798cuJeotvXP8UVa8GJPnD,0.546,0.733,2,-7.073,1,0.0299,1.11e-06,0.235,0.91,107.285,241920,4
+The Weeknd,Dawn FM,Best Friends,1E5Xu8dur0fAjSP1VpVhAZ,0.737,0.564,4,-7.045,0,0.105,0.0,0.351,0.528,90.0,163504,4
+Reneé Rapp,Everything To Everyone,Too Well,6Szgu8v7CAapag3XuuJX0b,0.668,0.618,10,-4.639,1,0.0607,0.0,0.112,0.389,120.951,156632,4
+The Weeknd,Save Your Tears (Remix),Save Your Tears (with Ariana Grande) (Remix),37BZB0z9T8Xu7U3e65qxFy,0.65,0.825,0,-4.645,1,0.0325,2.44e-05,0.0936,0.593,118.091,191014,4
+Miley Cyrus,Flowers,Flowers,0yLdNVWF3Srea0uzk55zFn,0.707,0.681,0,-4.325,1,0.0668,5.15e-06,0.0322,0.646,117.999,200455,4
+NEIKED,Better Days (NEIKED x Mae Muller x Polo G),Better Days (NEIKED x Mae Muller x Polo G),6f5ExP43esnvdKPddwKXJH,0.717,0.671,0,-5.077,0,0.0337,2.54e-06,0.0921,0.699,110.054,160657,4
+Taylor Swift,1989,All You Had To Do Was Stay,0dAb8TY433dl3ZfXYCLE19,0.602,0.736,5,-5.778,1,0.0338,4.57e-05,0.105,0.471,96.969,193293,4
+Billie Eilish,dont smile at me,watch,7eB1V5LvAdxCc7brfGhRRo,0.441,0.599,0,-8.985,1,0.225,0.00198,0.103,0.35,165.212,177523,4
+FKA twigs,CAPRISONGS,tears in the club (feat. the weeknd),1GsSM1Fju5J1Fsu51jEsTg,0.616,0.717,8,-6.178,1,0.11,9.81e-05,0.0731,0.72,167.99,196760,4
+FLETCHER,Sting,Sting,3CRLMDJygwt1KWMg1FASye,0.521,0.626,8,-7.245,1,0.0591,0.0,0.161,0.512,95.011,187253,4
+Carly Rae Jepsen,The Loneliest Time,Talking to Yourself,7I7Dk8FOkZqhqZp9N2RKiP,0.743,0.811,7,-5.518,0,0.0467,0.000449,0.0719,0.847,124.056,173200,4
+Halsey,Manic,You should be sad,7lidXGPXPYLNThITAOTlkK,0.591,0.585,2,-6.35,1,0.0277,0.0,0.109,0.324,110.94,205473,4
+thuy,girls like me don't cry,girls like me don't cry,2DtUUBwYwEzKMTMDrc5EiO,0.871,0.372,0,-9.077,0,0.0413,1.6e-06,0.104,0.608,110.011,214387,4
+Galantis,Heartbreak Anthem (with David Guetta & Little Mix),Heartbreak Anthem (with David Guetta & Little Mix),5K6Ssv4Z3zRvxt0P6EKUAP,0.595,0.784,1,-4.878,1,0.102,0.0,0.0608,0.479,124.111,183726,4
+Robyn,Body Talk Pt. 1,Dancing On My Own,3Rc2ajBMInxeNGVkMPC92Y,0.678,0.871,6,-4.781,1,0.0342,0.249,0.0928,0.28,117.029,285973,4
+MUNA,About U,Crying On The Bathroom Floor,6nVKC0GCQrf9MQSJgYiaEr,0.57,0.836,1,-6.431,1,0.103,0.0,0.173,0.318,114.96,255507,4
+SG Lewis,times,Heartbreak On The Dancefloor (feat. Frances),7LgOkzv8NTDeInrCLJnNru,0.699,0.748,2,-5.706,1,0.107,0.0,0.0616,0.86,101.019,195853,4
+MICHELLE,EXPIRATION DATE,EXPIRATION DATE,6BMAOOrAC6LxdYjVbkk7h9,0.831,0.593,0,-5.371,0,0.0417,0.122,0.144,0.619,96.988,161472,4
+Tears For Fears,Songs From The Big Chair (Super Deluxe Edition),Everybody Wants To Rule The World,4RvWPyQ5RL0ao9LPZeSouE,0.645,0.795,7,-12.095,1,0.0527,0.00389,0.104,0.535,112.067,251489,4
+Gracie Abrams,This Is What It Feels Like,The Bottom,4Sk74gcXTe9dnE1HU5Pn1y,0.722,0.596,5,-5.072,1,0.185,9.2e-06,0.133,0.903,94.512,180489,3
+Sabrina Carpenter,emails i can't send,because i liked a boy,32FhTAAjKZaBein150o3Px,0.386,0.592,11,-7.299,1,0.374,0.0,0.117,0.161,146.879,196458,4
+Harry Styles,As It Was,As It Was,4LRPiXqCikLlN15c3yImP7,0.52,0.731,6,-5.338,0,0.0557,0.00101,0.311,0.662,173.93,167303,4
+Conan Gray,Telepath,Telepath,3Z39gbqdaGL3WJXBG0gcuE,0.606,0.819,9,-4.804,1,0.049,0.0,0.0702,0.744,75.006,194973,4
+Kacey Musgraves,Golden Hour,Happy & Sad,04MoJkJzCoU9ukeewv5Vzu,0.642,0.657,10,-5.246,1,0.0333,0.0,0.111,0.658,90.0,243187,4
+Olivia Rodrigo,SOUR,deja vu,6HU7h9RYOaPRFeh0R3UeAr,0.442,0.612,2,-7.222,1,0.112,5.7e-06,0.37,0.178,180.917,215507,4
+Morgan Reese,"not cool anymore,","not cool anymore,",4iabzEk5WL3yipdTR7uohI,0.752,0.45,11,-8.144,0,0.0344,1.39e-06,0.318,0.609,89.951,205580,4
+Caroline Polachek,Pang,So Hot You're Hurting My Feelings,5B6Kjha6RRIMWGN7zGsAaT,0.795,0.576,6,-4.971,1,0.0289,1.01e-05,0.121,0.847,111.975,183861,4
+220 KID,Stupid Feelings,Stupid Feelings,7iUB3byx9Rcks8zW10JVkP,0.715,0.778,6,-6.546,0,0.0365,0.0,0.121,0.756,123.954,166925,4
+Carly Rae Jepsen,The Loneliest Time (feat. Rufus Wainwright),The Loneliest Time (feat. Rufus Wainwright),1sV6bR42OhPi2PL7ZPHLNi,0.686,0.568,2,-6.196,1,0.0568,0.0,0.0991,0.486,122.969,274507,4
+SG Lewis,AudioLust & HigherLove,Oh Laura,2Lq7rOLcBBTvBa86k1YTW0,0.789,0.568,2,-5.084,1,0.0568,0.000409,0.0681,0.899,90.0,216018,4
+Snakehips,Who's Gonna Love You Tonight (with Tinashe),Who's Gonna Love You Tonight (with Tinashe),0HPJa3SJksQakwtOrJT7pj,0.519,0.746,5,-5.217,1,0.0505,0.0,0.117,0.527,90.999,196535,4
+Sabrina Carpenter,Fast Times,Fast Times,0oN3KzKOxYtyIuNiobf8Q4,0.721,0.666,1,-4.699,0,0.0408,0.0,0.045,0.739,132.465,174540,4
+Alessia Cara,In The Meantime,You Let Me Down,5vItiIbaaoTxihU8uAlRbq,0.628,0.524,1,-7.668,1,0.0347,0.00387,0.111,0.373,118.044,193728,4
+Mitski,Love Me More,Love Me More,2OnrjKShafw7qtoyLkKNR2,0.55,0.707,1,-6.222,0,0.0323,2.56e-06,0.098,0.487,136.318,212661,4
+ABBA,Voulez-Vous,Angeleyes,7rWgGyRK7RAqAAXy4bLft9,0.719,0.922,11,-6.091,1,0.0338,0.000163,0.0867,0.964,133.113,260893,4
+Alaina Castillo,call me when ur lonely,call me when ur lonely,5J9KqprFnG4M82Nx8fmScr,0.302,0.596,11,-7.101,0,0.0489,2.19e-05,0.102,0.105,137.565,159907,4
+Lorde,Melodrama,Supercut,6K8VQ84MqhsoakN5MjrnVR,0.562,0.437,0,-10.229,1,0.052,2.18e-05,0.0806,0.15,124.852,277506,4
+Kacey Musgraves,star-crossed,simple times,1lNEXDlxVhsWaq2DLBUDgC,0.654,0.713,1,-6.484,0,0.0846,0.0,0.0837,0.694,80.043,167120,4
+LANY,gg bb xx (deluxe),"the older you get, the less you cry",280MV4FuB5uusjx8wj1dpt,0.547,0.703,1,-6.287,1,0.0278,1.81e-06,0.1,0.385,75.009,202202,4
+Sabrina Carpenter,emails i can't send,Tornado Warnings,5kcuHw8WtxauIWI5crMcLM,0.7,0.571,3,-7.713,1,0.0591,0.0,0.0938,0.579,115.036,204180,4
+ABBA,Voulez-Vous,If It Wasn't For The Nights,3R47KOuGuGvmoeQqbODPa3,0.7,0.88,9,-4.692,1,0.0389,0.00186,0.209,0.872,105.65,309320,4
+Olivia O'Brien,Better Than Feeling Lonely,Better Than Feeling Lonely,0n1SCmuSFEqRQxXvlxCNBy,0.54,0.542,5,-5.562,1,0.0568,0.0,0.0833,0.334,77.43,194000,4
+Julia Michaels,Sorry To Me Too,Sorry To Me Too,4SDccIA3pVkjaZsivDPaV5,0.682,0.642,11,-6.765,0,0.0825,0.000271,0.107,0.387,148.127,209596,4
+Tate McRae,rubberband,rubberband,05ABOPiW13nqIedJfqmfPM,0.64,0.593,10,-6.068,1,0.0431,0.0,0.104,0.432,155.08,147713,4
+Lexi Jayde,closer to closure,hate to be you,4B8xshUQgezhJ8i8HWhHR1,0.635,0.753,4,-4.218,1,0.0271,0.0,0.256,0.535,97.973,182947,4
+Justin Bieber,Justice,Ghost,6I3mqTwhRpn34SLVafSH7G,0.601,0.741,2,-5.569,1,0.0478,2.91e-05,0.415,0.441,153.96,153190,4
+PNAU,You Know What I Need,You Know What I Need,5PQFmB2xhRkJTUWDKccBoP,0.768,0.896,6,-3.501,0,0.0969,0.0,0.0412,0.829,109.959,170000,4
+Kito,Sad Girl Music (feat. BANKS),Sad Girl Music (feat. BANKS),6Zx9jLPOmRwZSxf7zdwoth,0.742,0.522,0,-8.14,1,0.0808,1.95e-05,0.216,0.403,127.909,203788,4
+Sabrina Carpenter,Vicious,Vicious,77Gyctcku69jSlSSYhZEkh,0.721,0.457,0,-6.916,1,0.159,0.0,0.258,0.63,129.98,149891,4
+Cast of High School Musical: The Musical: The Series,High School Musical: The Musical: The Series (Original Soundtrack),All I Want,1v6svH1Fyx9C1nIt1mA2DT,0.376,0.43,0,-6.585,0,0.0328,0.0,0.0912,0.129,77.599,177323,3
+blackbear,everything means nothing,I feel 2 much,6p19vVjC4Lge9VANZlG8gi,0.612,0.544,9,-7.279,1,0.0666,0.0,0.0998,0.694,86.046,240038,4
+Katherine Li,Crush(ed),Miss Me Too,3yCf5wq33Tjd1aWjVHQ192,0.626,0.71,4,-5.321,1,0.107,0.0,0.343,0.547,93.005,150645,4
+Tate McRae,feel like shit,feel like shit,2EBnvom1dTybtm75a3Xh1T,0.508,0.378,7,-7.158,1,0.0473,0.0,0.119,0.161,144.962,204315,4
+Billie Eilish,Bellyache,bellyache,51NFxnQvaosfDDutk0tams,0.695,0.573,4,-8.597,0,0.106,0.0734,0.482,0.408,99.939,179172,4
+Madison Beer,Life Support,Blue,4a1RWaG4BTkifgMSx3rpf3,0.64,0.501,7,-7.86,1,0.0624,0.0,0.16,0.346,114.031,229882,4
+Julia Michaels,Inner Monologue Part 1,What A Time (feat. Niall Horan),5WtfUKzXircvW8l5aaVZWT,0.516,0.467,0,-6.184,1,0.0302,0.0,0.0853,0.386,132.861,173307,4
+Sam Fischer,Hopeless Romantic,Hopeless Romantic,22VPpAWB7qzV8L9rgza11j,0.654,0.636,8,-6.913,1,0.0391,0.00179,0.0919,0.392,113.994,181178,4
+Selena Gomez,Rare,People You Know,63mdJr3NMY3wReOkNE6c6W,0.695,0.62,8,-8.082,0,0.0521,5.43e-05,0.111,0.62,150.032,194900,4
+Kim Petras,Can't Do Better,Can't Do Better,7t9gDWqX10tbhtriPR1Cnd,0.473,0.655,7,-5.144,1,0.0373,1.12e-06,0.144,0.295,131.975,188616,4
+King Princess,Hold On Baby,For My Friends,6IEzGhvKEeUprf0pVk21ye,0.472,0.683,1,-6.007,1,0.0694,0.0,0.163,0.197,85.045,215621,4
+Taylor Swift,Lover,Cornelia Street,12M5uqx0ZuwkpLp5rJim1a,0.824,0.624,0,-9.728,1,0.0827,0.000189,0.1,0.248,102.012,287267,4
+Tove Lo,"How Long (From ""Euphoria"" An HBO Original Series)","How Long - From""Euphoria"" An HBO Original Series",05eZlxyjbkHMPCnunUasCS,0.668,0.687,7,-7.129,0,0.058,0.000822,0.149,0.468,97.025,199314,4
+Bea Miller,feel something,feel something,7JDWhC422Gtk1Bq0mL3OTC,0.74,0.415,0,-8.914,1,0.0707,0.000156,0.319,0.156,136.029,180161,4
+mxmtoon,rising,sad disco,4L9CJKKoqJO2ryiVDnJiiQ,0.772,0.849,0,-4.546,1,0.0387,0.0,0.342,0.96,123.971,183449,4
+Chappell Roan,My Kink is Karma,My Kink is Karma,5nutMjOPSSB9I9CUGOg8lm,0.582,0.526,2,-6.201,1,0.0624,0.0,0.0847,0.273,86.256,222578,4
+Elley Duhé,MIDDLE OF THE NIGHT,MIDDLE OF THE NIGHT,58HvfVOeJY7lUuCqF0m3ly,0.41,0.611,4,-8.271,0,0.0467,0.0,0.116,0.0899,185.727,184448,3
+Maude Latour,Strangers Forever EP,Strangers Forever,0mIvRrpvEg5NDJIEoXee1E,0.636,0.529,5,-8.941,1,0.0422,0.000152,0.363,0.431,136.967,193987,4
+JXN,love sux,love sux,0o8iO4tGwKdxRePgMo9Qrw,0.781,0.532,8,-5.341,0,0.0374,0.0,0.0629,0.332,95.072,144882,4
+Halsey,So Good,So Good,6kxaaIeowajN7w21PfMLbu,0.576,0.627,3,-4.649,0,0.0449,0.0,0.181,0.311,164.998,176059,4
+sundial,24,24,5nsMKSAJwcr1pA9I6PW429,0.839,0.525,2,-4.873,1,0.131,0.0,0.302,0.831,135.996,133897,4
+Suriel Hess,Hurt Me,Hurt Me,4JYBmZcCjPOUg5cofekIYX,0.768,0.435,8,-9.651,1,0.0857,8.09e-05,0.122,0.157,120.003,182979,4
+FLETCHER,Healing,Healing,2jgq1RlYLt4FZldm4KAfj2,0.572,0.621,2,-7.298,1,0.0336,2.19e-06,0.124,0.35,159.989,187544,4
+Zara Larsson,Lay All Your Love On Me - Spotify Singles,Lay All Your Love On Me - Spotify Singles,2vaxUyVWNoA2L272YHEy70,0.691,0.409,4,-10.144,1,0.0376,0.000224,0.145,0.21,124.994,161126,4

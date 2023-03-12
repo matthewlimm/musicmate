@@ -1,0 +1,101 @@
+artist,album,track_name,track_id,danceability,energy,key,loudness,mode,speechiness,instrumentalness,liveness,valence,tempo,duration_ms,time_signature
+Mac Ayres,Drive Slow,Easy,58dSdjfEYNSxte1aNVxuNf,0.722,0.282,5,-7.484,1,0.106,0.00557,0.147,0.217,91.367,314358,4
+Daniel Caesar,Freudian,Best Part (feat. H.E.R.),1RMJOxR6GRPsBHL8qeC2ux,0.524,0.364,7,-10.209,1,0.0367,0.0,0.1,0.436,75.24,209831,4
+Bruno Major,A Song For Every Moon,Easily,2k9N4caeCIJLOWwWwssrEM,0.772,0.256,7,-8.545,0,0.0481,0.00612,0.144,0.357,118.902,210240,3
+keshi,skeletons,skeletons,2BuJrxYKhYky20dQqTlobO,0.719,0.265,2,-12.782,1,0.0754,0.0865,0.108,0.273,80.021,152480,4
+Kendrick Lamar,DAMN.,LOVE. FEAT. ZACARI.,6PGoSes0D9eUDeeAafB2As,0.8,0.585,10,-7.343,1,0.0924,0.0,0.153,0.779,126.058,213400,4
+Jeremy Passion,For More Than a Feeling,Lemonade - Ukulele Version,5nJzWhlrBfn3cfDLlaAgAO,0.546,0.221,2,-8.915,1,0.063,0.0,0.0994,0.593,128.144,181505,4
+Joji,BALLADS 1,SLOW DANCING IN THE DARK,0rKtyWc8bvkriBthvHKY8d,0.515,0.479,3,-7.458,1,0.0261,0.00598,0.191,0.284,88.964,209274,4
+Rex Orange County,Sunflower,Sunflower,4EpZ4eYuZOwPSSwyqpdHnJ,0.384,0.765,6,-4.463,1,0.0579,0.00352,0.522,0.567,129.903,252231,4
+"Tyler, The Creator",Flower Boy,See You Again (feat. Kali Uchis),7KA4W4McWYRpgf0fWsJZWB,0.558,0.559,6,-9.222,1,0.0959,7.49e-06,0.109,0.62,78.558,180387,4
+SZA,The Weekend (Funk Wav Remix),The Weekend - Funk Wav Remix,0P6AWOA4LG1XOctzaVu5tt,0.775,0.573,11,-4.933,1,0.0585,0.0,0.126,0.667,101.925,171806,4
+BROCKHAMPTON,GINGER,SUGAR,6U0FIYXCQ3TGrk4tFpLrEA,0.453,0.538,1,-8.212,1,0.0638,0.0,0.19,0.516,122.973,204533,4
+Frank Ocean,Chanel,Chanel,6Nle9hKrkL1wQpwNfEkxjh,0.776,0.503,0,-5.732,0,0.237,0.0,0.112,0.473,110.134,210285,4
+RINI,Emerald,Emerald,5Ft4VNqy14Lv8xR8RRNCz5,0.562,0.212,5,-13.916,0,0.0364,0.000257,0.0887,0.349,171.953,212093,4
+FKJ,French Kiwi Juice,Vibin' Out,6SEolIp22t0DzeBfCBo3hr,0.41,0.169,3,-11.422,1,0.0485,0.00327,0.117,0.208,89.494,311837,4
+Mac Ayres,Drive Slow,Slow Down,3XstzgzP0rp3bzElEnRVHv,0.729,0.338,5,-12.816,1,0.116,0.000295,0.118,0.184,119.345,234595,4
+Mac Ayres,Drive Slow,Calvin's Joint,33VQJLL7QWS0LUuF7r39Rq,0.676,0.656,8,-7.653,1,0.211,0.0119,0.118,0.283,94.383,226299,4
+Daniel Caesar,Get You - Single,Japanese Denim,1boXOL0ua7N2iCOUVI1p9F,0.707,0.238,3,-8.818,1,0.0379,2.42e-06,0.0842,0.345,124.156,270847,3
+Daniel Caesar,Get You - Single,Get You (feat. Kali Uchis),6N3qHjcwly8ZuhE4bPYJAX,0.659,0.295,11,-8.528,0,0.0322,6.95e-05,0.0795,0.36,74.037,277297,4
+Daniel Caesar,Who Hurt You?,Who Hurt You?,23c9gmiiv7RCu7twft0Mym,0.649,0.493,11,-7.645,0,0.11,0.000167,0.0667,0.277,104.542,231964,4
+Daniel Caesar,Freudian,Blessed,0KyzXQhY2yzcb1FYCHkZc2,0.448,0.263,11,-11.98,1,0.0373,1.91e-06,0.106,0.451,109.889,241371,1
+Daniel Caesar,Pilgrim's Paradise,Streetcar,7Cu2COdH93MnuireuKNiS3,0.41,0.298,3,-11.796,1,0.0473,0.0,0.158,0.142,109.651,246972,3
+Daniel Caesar,Freudian,Loose,59acp1OhcvxwVBwQJBYKuX,0.198,0.162,1,-15.815,1,0.0343,0.00896,0.135,0.0527,70.453,185523,1
+Daniel Caesar,CASE STUDY 01,CYANIDE,3uouaAVXpQR3X8RYkJyitQ,0.589,0.652,10,-7.498,1,0.373,0.00055,0.125,0.486,158.49,194960,4
+Daniel Caesar,CASE STUDY 01,LOVE AGAIN,2fhePAlCSsJplwkjqMYpVm,0.553,0.441,5,-6.411,1,0.0918,2.57e-06,0.107,0.525,76.988,214278,4
+Daniel Caesar,CASE STUDY 01,SUPERPOSITION,45PxuJqJBnPXZKLxoo9Apj,0.589,0.279,4,-11.209,1,0.0408,0.000128,0.087,0.333,115.656,263795,4
+Daniel Caesar,CASE STUDY 01,ENTROPY,795p3jKj5stjPf8IFpZkdD,0.642,0.527,2,-9.444,1,0.0534,4.28e-05,0.154,0.566,133.062,261291,4
+Daniel Caesar,CASE STUDY 01,OPEN UP,4QTwWQDW89udp0JDO2lmPI,0.84,0.192,6,-12.843,1,0.0514,6e-06,0.101,0.31,114.93,266227,3
+Daniel Caesar,CASE STUDY 01,TOO DEEP TO TURN BACK,63UNqAjFomMcZXc2InOxTC,0.567,0.436,9,-10.326,1,0.0571,0.0,0.188,0.252,149.987,318533,4
+Omar Apollo,Stereo,Ugotme,2NCBjlH7FHEG7hXcnvUaWA,0.782,0.494,0,-1.458,1,0.0339,6.31e-05,0.134,0.401,65.832,127273,4
+Omar Apollo,Stereo,Erase,7AszVgcyqnhmIzo6TutnCd,0.657,0.376,9,-6.534,1,0.0463,2.54e-05,0.272,0.575,84.905,236794,4
+Bruno Major,A Song For Every Moon,Fair-Weather Friend,1I9GllIh1R3EMvTFT5Tfn7,0.68,0.34,6,-6.985,1,0.115,0.0021,0.0705,0.391,131.353,186713,3
+Bruno Major,Old Fashioned,Old Fashioned,2N0rHlYG5N4fN9HnVis9yj,0.74,0.242,2,-9.003,1,0.0472,0.00156,0.0972,0.331,131.987,199904,3
+Bruno Major,A Song For Every Moon,Second Time,6Ub9ro6DKs0u0J0zIBw5Of,0.627,0.309,5,-12.783,1,0.0382,0.0316,0.19,0.406,92.6,155617,4
+HONNE,Love Me / Love Me Not,Day 1 ◑,6ZzYETKetIfNUsZUb23jgG,0.503,0.581,6,-7.007,1,0.0881,0.000708,0.257,0.633,94.555,233601,4
+Joji,BALLADS 1,YEAH RIGHT,1VGzxJnVQND7Cg5H5wGj14,0.672,0.588,1,-9.573,1,0.133,0.241,0.0992,0.204,169.033,174358,4
+Jhené Aiko,Trip,While We're Young,4mL59LVbKgOpEACxraGYdr,0.649,0.791,2,-6.013,1,0.193,1.97e-06,0.108,0.811,128.023,236160,4
+H.E.R.,H.E.R.,Focus,3tZs3nVjySLbL320lP4mvs,0.414,0.314,1,-12.943,0,0.0548,1.47e-05,0.117,0.09,84.993,200133,4
+H.E.R.,I Used To Know Her,Could've Been (feat. Bryson Tiller),6oEVnWKgPqIEPc53OYDNqG,0.45,0.352,1,-11.733,0,0.267,3.8e-06,0.249,0.408,102.679,252747,4
+Alextbh,Stoop So Low,Stoop So Low,6QMoHcXX5f6zP9LCAh8mNk,0.46,0.398,4,-9.074,0,0.0421,0.0,0.109,0.335,95.852,197938,4
+UMI,Remember Me,Remember Me,630Ug0XtmhhFvAKo0PNuEI,0.84,0.344,5,-8.613,0,0.0374,3.36e-05,0.35,0.526,111.994,199227,4
+UMI,Love Language,Love Affair,77louqSyp5KhwleVBa0nPW,0.613,0.488,8,-7.372,1,0.0959,2.13e-05,0.335,0.183,172.067,190960,4
+UMI,Butterfly,Butterfly,4qkVALwOxCIEZ7I5gkZ3m4,0.785,0.27,5,-14.457,1,0.0892,0.00132,0.0953,0.12,131.894,160500,4
+Finding Hope,Our Love,3:00 AM,5HsSsEeP3hU9QSfHZrzbtA,0.55,0.147,0,-18.675,0,0.0404,0.00102,0.286,0.0346,81.991,201951,4
+Jackson Lundy,Calypso,Calypso,6ES1G1anjmjDdQsPzlFaXz,0.603,0.374,8,-13.626,1,0.202,0.000981,0.107,0.242,84.294,244460,4
+SZA,Ctrl,Love Galore (feat. Travis Scott),0q75NwOoFiARAVp4EXU4Bs,0.795,0.594,0,-6.2,1,0.0748,0.0,0.162,0.409,135.002,275080,4
+Post Malone,beerbongs & bentleys,Stay,4H7WNRErSbONkM06blBoGc,0.507,0.48,5,-5.418,1,0.0266,0.0,0.147,0.35,86.046,204427,4
+Various Artists,Spider-Man: Into the Spider-Verse (Soundtrack From & Inspired by the Motion Picture),Sunflower - Spider-Man: Into the Spider-Verse,3KkXRkHbMCARz0aVfEt68P,0.76,0.479,2,-5.574,1,0.0466,0.0,0.0703,0.913,89.911,158040,4
+Various Artists,Spider-Man: Into the Spider-Verse (Soundtrack From & Inspired by the Motion Picture),Invincible,6VS7wKwtvL2FvTupYSWZ9e,0.724,0.6,10,-4.391,0,0.29,0.000218,0.104,0.466,86.984,196387,4
+Kendrick Lamar,Black Panther The Album Music From And Inspired By,The Ways (with Swae Lee),5jyyPsIGM2yqkZN9R3TmvN,0.727,0.72,11,-5.856,0,0.0488,1.21e-06,0.176,0.589,140.08,238893,4
+88rising,Head In The Clouds,Midsummer Madness,6TodWdTSDfzwgYynTZSvJn,0.409,0.678,9,-7.731,1,0.0878,4.76e-06,0.167,0.168,89.968,280842,4
+Sun Rai,Pocket Music,San Francisco Street,5pjWzUc1tVcewUTdDJd6Ce,0.877,0.542,2,-9.102,1,0.0419,0.132,0.0858,0.509,111.474,266704,4
+RINI,My Favourite Clothes,My Favourite Clothes,5h5q02tgTORSKqYYkRfUU5,0.749,0.339,2,-9.041,1,0.144,1.36e-05,0.0838,0.291,119.928,257000,4
+RINI,Camped,Camped,2kYDe95UATeXhuaEHhFJwb,0.632,0.375,8,-13.582,1,0.0422,1.98e-05,0.128,0.342,133.009,220602,4
+88rising,Head In The Clouds,History,4TwVtW8hS5LyLoDtJGpUOg,0.554,0.589,3,-8.163,0,0.231,0.000257,0.0982,0.414,74.982,207308,4
+Rich Brian,The Sailor,Drive Safe,6eDfe957aV4sqGnDhlSikJ,0.635,0.312,7,-8.134,1,0.0265,0.0,0.138,0.414,98.017,240118,4
+Rich Brian,Amen,Glow Like Dat,7MXcmkmyxEYAJf04cbqKoI,0.787,0.586,10,-9.64,1,0.0695,0.000311,0.118,0.581,140.036,210862,4
+"Tyler, The Creator",IGOR,EARFQUAKE,5hVghJ4KaYES3BFUATCYn0,0.554,0.498,9,-8.866,1,0.0685,5.98e-06,0.795,0.413,79.635,190067,4
+"Tyler, The Creator",IGOR,ARE WE STILL FRIENDS?,5TxRUOsGeWeRl3xOML59Ai,0.216,0.497,10,-8.025,1,0.0371,2.39e-06,0.111,0.313,187.308,265480,3
+Tom Misch,Geography,Movie,6pxElwU80zhjbCC77Vn8EI,0.785,0.379,7,-11.446,1,0.0732,0.0161,0.267,0.182,122.043,357357,3
+Jeff Bernat,Afterwords,Once Upon a Time,7fU0YxB4RyawfEDv6vtYG7,0.709,0.302,2,-8.474,1,0.0425,0.0263,0.16,0.594,83.026,234107,4
+Jeff Bernat,Changes,Changes,6YKb5UMzDOtfCfbPvJZ8XT,0.474,0.283,6,-8.25,0,0.143,5.55e-06,0.087,0.437,80.336,228571,4
+Post Malone,Circles,Circles,4VginDwYTP2eaHJzO0QMjG,0.704,0.758,0,-3.537,1,0.0402,0.00144,0.0924,0.534,120.003,214907,4
+Post Malone,Stoney (Deluxe),Deja Vu,0H8XeaJunhvpBdBFIYi6Sh,0.62,0.69,7,-6.508,1,0.0493,0.0,0.131,0.331,133.935,234213,4
+Post Malone,Stoney,White Iverson,1Bi5t0q9j3nYXIZuZgSGvr,0.677,0.577,7,-7.671,1,0.0355,0.0,0.0776,0.329,130.05,256533,4
+Post Malone,Stoney,Go Flex,2hCKzqwjRjhycKeZJvbloJ,0.663,0.489,5,-8.198,1,0.124,0.0,0.0769,0.117,81.959,179613,4
+Post Malone,Stoney,Congratulations,6syOdAs4IK8kPWR7gDyjRw,0.629,0.817,6,-4.261,1,0.0357,0.0,0.317,0.466,123.087,220293,4
+ODIE,Analogue,North Face,63bAGRSSX2V1hhPSP2NpBC,0.802,0.382,10,-7.356,1,0.0312,0.163,0.0783,0.581,99.969,196800,4
+Drake,More Life,Passionfruit,5mCPDVBb16L4XQwDdbRUpz,0.809,0.463,11,-11.377,1,0.0396,0.085,0.109,0.364,111.98,298941,4
+sky,over and over,over and over,1BNqVA2FpbCdwbCdNsrbKu,0.721,0.368,6,-9.376,1,0.037,2.36e-06,0.129,0.298,111.92,231437,3
+88rising,Head In The Clouds II,I Love You 3000 II,3witRpHWHqArlnt6GTlH2Y,0.435,0.338,6,-9.109,1,0.066,0.0,0.412,0.354,179.727,209643,4
+keshi,THE REAPER,like i need u,7ivYWXqrPLs66YwakDuSim,0.748,0.465,5,-8.163,1,0.0869,0.0,0.294,0.412,119.872,182679,4
+keshi,2 soon,2 soon,5SlU0Yhi51jobhEiGE4xDv,0.517,0.663,6,-6.688,0,0.0375,0.0,0.322,0.146,174.032,206512,4
+keshi,right here,right here,2xnNgKhyMl9MxBmRNGnBJP,0.619,0.445,5,-10.332,1,0.0503,0.0,0.151,0.35,160.125,194907,4
+keshi,always,drunk,6D6HVKe7Qu3imn4zzJD0W9,0.691,0.389,4,-8.247,1,0.0367,0.0,0.0941,0.306,104.952,227032,4
+FINNEAS,Let’s Fall In Love For The Night,Let's Fall in Love for the Night,7kQkmyoHCEqwe7QwDbkSXM,0.737,0.408,5,-7.941,1,0.104,0.0,0.171,0.374,127.921,190348,4
+JAIE,December,better days,4aFvaG8tPkPSafZdSungMh,0.679,0.0821,0,-17.194,1,0.11,0.0,0.0957,0.218,84.952,169588,4
+Sonder,Too Fast,Too Fast,42QRyJd5x6e2TFR1S41g2p,0.395,0.33,4,-10.924,0,0.0408,1.89e-05,0.268,0.102,98.813,308006,3
+John Mayer,New Light,New Light,3bH4HzoZZFq8UpZmI2AMgV,0.828,0.689,7,-7.878,1,0.0326,0.0384,0.0808,0.853,123.931,216015,4
+Lauv,I met you when I was 18. (the playlist),Paris in the Rain,41CgzGD7xlgnJe14R4cqkL,0.426,0.408,3,-9.419,1,0.0524,7.88e-06,0.394,0.528,76.309,204712,4
+Phum Viphurit,Lover Boy,Lover Boy,2rd4FH1cSaWGc0ZiUaMbX9,0.798,0.556,11,-8.597,1,0.0303,0.000353,0.0959,0.627,109.994,236727,4
+Rex Orange County,Loving Is Easy (feat. Benny Sings),Loving Is Easy (feat. Benny Sings),5EYi2rH4LYs6M21ZLOyQTx,0.756,0.609,3,-7.927,1,0.0544,0.00482,0.0959,0.537,117.024,155720,4
+pxzvc,Bad Idea,Bad Idea,1D5q7cBDHLBDbzQDVrS6E3,0.852,0.41,0,-9.498,1,0.0602,0.167,0.142,0.467,122.054,114109,4
+June Marieezy,Fly (The Remixes),Fly - FKJ Remix,2cbWaw8K4fKvR9kgBg3ugq,0.657,0.528,6,-8.039,0,0.0679,0.000158,0.264,0.35,75.44,252000,4
+Bazzi,I.F.L.Y.,I.F.L.Y.,4R9ATNRRl1uth17i5qDCc0,0.812,0.519,2,-4.823,1,0.0385,0.0,0.13,0.554,104.954,165714,4
+Snoh Aalegra,FEELS,Fool For You,2TRnVXGSK4aBtfEOaB460m,0.58,0.278,2,-11.569,1,0.0701,0.000241,0.104,0.259,149.781,194303,3
+Frank Ocean,Blonde,Self Control,5GUYJTQap5F3RDQiCOJhrS,0.581,0.21,8,-10.426,1,0.0321,0.0,0.369,0.452,80.099,249668,4
+Michael Jackson,XSCAPE,Love Never Felt So Good,48td6xvpokdYwvbl3JIiXP,0.775,0.719,7,-6.212,0,0.0435,1.79e-06,0.0662,0.712,117.513,246027,4
+Justin Timberlake,The 20/20 Experience (Deluxe Version),Suit & Tie (feat. Jay-Z),6vt0I1cw1YmAIKDJvHVIM5,0.795,0.596,11,-3.799,0,0.219,0.0,0.164,0.357,101.985,326280,4
+The Weeknd,Starboy,Die For You,2LBqCSwhJGcFQeTHMVGwy3,0.586,0.525,1,-7.163,0,0.0615,0.0,0.134,0.508,133.629,260253,4
+The Weeknd,Starboy,I Feel It Coming,5GXAXm5YOmYT0kL5jHvYBt,0.773,0.819,0,-5.946,0,0.118,0.0,0.0679,0.585,92.99,269187,4
+Bruno Mars,24K Magic,Versace on the Floor,0kN8xEmgMW9mh7UmDYHlJP,0.578,0.574,2,-6.209,1,0.0454,0.0,0.083,0.301,174.152,261240,4
+Jeremy Zucker,"summer,",comethru,18uwL0vNUanqZH0ro2QcOP,0.795,0.178,0,-11.991,1,0.0574,0.0,0.623,0.608,93.982,181613,4
+dalynn,thrifted youth,thrifted youth,6jnlnvLfayYxvn4kYQl36c,0.57,0.0674,11,-14.907,0,0.0793,0.0,0.0861,0.47,73.343,200526,4
+Eloise,This Thing Called Living,Subside,7EZzBzo5ZoRPKzZbE9iGun,0.736,0.461,8,-6.412,1,0.358,0.00487,0.149,0.486,81.979,188186,4
+Roddy Ricch,Please Excuse Me for Being Antisocial,High Fashion (feat. Mustard),07KXEDMj78x68D884wgVEm,0.831,0.499,11,-8.442,0,0.114,0.0,0.3,0.511,97.956,220487,4
+Frank Ocean,Blonde,Pink + White,3xKsf9qdS1CyvXSMEid6g8,0.545,0.545,9,-7.362,1,0.107,5.48e-05,0.417,0.549,159.94,184516,3
+Frank Ocean,channel ORANGE,Thinkin Bout You,7DfFc7a6Rwfi3YQMRbDMau,0.721,0.339,0,-11.195,1,0.0532,0.00153,0.0973,0.2,129.83,200747,4
+Marc E. Bassy,"Only The Poets Mixtape, Vol. 1",Lock It Up (feat. Kehlani),6uT9XRrPvimLt62FNjMNBv,0.738,0.443,5,-9.614,0,0.0707,0.0,0.103,0.687,127.084,226220,4
+Mac Ayres,Drive Slow,The Devil's in the Details,5q0zxo739jt8HAyo88vNkt,0.708,0.507,6,-8.876,0,0.0549,0.000547,0.101,0.543,76.757,177517,4
+Jacob Collier,All I Need (with Mahalia & Ty Dolla $ign),All I Need (with Mahalia & Ty Dolla $ign),68j5DYmCikBzcp60Sv6xWO,0.485,0.492,5,-6.462,0,0.331,0.0,0.105,0.876,78.001,243787,4
