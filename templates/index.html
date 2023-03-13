@@ -16,12 +16,10 @@
 			</header>
 
 		<!-- Spotify Login -->
-
-		<!-- Signup Form -->
-		<form action="{{ url_for('predict')}}" method="post">
-			 <button type="submit">Predict</button>
-		</form>
-		<p> {{ prediction }} </p>
+		<form action="{{ url_for('login') }}" method="GET">
+			<button type="submit">Login</button>
+	   </form>
+	   <p> {{ login }} </p>
 
 		<!-- Footer -->
 			<footer id="footer">
