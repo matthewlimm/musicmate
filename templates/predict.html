@@ -18,10 +18,25 @@
 		<!-- Predictions -->
 		<body>
 			{% for table in tables %}
-						{{titles[loop.index]}}
+						<!-- {{titles[loop.index]}} -->
 						{{ table|safe }}
 			{% endfor %}
 		</body>
+
+		<!-- Playlist Generator Buttons -->
+
+		<form action="{{ url_for('savePlaylist') }}" method="POST">
+			{% for table in tables %}
+				{% if loop.index == 1 %}
+					<label><input type="radio" name="Playlist" value='{{tables[0]}}'/>Happy</label>
+				{% else %}
+					<label><input type="radio" name="Playlist" value='{{tables[1]}}'/>Sad</label>
+				{% endif %}
+			{% endfor %}
+			<button type="submit">Generate My Playlist!</button>
+	   </form>
+
+		
 
 		<!-- Footer -->
 			<footer id="footer">
