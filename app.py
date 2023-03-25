@@ -67,6 +67,18 @@ def dashboard():
         return redirect('/')
     # at this part, we ensured the token info is up-to-date / fresh
     sp = spotipy.Spotify(auth=token_info['access_token'])
+    creator = sp.user(sp.me()['id'])
+    return render_template('dashboard.html',data=creator)
+
+@app.route('/happyvsad')
+def happyvsad():
+    try:
+        token_info = get_token()
+    except:
+        print('User Not Logged In!')
+        return redirect('/')
+    # at this part, we ensured the token info is up-to-date / fresh
+    sp = spotipy.Spotify(auth=token_info['access_token'])
 
     playlists = []
     iter = 0
@@ -77,7 +89,7 @@ def dashboard():
         if(len(items) < 50):
             break
     pprint(playlists)
-    return render_template('dashboard.html',data=playlists) # data is list
+    return render_template('happyvsad.html',data=playlists) # data is list
 
 @app.route('/predict',methods=['POST'])
 def predict():

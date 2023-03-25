@@ -1,40 +1,191 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Playlist Purifier</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>Spotify Clone</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+<body>
+    <div class="sidebar">
+      <div class="logo">
+        <a href="#">
+          <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="Logo" />
+        </a>
+      </div>
 
-		<!-- Header -->
-			<header id="header">
-				<h1>Playlist Purifier</h1>
-				<p>A simple model that separates the happy tracks<br />
-					from your sad tracks.</p>
-			</header>
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fa-home"></span>
+              <span>Home</span>
+            </a>
+          </li>
 
-		<!-- Prediction Button -->
-		<form action="{{ url_for('predict') }}" method="POST">
-			{% for item in data %}
-				<label><input type="radio" name="playlist" value={{item.id}} required="required" 		/>{{item.name}}</label>
-			{% endfor %}
-			<button type="submit">Predict</button>
-	   </form>
+          <li>
+            <a href="#">
+              <span class="fa fa-search"></span>
+              <span>About</span>
+            </a>
+          </li>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-			</footer>
+          <li>
+            <a href="#">
+              <span class="fa fas fa-book"></span>
+              <span>Repository</span>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-		<!-- Scripts -->
-		<script type="text/javascript" 
-		src="{{ url_for('static',filename='script/script.js') }}"></script>
-	</body>
-</html>
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fas fa-plus-square"></span>
+              <span>My Portfolio</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <span class="fa fas fa-heart"></span>
+              <span>Buy Me A Coffee</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="policies">
+        <ul>
+          <li>
+            <a href="#">Legal</a>
+          </li>
+          <li>
+            <a href="https://developer.spotify.com/">Not Affiliated with Spoitfy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="topbar">
+        <div class="prev-next-buttons">
+          <button type="button" class="fa fas fa-chevron-left"></button>
+          <button type="button" class="fa fas fa-chevron-right"></button>
+        </div>
+
+        <div class="navbar">
+			<div class="user-button">
+				<button type="button">
+          <img class="user-profile-picture" src="{{data['images'][0]['url']}}" />{{data['display_name']}}
+          <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/60/60995.png" style="filter: invert(1);" />
+        </button>
+			</div>
+        </div>
+      </div>
+
+      <div class="spotify-playlists">
+        <h2>Your Insights</h2>
+
+        <div class="list">
+          <div class="item">
+          </div>
+
+          <div class="item">
+          </div>
+
+          <div class="item">
+          </div>
+
+          <div class="item">
+          </div>
+
+          <div class="item">
+            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Chill Hits</h4>
+            <p>Kick back to the best new and recent chill...</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="spotify-playlists">
+        <h2>Compare and Contrast</h2>
+        <div class="list">
+          <div class="item">
+            <div class="grad1"></div>
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Happy versus Sad</h4>
+            <p>Separate the positive tracks from the negative and vice-versa...</p>
+          </div>
+
+          <div class="item">
+          </div>
+
+          <div class="item">
+          </div>
+
+          <div class="item">
+          </div>
+
+          <div class="item">
+          </div>
+        </div>
+      </div>
+
+      <div class="spotify-playlists">
+        <h2>Recommender</h2>
+        <div class="list">
+          <div class="item">
+          </div>
+
+          <div class="item">
+          </div>
+
+          <div class="item">
+          </div>
+
+          <div class="item">
+          </div>
+
+          <div class="item">
+            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Chill Hits</h4>
+            <p>Kick back to the best new and recent chill...</p>
+          </div>
+        </div>
+
+        <hr>
+      </div>
+
+      <div class="preview">
+        <div class="text">
+          <h6>Preview of Music Mate</h6>
+          <p>Log into Spotify to view your insights and gain access to machine learning tools to generate playlists.</p>
+        </div>
+        <div class="button">
+          <button type="button">Log in free</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/23cecef777.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  </html>

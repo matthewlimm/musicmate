@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Playlist Purifier</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1>Playlist Purifier</h1>
+				<p>A simple model that separates the happy tracks<br />
+					from your sad tracks.</p>
+			</header>
+
+		<!-- Prediction Button -->
+		<form action="{{ url_for('predict') }}" method="POST">
+			{% for item in data %}
+				<label><input type="radio" name="playlist" value={{item.id}} required="required" 		/>{{item.name}}</label>
+			{% endfor %}
+			<button type="submit">Predict</button>
+	   </form>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+		<script type="text/javascript" 
+		src="{{ url_for('static',filename='script/script.js') }}"></script>
+	</body>
+</html>
