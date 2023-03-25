@@ -55,6 +55,10 @@
     position: absolute;
     bottom: 100px;
   }
+  .sidebar .policies .no-preview {
+    position: relative;
+    bottom: -75px;
+  }
   .sidebar .policies ul {
     list-style: none;
   }
