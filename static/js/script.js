@@ -15,3 +15,11 @@ function pausePlay(input) {
         playButton.className = "fa fa-play";
     }
 }
+
+function next() {
+    window.history.forward();
+}
+
+function previous() {
+    window.history.back();
+}

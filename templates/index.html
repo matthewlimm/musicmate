@@ -21,7 +21,7 @@
       <div class="navigation">
         <ul>
           <li>
-            <a href="#">
+            <a href="{{ url_for('dashboard') }}">
               <span class="fa fa-home"></span>
               <span>Home</span>
             </a>
@@ -76,8 +76,8 @@
     <div class="main-container">
       <div class="topbar">
         <div class="prev-next-buttons">
-          <button type="button" class="fa fas fa-chevron-left"></button>
-          <button type="button" class="fa fas fa-chevron-right"></button>
+          <button type="button" class="fa fas fa-chevron-left" style="cursor: not-allowed"></button>
+          <button type="button" class="fa fas fa-chevron-right" style="cursor: not-allowed"></button>
         </div>
 
         <div class="navbar">

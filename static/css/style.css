@@ -90,7 +90,7 @@
   }
   .topbar .prev-next-buttons button {
     color: #7a7a7a;
-    cursor: not-allowed;
+    cursor: pointer;
     width: 34px;
     height: 34px;
     border-radius: 100%;
@@ -243,6 +243,21 @@
   .spotify-playlists hr {
     margin: 70px 0px 0px;
     border-color: #636363;
+  }
+  .spotify-playlists .list .item-predict
+  {
+    min-width: 140px;
+    width: 160px;
+    padding: 15px;
+    background-color: #1DB954;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+  }
+  .spotify-playlists .list .item-predict button h2
+  {
+    color: #ffffff;
+    font-size: 22px;
   }
   footer {
     padding: 20px 40px;

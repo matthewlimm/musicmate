@@ -21,7 +21,7 @@
       <div class="navigation">
         <ul>
           <li>
-            <a href="#">
+            <a href="{{ url_for('dashboard') }}">
               <span class="fa fa-home"></span>
               <span>Home</span>
             </a>
@@ -78,8 +78,8 @@
     <div class="main-container">
       <div class="topbar">
         <div class="prev-next-buttons">
-          <button type="button" class="fa fas fa-chevron-left"></button>
-          <button type="button" class="fa fas fa-chevron-right"></button>
+          <button type="button" class="fa fas fa-chevron-left" onclick="previous()"></button>
+          <button type="button" class="fa fas fa-chevron-right" onclick="next()"></button>
         </div>
 
         <div class="navbar">
@@ -111,7 +111,11 @@
             </label>
             {% endfor %}
     
-            <button type="submit">Predict</button>
+            <label class="item-predict">
+            <button type="submit">
+              <h2>Predict</h2>
+            </button>
+            </label>
 
           </div>
         </form>
