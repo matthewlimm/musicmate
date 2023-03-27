@@ -178,7 +178,6 @@
     left: 150px;
     bottom: 6px;
   }
-  
   input:checked {
     border: 6px solid #1DB954;
   }
@@ -216,7 +215,7 @@
     top: -60px;
     padding: 18px;
     background-color: #1db954;
-    border-radius: 100%;
+    border-radius: 100%;  
     opacity: 0;
     transition: all ease 0.4s;
   }

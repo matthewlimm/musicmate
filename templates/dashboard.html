@@ -134,7 +134,7 @@
       <div class="spotify-playlists">
         <h2>Compare and Contrast</h2>
         <div class="list">
-          <form action="{{ url_for('happyvsad') }}" method="GET">
+          <form action="{{ url_for('happyvsad') }}" method="GET" onsubmit="pausePlay(this)">
             <div class="item">
               <button type="submit">
                 <div class="grad1"></div>
@@ -198,5 +198,8 @@
       src="https://kit.fontawesome.com/23cecef777.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="/static/js/script.js"></script>
+
   </body>
 </html>
