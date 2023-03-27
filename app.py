@@ -79,6 +79,7 @@ def happyvsad():
         return redirect('/')
     # at this part, we ensured the token info is up-to-date / fresh
     sp = spotipy.Spotify(auth=token_info['access_token'])
+    creator = sp.user(sp.me()['id'])
 
     playlists = []
     iter = 0
@@ -89,7 +90,7 @@ def happyvsad():
         if(len(items) < 50):
             break
     pprint(playlists)
-    return render_template('happyvsad.html',data=playlists) # data is list
+    return render_template('happyvsad.html',data=creator,data2=playlists) # data is list
 
 @app.route('/predict',methods=['POST'])
 def predict():

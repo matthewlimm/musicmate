@@ -154,10 +154,36 @@
     display: flex;
     gap: 20px;
     overflow: hidden;
+    flex-wrap: wrap;
+  }
+  button[type='submit'] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-align: left
+  }
+  input {
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #7a7a7a;
+    cursor: pointer;
+    transition: 0.2s all linear;
+    position: relative;
+    left: 150px;
+    bottom: 6px;
+  }
+  
+  input:checked {
+    border: 6px solid #1DB954;
   }
   .spotify-playlists .list .item {
     min-width: 140px;
-    min-height: 210px;
     width: 160px;
     padding: 15px;
     background-color: #181818;
@@ -170,13 +196,14 @@
   }
   .spotify-playlists .list .item img {
     width: 100%;
+    height: 150px;
     border-radius: 6px;
     margin-bottom: 10px;
   }
   .spotify-playlists .list .item .grad1 {
     background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
-    height: 150px;
     width: 100%;
+    height: 150px;
     border-radius: 6px;
     margin-bottom: 10px;
   }
@@ -201,21 +228,30 @@
     color: #ffffff;
     font-size: 14px;
     margin-bottom: 10px;
-    white-space: nowrap;
+    /* white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
   }
   .spotify-playlists .list .item p {
     color: #989898;
     font-size: 12px;
     line-height: 20px;
     font-weight: 600;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
   }
   .spotify-playlists hr {
     margin: 70px 0px 0px;
     border-color: #636363;
   }
-  
+  footer {
+    padding: 20px 40px;
+  }
+  footer p {
+    color: #b3b3b3;
+    font-size: 14px;
+  }
   .preview {
     position: fixed;
     bottom: 0;

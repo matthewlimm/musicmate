@@ -96,14 +96,26 @@
         <h2>Your Insights</h2>
 
         <div class="list">
-          <div class="item">
+          <!-- <div class="item">
             <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
             <div class="play">
               <span class="fa fa-play"></span>
             </div>
             <h4>Chill Hits</h4>
             <p>Kick back to the best new and recent chill...</p>
-          </div>
+          </div> -->
+          <form action="{{ url_for('happyvsad') }}" method="GET">
+            <div class="item">
+              <button type="submit">
+                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Chill Hits</h4>
+                <p>Kick back to the best new and recent chill...</p>
+              </button>
+            </div>
+          </form>
           <div class="item">
           </div>
 
@@ -122,14 +134,24 @@
       <div class="spotify-playlists">
         <h2>Compare and Contrast</h2>
         <div class="list">
-          <div class="item">
-            <div class="grad1"></div>
-            <div class="play">
-              <span class="fa fa-play"></span>
+          <form action="{{ url_for('happyvsad') }}" method="GET">
+            <div class="item">
+              <button type="submit">
+                <div class="grad1"></div>
+                <div class="play">
+                  <span class="fa fa-play"></span>
+                </div>
+                <h4>Happy versus Sad</h4>
+                <p>Separate the positive tracks from the negative and vice-versa...</p>
+              </button>
+              </div>
+          </form>
+
+          <!-- <form action="{{ url_for('login') }}" method="GET">
+            <div class="button">
+              <button type="submit">Log in free</button>
             </div>
-            <h4>Happy versus Sad</h4>
-            <p>Separate the positive tracks from the negative and vice-versa...</p>
-          </div>
+           </form> -->
 
           <div class="item">
           </div>
@@ -168,9 +190,13 @@
         <hr>
       </div>
 
+      <footer>
+        <p>Made with ☕ by Matthew Lim California, US.</p>
+      </footer>
+
     <script
       src="https://kit.fontawesome.com/23cecef777.js"
       crossorigin="anonymous"
     ></script>
   </body>
-  </html>
+</html>
