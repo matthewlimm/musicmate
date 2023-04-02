@@ -240,10 +240,6 @@
     overflow: hidden;
     text-overflow: ellipsis; */
   }
-  .spotify-playlists hr {
-    margin: 70px 0px 0px;
-    border-color: #636363;
-  }
   .spotify-playlists .list .item-predict
   {
     min-width: 140px;
@@ -258,6 +254,10 @@
   {
     color: #ffffff;
     font-size: 22px;
+  }
+  .spotify-playlists hr {
+    margin: 70px 0px 0px;
+    border-color: #636363;
   }
   footer {
     padding: 20px 40px;

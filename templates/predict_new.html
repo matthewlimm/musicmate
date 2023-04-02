@@ -79,7 +79,7 @@
       <div class="topbar">
         <div class="prev-next-buttons">
           <button type="button" class="fa fas fa-chevron-left" onclick="previous()"></button>
-          <button type="button" class="fa fas fa-chevron-right" onclick="next()"></button>
+          <button type="button" class="fa fas fa-chevron-right" style="cursor: not-allowed"></button>
         </div>
 
         <div class="navbar">
@@ -95,30 +95,53 @@
       <div class="spotify-playlists">
         <h2>Happy versus Sad</h2>
 
-        <form action="{{ url_for('predict') }}" method="POST">
-          <div class="list">
-          
-            {% for playlist in playlists %}
-           <label class="item">
-              <input type="radio" name="playlist" value={{playlist.id}} required="required" onchange="pausePlay(this)">
-              <img src="{{playlist.images[0]['url']}}" />
-              <div class="play">
-                <span class="fa fa-play" id="play-button"></span>
-              </div>
-              <h4>{{playlist.name}}</h4>
-              <p>{{playlist.description}}</p>
-              </input>
-            </label>
+        <div class="list">
+
+			<!-- Key
+			rows[0] = Happy dataframe
+			rows[1] = Sad dataframe
+
+			row[2] = track_image_url
+			row[2] = track_name
+			row[0] = artist
+			row[1] = album -->
+            {% for row in rows[0] %}
+			<label class="item" style="border: 6px solid #fc5c7d">
+				<img src="{{row[4]}}" />
+				<div class="play">
+					<span class="fa fa-play" id="play-button"></span>
+				</div>
+				<h4>{{row[2]}}</h4> 
+				<p>{{row[0]}}</p> 
+				<!-- <p>{{row[1]}}</p>  -->
+			</label>
             {% endfor %}
     
+			{% for row in rows[1] %}
+			<label class="item" style="border: 6px solid #6a82fb">
+				<img src="{{row[4]}}" />
+				<div class="play">
+					<span class="fa fa-play" id="play-button"></span>
+				</div>
+				<h4>{{row[2]}}</h4> 
+				<p>{{row[0]}}</p> 
+				<!-- <p>{{row[1]}}</p>  -->
+			</label>
+            {% endfor %}
+
             <label class="item-predict">
             <button type="submit">
-              <h2>Predict</h2>
+              <h2>Generate New Happy Playlist</h2>
             </button>
             </label>
 
+			<label class="item-predict">
+			<button type="submit">
+				<h2>Generate New Sad Playlist</h2>
+			</button>
+			</label>
+
           </div>
-        </form>
         
         <hr>
       </div>
