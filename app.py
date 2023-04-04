@@ -162,15 +162,17 @@ def savePlaylist():
         return redirect('/')
     # at this part, we ensured the token info is up-to-date / fresh
     sp = spotipy.Spotify(auth=token_info['access_token'])
+    prediction_table = request.form['save_button']
+    prediction_table = np.array(eval(prediction_table))
+    prediction_table = pd.DataFrame(data=prediction_table,columns=['artist','album','track_name','track_id','track_image_url','danceability','energy','key','loudness','mode','speechiness','instrumentalness','liveness','valence','tempo','duration_ms','time_signature','prediction'])
 
-    prediction_table = [str(x) for x in request.form.values()][0]
-    print(prediction_table)
-    prediction_table = pd.read_html(prediction_table)[0]
     if prediction_table['prediction'][0] == 'Happy':
         prediction = 'Happy'
+        print('Selected Happy Playlist for Import')
     else:
         prediction = 'Sad'
-    track_ids = prediction_table.drop(['artist','album','track_name','danceability','energy','key','loudness','mode','speechiness','instrumentalness','liveness','valence','tempo','duration_ms','time_signature','prediction'],axis=1)
+        print('Selected Sad Playlist for Import')
+    track_ids = prediction_table.drop(['artist','album','track_name','track_image_url','danceability','energy','key','loudness','mode','speechiness','instrumentalness','liveness','valence','tempo','duration_ms','time_signature','prediction'],axis=1)
     track_ids = track_ids.values.tolist()
     track_ids = list(np.concatenate(track_ids).flat)
     

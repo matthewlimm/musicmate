@@ -1,68 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <title>Spotify Clone</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/static/css/style.css">
-      </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Spotify Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
 <body>
-    <div class="sidebar">
-      <div class="logo">
-        <a href="#">
-          <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="Logo" />
-        </a>
-      </div>
+  <div class="sidebar">
+    <div class="logo">
+      <a href="#">
+        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="Logo" />
+      </a>
+    </div>
 
-      <div class="navigation">
-        <ul>
-          <li>
-            <a href="{{ url_for('dashboard') }}">
-              <span class="fa fa-home"></span>
-              <span>Home</span>
-            </a>
-          </li>
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="{{ url_for('dashboard') }}">
+            <span class="fa fa-home"></span>
+            <span>Home</span>
+          </a>
+        </li>
 
-          <li>
-            <a href="#">
-              <span class="fa fa-search"></span>
-              <span>About</span>
-            </a>
-          </li>
+        <li>
+          <a href="#">
+            <span class="fa fa-search"></span>
+            <span>About</span>
+          </a>
+        </li>
 
-          <li>
-            <a href="#">
-              <span class="fa fas fa-book"></span>
-              <span>Repository</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+        <li>
+          <a href="#">
+            <span class="fa fas fa-book"></span>
+            <span>Repository</span>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-      <div class="navigation">
-        <ul>
-          <li>
-            <a href="#">
-              <span class="fa fas fa-plus-square"></span>
-              <span>My Portfolio</span>
-            </a>
-          </li>
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="fa fas fa-plus-square"></span>
+            <span>My Portfolio</span>
+          </a>
+        </li>
 
-          <li>
-            <a href="#">
-              <span class="fa fas fa-heart"></span>
-              <span>Buy Me A Coffee</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+        <li>
+          <a href="#">
+            <span class="fa fas fa-heart"></span>
+            <span>Buy Me A Coffee</span>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-      <div class="policies">
-        <div class="no-preview">
+    <div class="policies">
+      <div class="no-preview">
         <ul>
           <li>
             <a href="#">Legal</a>
@@ -72,32 +76,32 @@
           </li>
         </ul>
       </div>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div class="topbar">
+      <div class="prev-next-buttons">
+        <button type="button" class="fa fas fa-chevron-left" onclick="previous()"></button>
+        <button type="button" class="fa fas fa-chevron-right" style="cursor: not-allowed"></button>
+      </div>
+
+      <div class="navbar">
+        <div class="user-button">
+          <button type="button">
+            <img class="user-profile-picture" src="{{user['images'][0]['url']}}" />{{user['display_name']}}
+            <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/60/60995.png" style="filter: invert(1);" />
+          </button>
+        </div>
       </div>
     </div>
 
-    <div class="main-container">
-      <div class="topbar">
-        <div class="prev-next-buttons">
-          <button type="button" class="fa fas fa-chevron-left" onclick="previous()"></button>
-          <button type="button" class="fa fas fa-chevron-right" style="cursor: not-allowed"></button>
-        </div>
+    <div class="spotify-playlists">
+      <h2>Happy versus Sad</h2>
 
-        <div class="navbar">
-			<div class="user-button">
-				<button type="button">
-          <img class="user-profile-picture" src="{{user['images'][0]['url']}}" />{{user['display_name']}}
-          <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/60/60995.png" style="filter: invert(1);" />
-        </button>
-			</div>
-        </div>
-      </div>
+      <div class="list">
 
-      <div class="spotify-playlists">
-        <h2>Happy versus Sad</h2>
-
-        <div class="list">
-
-			<!-- Key
+        <!-- Key
 			rows[0] = Happy dataframe
 			rows[1] = Sad dataframe
 
@@ -105,57 +109,57 @@
 			row[2] = track_name
 			row[0] = artist
 			row[1] = album -->
-            {% for row in rows[0] %}
-			<label class="item" style="border: 6px solid #fc5c7d">
-				<img src="{{row[4]}}" />
-				<div class="play">
-					<span class="fa fa-play" id="play-button"></span>
-				</div>
-				<h4>{{row[2]}}</h4> 
-				<p>{{row[0]}}</p> 
-				<!-- <p>{{row[1]}}</p>  -->
-			</label>
-            {% endfor %}
-    
-			{% for row in rows[1] %}
-			<label class="item" style="border: 6px solid #6a82fb">
-				<img src="{{row[4]}}" />
-				<div class="play">
-					<span class="fa fa-play" id="play-button"></span>
-				</div>
-				<h4>{{row[2]}}</h4> 
-				<p>{{row[0]}}</p> 
-				<!-- <p>{{row[1]}}</p>  -->
-			</label>
-            {% endfor %}
-
-            <label class="item-predict">
-            <button type="submit">
-              <h2>Generate New Happy Playlist</h2>
-            </button>
-            </label>
-
-			<label class="item-predict">
-			<button type="submit">
-				<h2>Generate New Sad Playlist</h2>
-			</button>
-			</label>
-
+        {% for row in rows[0] %}
+        <label class="item" style="border: 6px solid #fc5c7d">
+          <img src="{{row[4]}}" />
+          <div class="play">
+            <span class="fa fa-play" id="play-button"></span>
           </div>
-        
-        <hr>
+          <h4>{{row[2]}}</h4>
+          <p>{{row[0]}}</p>
+          <!-- <p>{{row[1]}}</p>  -->
+        </label>
+        {% endfor %}
+
+        {% for row in rows[1] %}
+        <label class="item" style="border: 6px solid #6a82fb">
+          <img src="{{row[4]}}" />
+          <div class="play">
+            <span class="fa fa-play" id="play-button" onclick="preview()"></span>
+          </div>
+          <h4>{{row[2]}}</h4>
+          <p>{{row[0]}}</p>
+          <!-- <p>{{row[1]}}</p>  -->
+        </label>
+        {% endfor %}
+
+        <form action="{{ url_for('savePlaylist') }}" method="POST">
+          <label class="item-predict">
+            <button type="submit" name="save_button" value='{{rows[0]}}'>
+              <h2>Generate New <span style=color:#fc5c7d>Happy</span> Playlist</h2>
+            </button>
+          </label>
+
+          <label class="item-predict">
+            <button type="submit" name="save_button" value='{{rows[1]}}'>
+              <h2>Generate New <span style=color:#6a82fb>Sad</span> Playlist</h2>
+            </button>
+          </label>
+        </form>
+
       </div>
 
-      <footer>
-        <p>Made with ☕ by Matthew Lim California, US.</p>
-      </footer>
+      <hr>
+    </div>
 
-    <script
-      src="https://kit.fontawesome.com/23cecef777.js"
-      crossorigin="anonymous"
-    ></script>
+    <footer>
+      <p>Made with ☕ by Matthew Lim California, US.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/23cecef777.js" crossorigin="anonymous"></script>
 
     <script src="/static/js/script.js"></script>
 
-  </body>
+</body>
+
 </html>
