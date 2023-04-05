@@ -92,7 +92,7 @@ def happyvsad():
     pprint(playlists)
     return render_template('happyvsad.html',user=user,playlists=playlists) # data is list
 
-@app.route('/predict',methods=['POST'])
+@app.route('/happyvsadpred',methods=['POST'])
 def predict():
     try:
             token_info = get_token()
@@ -148,12 +148,10 @@ def predict():
     happy_predictions = predictions[predictions['prediction'] == 'Happy']
     sad_predictions = predictions[predictions['prediction'] == 'Sad']
 
-    #track_ids = [predictions['track_id'] for predictions in predictions]
-    #session['track_ids'] = track_ids
     user = sp.user(sp.me()['id'])
-    return render_template('predict_new.html',columns=[happy_predictions.columns.values,sad_predictions.columns.values], rows=[list(happy_predictions.values.tolist()),list(sad_predictions.values.tolist())],user=user)
+    return render_template('happyvsadpred.html',columns=[happy_predictions.columns.values,sad_predictions.columns.values], rows=[list(happy_predictions.values.tolist()),list(sad_predictions.values.tolist())],user=user)
     
-@app.route("/savePlaylist", methods=['GET', 'POST'])
+@app.route("/saveplaylist", methods=['GET', 'POST'])
 def savePlaylist():
     try:
         token_info = get_token()
@@ -198,7 +196,7 @@ def savePlaylist():
 
     playlist_id = getPlaylistID(user, playlist_name)
     sp.user_playlist_add_tracks(user, playlist_id, track_ids)
-    return 'Success'
+    return render_template('saveplaylist.html',user=user)
 
 def get_token():
     token_info = session.get(TOKEN_INFO, None) # if token value DNE, return none
