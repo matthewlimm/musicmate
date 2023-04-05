@@ -90,62 +90,29 @@
         <div class="user-button">
           <button type="button">
             <img class="user-profile-picture" src="{{user['images'][0]['url']}}" />{{user['display_name']}}
-            <img class="arrow" src="https://cdn-icons- .flaticon.com/512/60/60995.png" style="filter: invert(1);" />
+            <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/60/60995.png" style="filter: invert(1);" />
           </button>
         </div>
       </div>
     </div>
 
     <div class="spotify-playlists">
-      <h2>Happy versus Sad</h2>
+      <h2>My {{prediction}} Playlist Successfully Saved!</h2>
 
       <div class="list">
-
-        <!-- Key
-			rows[0] = Happy dataframe
-			rows[1] = Sad dataframe
-
-			row[2] = track_image_url
-			row[2] = track_name
-			row[0] = artist
-			row[1] = album -->
-        {% for row in rows[0] %}
-        <label class="item" style="border: 6px solid #fc5c7d">
-          <img src="{{row[4]}}" />
-          <div class="play">
-            <span class="fa fa-play" id="play-button"></span>
-          </div>
-          <h4>{{row[2]}}</h4>
-          <p>{{row[0]}}</p>
-          <!-- <p>{{row[1]}}</p>  -->
+        <label class="item" style="border: 6px solid #1DB954; width: 154px">
+          <img src="{{playlists[0].images[0]['url']}}" />
+            <h4>{{playlists[0].name}}</h4>
+            <p>{{playlists[0].description}}</p>
         </label>
-        {% endfor %}
 
-        {% for row in rows[1] %}
-        <label class="item" style="border: 6px solid #6a82fb">
-          <img src="{{row[4]}}" />
-          <div class="play">
-            <span class="fa fa-play" id="play-button" onclick="preview()"></span>
-          </div>
-          <h4>{{row[2]}}</h4>
-          <p>{{row[0]}}</p>
-          <!-- <p>{{row[1]}}</p>  -->
-        </label>
-        {% endfor %}
-
-        <form action="{{ url_for('savePlaylist') }}" method="POST">
-          <label class="item-predict">
-            <button type="submit" name="save_button" value='{{rows[0]}}'>
-              <h2>Generate New <span style=color:#fc5c7d>Happy</span> Playlist</h2>
-            </button>
-          </label>
-
-          <label class="item-predict">
-            <button type="submit" name="save_button" value='{{rows[1]}}'>
-              <h2>Generate New <span style=color:#6a82fb>Sad</span> Playlist</h2>
-            </button>
-          </label>
-        </form>
+        {% for playlist in playlists[1:] %}
+           <label class="item">
+                <img src="{{playlist.images[0]['url']}}" />
+                <h4>{{playlist.name}}</h4>
+                <p>{{playlist.description}}</p>
+            </label>
+            {% endfor %}
 
       </div>
 
