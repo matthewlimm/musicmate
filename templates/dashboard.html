@@ -92,27 +92,18 @@
         </div>
       </div>
 
-      <div class="spotify-playlists">
+      <div class="spotify-headers">
         <h2>Your Insights</h2>
 
         <div class="list">
-          <!-- <div class="item">
-            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
-            <h4>Chill Hits</h4>
-            <p>Kick back to the best new and recent chill...</p>
-          </div> -->
           <form action="{{ url_for('happyvsad') }}" method="GET" onsubmit="pausePlay(this)">
             <div class="item">
               <button type="submit">
                 <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                <h4>Chill Hits</h4>
                 <div class="play">
                   <span class="fa fa-play"></span>
                 </div>
-                <h4>Chill Hits</h4>
-                <p>Kick back to the best new and recent chill...</p>
               </button>
             </div>
           </form>
