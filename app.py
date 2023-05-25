@@ -15,9 +15,8 @@ app.secret_key = "asdfd2FD2hjklfds"
 app.config['SESSION_COOKIE_NAME'] = 'Matthews Cookie'
 TOKEN_INFO = 'token_info'
 
-if __name__ == "__main__":
-    app.debug=True
-    app.run()
+if __name__ == '__main__':
+    app.run(debug=True)
 
 @app.route('/login')
 def login():
@@ -69,7 +68,46 @@ def dashboard():
     # at this part, we ensured the token info is up-to-date / fresh
     sp = spotipy.Spotify(auth=token_info['access_token'])
     user = sp.user(sp.me()['id'])
-    return render_template('dashboard.html',user=user)
+
+    def analyze_playlist(playlist):
+        # Create empty dataframe
+        playlist_features_list = ["danceability","energy","valence",]
+        playlist_df = pd.DataFrame(columns=playlist_features_list)
+        
+        # Loop through every track in the playlist, extract features and append the features to the playlist df
+        for track in saved_tracks:
+            # Create empty dict
+            playlist_features = {}
+            # Get metadata
+            playlist_features["track_id"] = track["track"]["id"]
+            
+            # Get audio features
+            audio_features = sp.audio_features(playlist_features["track_id"])[0]
+            for feature in playlist_features_list:
+                playlist_features[feature] = audio_features[feature]
+            
+            # Concat the dfs
+            track_df = pd.DataFrame(playlist_features, index = [0])
+            playlist_df = pd.concat([playlist_df, track_df], ignore_index = True)
+    
+        return playlist_df
+    
+    # Calculate average percentages of the happy, energy, and danceability
+    def calc_happy(playlist_df):
+        return playlist_df['valence'].mean()
+    def calc_energy(playlist_df):
+        return playlist_df['energy'].mean()
+    def calc_danceable(playlist_df):
+        return playlist_df['danceability'].mean()
+    
+    saved_tracks = sp.current_user_saved_tracks(50)['items']
+    playlist_df = analyze_playlist(saved_tracks)
+
+    happy_percent = round(calc_happy(playlist_df)*100)
+    energy_percent = round(calc_energy(playlist_df)*100)
+    danceable_percent = round(calc_danceable(playlist_df)*100)
+    
+    return render_template('dashboard.html',user=user,happy_percent=happy_percent,energy_percent=energy_percent,danceable_percent=danceable_percent)
 
 @app.route('/happyvsad')
 def happyvsad():
@@ -110,7 +148,6 @@ def predict():
     def analyze_playlist(user, playlist_id):
         # Create empty dataframe
         playlist_features_list = ["artist","album","track_name", "track_id","track_image_url","danceability","energy","key","loudness","mode", "speechiness","instrumentalness","liveness","valence","tempo", "duration_ms","time_signature"]
-        
         playlist_df = pd.DataFrame(columns=playlist_features_list)
         
         # Loop through every track in the playlist, extract features and append the features to the playlist df
@@ -137,12 +174,12 @@ def predict():
         return playlist_df
     
     def classify_playlist(user, playlist_id):
-        playlist = analyze_playlist(user, playlist_id)
-        playlist_predictions = model.predict(playlist.drop(['artist','album','track_name','track_id','track_image_url'],axis=1))
-        playlist['prediction'] = playlist_predictions
-        playlist['prediction'] = playlist['prediction'].replace(1, 'Happy')
-        playlist['prediction'] = playlist['prediction'].replace(2, 'Sad')
-        return playlist
+        playlist_pred_df = analyze_playlist(user, playlist_id)
+        playlist_predictions = model.predict(playlist_pred_df.drop(['artist','album','track_name','track_id','track_image_url'],axis=1))
+        playlist_pred_df['prediction'] = playlist_predictions
+        playlist_pred_df['prediction'] = playlist_pred_df['prediction'].replace(1, 'Happy')
+        playlist_pred_df['prediction'] = playlist_pred_df['prediction'].replace(2, 'Sad')
+        return playlist_pred_df
     
     predictions = classify_playlist(user, selected_playlist_id)
     print(predictions)
