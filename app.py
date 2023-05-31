@@ -92,6 +92,12 @@ def dashboard():
     
         return playlist_df
     
+    def get_top_artist_picture():
+        return sp.current_user_top_artists()['items'][0]['images'][0]['url']
+    
+    def get_top_track_picture():
+        return sp.current_user_top_tracks()['items'][0]['album']['images'][0]['url']
+    
     # Calculate average percentages of the happy, energy, and danceability
     def calc_happy(playlist_df):
         return playlist_df['valence'].mean()
@@ -107,7 +113,23 @@ def dashboard():
     energy_percent = round(calc_energy(playlist_df)*100)
     danceable_percent = round(calc_danceable(playlist_df)*100)
     
-    return render_template('dashboard.html',user=user,happy_percent=happy_percent,energy_percent=energy_percent,danceable_percent=danceable_percent)
+    top_artist_picture = get_top_artist_picture()
+    top_track_picture = get_top_track_picture()
+
+    return render_template('dashboard.html',user=user,happy_percent=happy_percent,energy_percent=energy_percent,danceable_percent=danceable_percent,top_artist_picture=top_artist_picture,top_track_picture=top_track_picture)
+
+@app.route('/about')
+def about():
+    try:
+        token_info = get_token()
+    except:
+        print('User Not Logged In!')
+        return redirect('/')
+    # at this part, we ensured the token info is up-to-date / fresh
+    sp = spotipy.Spotify(auth=token_info['access_token'])
+    user = sp.user(sp.me()['id'])
+
+    return render_template('about.html',user=user)
 
 @app.route('/happyvsad')
 def happyvsad():
@@ -269,4 +291,4 @@ def create_spotify_oauth():
         client_id='9ad5134785d349878a600cac03f8a9e2',
         client_secret='2d21a0cee3a142daaae4c64f5d6de9d2',
         redirect_uri=url_for('redirectPage',_external=True),
-        scope='user-library-read playlist-modify-public playlist-read-private playlist-modify-private')
+        scope='user-library-read playlist-modify-public playlist-read-private playlist-modify-private user-top-read')

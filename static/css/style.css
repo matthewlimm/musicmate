@@ -150,6 +150,11 @@
     font-size: 22px;
     margin-bottom: 20px;
   }
+  .spotify-playlists p {
+    color: #b3b3b3;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
   .spotify-playlists .list {
     display: flex;
     gap: 20px;
@@ -162,6 +167,11 @@
   .spotify-headers h2 {
     color: #ffffff;
     font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .spotify-headers p {
+    color: #b3b3b3;
+    font-size: 16px;
     margin-bottom: 20px;
   }
   .spotify-headers .list {

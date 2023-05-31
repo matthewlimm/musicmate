@@ -28,7 +28,7 @@
           </li>
 
           <li>
-            <a href="#">
+            <a href="{{ url_for('about') }}">
               <span class="fa fa-search"></span>
               <span>About</span>
             </a>
@@ -55,7 +55,7 @@
           <li>
             <a href="#">
               <span class="fa fas fa-heart"></span>
-              <span>Buy Me A Coffee</span>
+              <span>Say Hi on LinkedIn</span>
             </a>
           </li>
         </ul>
@@ -100,7 +100,7 @@
           <form action="{{ url_for('happyvsad') }}" method="GET" onsubmit="pausePlay(this)">
             <div class="item">
               <button type="submit">
-                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                <img src="{{top_artist_picture}}" />
                 <h4>Top Artists</h4>
                 <div class="play">
                   <span class="fa fa-play"></span>
@@ -112,7 +112,7 @@
           <form action="{{ url_for('happyvsad') }}" method="GET" onsubmit="pausePlay(this)">
             <div class="item">
               <button type="submit">
-                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                <img src="{{top_track_picture}}" />
                 <h4>Top Tracks</h4>
                 <div class="play">
                   <span class="fa fa-play"></span>
@@ -123,23 +123,14 @@
 
           <div class="item" style="background-image: linear-gradient(45deg, rgb(236, 188, 36), rgb(236, 188, 36)); cursor: default;">
             <h4 id="happy_metric" style="font-size: 56px; color: rgb(244, 217, 132); margin-left: 50%;"></h4><h4 style="color: #ffffff;">Happy</h4>
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
           </div>
 
           <div class="item" style="background-image: linear-gradient(45deg, rgb(235, 42, 5), rgb(235, 42, 5)); cursor: default;">
             <h4 id="energy_metric" style="font-size: 56px; color: rgb(252, 236, 135); margin-left: 50%;">{{energy_percent}}</h4><h4 style="color: #ffffff;">Energy</h4>
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
           </div>
 
           <div class="item" style="background-image: linear-gradient(45deg, rgb(210, 88, 85), rgb(210, 88, 85)); cursor: default;">
             <h4 id="danceable_metric" style="font-size: 56px; color: rgb(249, 236, 235); margin-left: 50%;">{{danceable_percent}}</h4><h4 style="color: #ffffff;">Danceable</h4>
-            <div class="play">
-              <span class="fa fa-play"></span>
-            </div>
           </div>
           <!-- Increment Animation Script Source: https://www.codingartistweb.com -->
           <script>
