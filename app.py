@@ -131,6 +131,42 @@ def about():
 
     return render_template('about.html',user=user)
 
+@app.route('/topartists')
+def topartists():
+    try:
+        token_info = get_token()
+    except:
+        print('User Not Logged In!')
+        return redirect('/')
+    # at this part, we ensured the token info is up-to-date / fresh
+    sp = spotipy.Spotify(auth=token_info['access_token'])
+    user = sp.user(sp.me()['id'])
+
+    topartists = sp.current_user_top_artists()['items']
+    
+    def analyze_artists(topartists):
+        # Create empty dataframe
+        artists_features_list = ['artist', 'artist_image_url']
+        artists_df = pd.DataFrame(columns=artists_features_list)
+
+        for artist in topartists:
+            # Create empty dict
+            artist_features = {}
+
+            # Get metadata
+            artist_features['artist'] = artist['name'] 
+            artist_features['artist_image_url'] = artist['images'][0]['url']
+            
+            # Concat the dfs
+            artists_features_df = pd.DataFrame(artist_features, index = [0])
+            artists_df = pd.concat([artists_df, artists_features_df], ignore_index = True)
+            
+        return artists_df
+    
+    artists = analyze_artists(topartists)
+    
+    return render_template('topartists.html',columns=[artists.columns.values], rows=[list(artists.values.tolist())],user=user,topartists=topartists)
+
 @app.route('/happyvsad')
 def happyvsad():
     try:
