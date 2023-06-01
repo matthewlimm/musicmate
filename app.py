@@ -143,10 +143,10 @@ def topartists():
     user = sp.user(sp.me()['id'])
 
     topartists = sp.current_user_top_artists()['items']
-    
+    pprint(topartists)
     def analyze_artists(topartists):
         # Create empty dataframe
-        artists_features_list = ['artist', 'artist_image_url']
+        artists_features_list = ['artist','artist_genre','artist_image_url','artist_url']
         artists_df = pd.DataFrame(columns=artists_features_list)
 
         for artist in topartists:
@@ -155,7 +155,9 @@ def topartists():
 
             # Get metadata
             artist_features['artist'] = artist['name'] 
+            artist_features['artist_genre'] = artist['genres'][0]
             artist_features['artist_image_url'] = artist['images'][0]['url']
+            artist_features['artist_url'] = artist['external_urls']['spotify']
             
             # Concat the dfs
             artists_features_df = pd.DataFrame(artist_features, index = [0])
@@ -164,7 +166,9 @@ def topartists():
         return artists_df
     
     artists = analyze_artists(topartists)
-    
+
+    pprint(artists)
+
     return render_template('topartists.html',columns=[artists.columns.values], rows=[list(artists.values.tolist())],user=user,topartists=topartists)
 
 @app.route('/happyvsad')

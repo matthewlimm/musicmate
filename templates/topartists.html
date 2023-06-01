@@ -78,7 +78,7 @@
     <div class="main-container">
       <div class="topbar">
         <div class="prev-next-buttons">
-          <button type="button" class="fa fas fa-chevron-left" style="cursor: not-allowed"></button>
+          <button type="button" class="fa fas fa-chevron-left" onclick="previous()"></button>
           <button type="button" class="fa fas fa-chevron-right" onclick="next()"></button>
         </div>
 
@@ -92,14 +92,39 @@
         </div>
       </div>
 
-      <div class="spotify-headers">
-        <h2>About</h2>
-        <p>Hi there, {{user['display_name']}}!</p>
+      <div class="spotify-top">
+        <h2>Top Artists</h2>
+        <p>Here are the top 3 artists that dominates your listening recently...</p>
+
+        <div class="list">
+        {% for row in rows[0][1:2] %}
+        <label class="item" style="width:250px;background-color:#606060">
+          <img src="{{row[2]}}" style="height:250px" />
+          <h2 style="font-size:24px">{{row[0]}}</h2>
+          <h4>{{row[1]}}</h4>
+        </label>
+        {% endfor %}
+        {% for row in rows[0][0:1] %}
+        <label class="item" style="width:350px;background-color:#6e5a18">
+          <img src="{{row[2]}}" style="height:350px" />
+          <h2>{{row[0]}}</h2>
+          <h4>{{row[1]}}</h4>
+        </label>
+        {% endfor %}
+        {% for row in rows[0][2:3] %}
+        <label class="item" style="width:150px;background-color:#4f3d1a">
+          <img src="{{row[2]}}" style="height:150px" />
+          <h2 style="font-size:16px">{{row[0]}}</h2>
+          <h4>{{row[1]}}</h4>
+        </label>
+        {% endfor %}
+        </div>
+
       </div>
 
-      <div class="spotify-artists">
-        <h2>Header one</h2>
-        <p>Testing one two three...</p>
+      <div class="spotify-playlists">
+        <h2>Other Favorites</h2>
+        <p>Don't forget these artists you've been listening to...</p>
 
         <div class="list">
 
@@ -108,10 +133,11 @@
   
         row[1] = track_image_url
         row[0] = artist -->
-        {% for row in rows[0] %}
+        {% for row in rows[0][3:] %}
         <label class="item">
-          <img src="{{row[1]}}" />
+          <img src="{{row[2]}}" />
           <h4>{{row[0]}}</h4>
+          <p>{{row[1]}}</p>
         </label>
         {% endfor %}
       </div>
