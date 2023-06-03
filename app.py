@@ -167,9 +167,46 @@ def topartists():
     
     artists = analyze_artists(topartists)
 
-    pprint(artists)
+    return render_template('topartists.html',columns=[artists.columns.values], rows=[list(artists.values.tolist())],user=user)
 
-    return render_template('topartists.html',columns=[artists.columns.values], rows=[list(artists.values.tolist())],user=user,topartists=topartists)
+@app.route('/toptracks')
+def toptracks():
+    try:
+        token_info = get_token()
+    except:
+        print('User Not Logged In!')
+        return redirect('/')
+    # at this part, we ensured the token info is up-to-date / fresh
+    sp = spotipy.Spotify(auth=token_info['access_token'])
+    user = sp.user(sp.me()['id'])
+
+    toptracks = sp.current_user_top_tracks()['items']
+    pprint(toptracks)
+    def analyze_artists(toptracks):
+        # Create empty dataframe
+        tracks_features_list = ["artist","album","track_name", "track_image_url", "track_url"]
+        tracks_df = pd.DataFrame(columns=tracks_features_list)
+
+        for track in toptracks:
+            # Create empty dict
+            track_features = {}
+
+            # Get metadata
+            track_features["artist"] = track["artists"][0]["name"]
+            track_features["album"] = track["album"]["name"]
+            track_features["track_name"] = track["name"]
+            track_features["track_image_url"] = sp.track(track["id"])['album']['images'][0]['url']
+            track_features["track_url"] = track["external_urls"]["spotify"][0]
+            
+            # Concat the dfs
+            track_features_df = pd.DataFrame(track_features, index = [0])
+            tracks_df = pd.concat([tracks_df, track_features_df], ignore_index = True)
+            
+        return tracks_df
+    
+    tracks = analyze_artists(toptracks)
+
+    return render_template('toptracks.html',columns=[tracks.columns.values], rows=[list(tracks.values.tolist())],user=user)
 
 @app.route('/happyvsad')
 def happyvsad():

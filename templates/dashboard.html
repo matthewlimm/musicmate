@@ -109,7 +109,7 @@
             </div>
           </form>
 
-          <form action="{{ url_for('happyvsad') }}" method="GET" onsubmit="pausePlay(this)">
+          <form action="{{ url_for('toptracks') }}" method="GET" onsubmit="pausePlay(this)">
             <div class="item">
               <button type="submit">
                 <img src="{{top_track_picture}}" />
@@ -138,7 +138,7 @@
                 let from = 0;
                 let to = metric;
                 let step = to > from ? 1 : -1;
-                let interval = 100;
+                let interval = 50;
 
                 if(from == to){
                     document.querySelector(id).textContent = from + '%';
