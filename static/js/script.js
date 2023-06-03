@@ -1,12 +1,18 @@
 function pausePlay(input) {
-    console.log(input.tagName);
-    var playButton = input.parentElement.querySelector('span');
+    console.log(input);
     pauseButtons = document.getElementsByClassName('fa fa-pause')
+    if(typeof input === 'string' || input instanceof String)
+    {
+      var playButton = document.getElementById(input).querySelector('span');
+      playButton.className = "fa fa-pause";
+      return;
+    }
+    var playButton = input.parentElement.querySelector('span');
     for(i=0;i<pauseButtons.length;i++)
     {
         pauseButtons[i].className = 'fa fa-play';
     }
-    if (input.checked || input.tagName == 'FORM')
+    if(input.checked)
     {
         playButton.className = "fa fa-pause";
     } 
