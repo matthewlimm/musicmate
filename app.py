@@ -1,6 +1,8 @@
 from flask import Flask, request, url_for, session, redirect, render_template
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
+import os
+from dotenv import load_dotenv, dotenv_values
 import time
 import pickle
 import pandas as pd
@@ -14,6 +16,13 @@ model = pickle.load(open('models/model.pkl','rb'))
 app.secret_key = "asdfd2FD2hjklfds"
 app.config['SESSION_COOKIE_NAME'] = 'Matthews Cookie'
 TOKEN_INFO = 'token_info'
+
+load_dotenv()
+
+client_id = os.getenv("CLIENT_ID")
+client_secret = os.getenv("CLIENT_SECRET")
+
+print(client_id, client_secret)
 
 if __name__ == '__main__':
     app.run(debug=True)
@@ -365,7 +374,7 @@ def get_token():
 
 def create_spotify_oauth():
     return SpotifyOAuth(
-        client_id='9ad5134785d349878a600cac03f8a9e2',
-        client_secret='2d21a0cee3a142daaae4c64f5d6de9d2',
+        client_id=client_id,
+        client_secret=client_secret,
         redirect_uri=url_for('redirectPage',_external=True),
         scope='user-library-read playlist-modify-public playlist-read-private playlist-modify-private user-top-read')
