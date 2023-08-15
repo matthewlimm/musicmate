@@ -1,101 +1,101 @@
-artist,album,track_name,track_id,danceability,energy,key,loudness,mode,speechiness,instrumentalness,liveness,valence,tempo,duration_ms,time_signature
-Frank Ocean,Blonde,Ivy,2ZWlPOoWh0626oTaHrnl2a,0.575,0.386,9,-9.584,0,0.037,0.000289,0.229,0.466,116.408,249191,4
-Giveon,TAKE TIME,Like I Want You,6qBFSepqLCuh5tehehc1bd,0.678,0.355,10,-7.757,0,0.0627,7.06e-05,0.114,0.438,119.772,260776,3
-Joji,Nectar,Afterthought,1ggYjU6zdFHgANcku82boU,0.668,0.547,1,-8.024,1,0.0353,0.0766,0.0931,0.192,83.5,194871,4
-Mariah Carey,Memoirs of an imperfect Angel,It's A Wrap,0SgbP5ZZOsUiHlE8EfeHma,0.626,0.357,2,-7.166,0,0.0631,0.0,0.0552,0.401,179.869,238867,3
-Lykke Li,sex money feelings die (slowed version),sex money feelings die - slowed version,0dkvbYmXYEPK7gGMdytmfI,0.797,0.44,5,-6.587,0,0.0594,1.57e-06,0.0849,0.436,111.014,168811,4
-Drake,Take Care (Deluxe),Marvins Room,047fCsbO4NdmwCBn8pcUXl,0.492,0.26,9,-17.341,0,0.0921,0.00178,0.0705,0.312,111.519,347227,5
-Rex Orange County,Pony,It's Not The Same Anymore,7vRia9rlEuTDQxkfXIKySi,0.666,0.317,5,-10.644,1,0.0327,3.74e-05,0.111,0.359,117.676,386200,4
-Cigarettes After Sex,Cry,Cry,0Qr61NXlyAeQaADO5xn3rI,0.409,0.399,7,-10.456,1,0.0275,0.654,0.112,0.161,142.823,256800,4
-keshi,always,drunk,6D6HVKe7Qu3imn4zzJD0W9,0.691,0.389,4,-8.247,1,0.0367,0.0,0.0941,0.306,104.952,227032,4
-Taylor Swift,folklore,august,3hUxzQpSfdDqwM3ZTFQY0K,0.532,0.623,5,-9.208,1,0.0331,7.28e-05,0.0925,0.403,89.937,261923,4
-Joji,Nectar,Ew,3Nc86B5XmDlG1KuEeSLD8x,0.48,0.373,10,-9.297,1,0.0278,0.067,0.12,0.0376,114.078,207710,4
-Dylan Sinclair,Proverb,All I Need,3defzp8pBpPdxU2uyIdHAA,0.446,0.329,2,-12.39,0,0.0976,3.32e-06,0.106,0.187,78.321,135210,3
-Arctic Monkeys,AM,Why'd You Only Call Me When You're High?,086myS9r57YsLbJpU0TgK9,0.691,0.631,2,-6.478,1,0.0368,1.13e-05,0.104,0.8,92.004,161124,4
-Libianca,People,People,26b3oVLrRUaaybJulow9kz,0.573,0.422,10,-7.621,0,0.0678,1.31e-05,0.102,0.693,124.357,184791,5
-Harry Styles,Fine Line,To Be So Lonely,5JiH89mHrv9oWHlD0T326z,0.758,0.436,0,-7.269,1,0.0418,1.61e-05,0.335,0.605,104.959,192080,4
-Conan Gray,Kid Krow,Wish You Were Sober,0kn2gu8Pd03DiYHzRvX2Xk,0.701,0.728,2,-5.226,1,0.0468,0.0,0.17,0.696,91.071,168880,4
-Adele,25,Love In The Dark,7B5Npv8NjjTCzk8PLpU66h,0.331,0.341,9,-6.057,0,0.0309,0.0,0.109,0.152,109.821,285935,4
-The Weeknd,"My Dear Melancholy,",Privilege,0Nwar8rweBUyfyuoyjjUvk,0.404,0.564,11,-7.013,0,0.0344,0.00252,0.134,0.371,93.631,170573,4
-Joji,Daylight,Daylight,6Ed1q0X8oSKSm4IIhiQbYg,0.528,0.749,7,-7.571,1,0.0479,9.6e-05,0.0949,0.729,163.944,163906,4
-Olivia Dean,The Hardest Part (Acoustic),The Hardest Part,3KsQ9CtgCFlWWnSpehB5dv,0.769,0.53,5,-6.048,1,0.0411,0.0,0.108,0.388,94.014,176040,4
-Alicia Creti,Congratulations,Congratulations,7EHhEcu9tJWPZmlsNX4Gud,0.391,0.497,11,-8.208,1,0.148,0.0,0.1,0.203,89.531,232987,4
-gab • brie,raindrops,raindrops,0opAHADyfECeBJIjIHj429,0.531,0.27,7,-12.72,0,0.0516,9.76e-06,0.33,0.34,74.68,179367,4
-Taylor Swift,Red (Taylor's Version),All Too Well (10 Minute Version) (Taylor's Version) (From The Vault),5enxwA8aAbwZbf5qCHORXi,0.631,0.518,0,-8.771,1,0.0303,0.0,0.088,0.205,93.023,613027,4
-Ayra Starr,19 & Dangerous,Snitch,1fMMsrHvW6tIMhnK2OHTTF,0.711,0.564,2,-8.143,1,0.0668,0.0,0.127,0.418,120.064,197000,4
-Saïna,Wrong Love,Wrong Love,2U09Gezu5PFkfoDiFJGKwm,0.608,0.591,0,-8.692,0,0.0388,0.000155,0.39,0.515,84.978,211765,4
-Joji,Nectar,Run,1zmgEIHE0eXH0IhBGuoTkP,0.448,0.72,7,-3.954,1,0.0332,0.000292,0.614,0.361,157.919,195000,3
-Various Artists,The Twilight Saga: Breaking Dawn - Part 1 (Original Motion Picture Soundtrack),It Will Rain,0RUGuh2uSNFJpGMSsD1F5C,0.576,0.835,2,-6.826,1,0.0486,0.0,0.082,0.476,150.017,257720,4
-Jeremy Zucker,CRUSHER,Cry with you,46LAHXpuIUZ5kR7AyQ1qmd,0.516,0.323,2,-9.688,1,0.0716,4.82e-06,0.189,0.386,159.861,217040,3
-Billie Eilish,"WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",listen before i go,0tMSssfxAL2oV8Vri0mFHE,0.319,0.0561,0,-23.023,1,0.045,0.00384,0.388,0.082,79.764,242652,3
-Justin Bieber,Justice,Unstable (feat. The Kid LAROI),137mSruegm1u6x9NvwiagR,0.495,0.333,4,-10.109,0,0.0288,0.0,0.112,0.37,99.757,158324,4
-Post Malone,Twelve Carat Toothache (Deluxe),Waiting For Never,753lkDSNs2u188xbl8Vrnx,0.593,0.834,10,-3.738,1,0.0424,0.0,0.191,0.555,151.944,196987,4
-Tate McRae,chaotic,chaotic,2bdqU7C4softKNcMYDFi96,0.412,0.382,2,-7.023,0,0.0497,0.0,0.0931,0.318,81.493,178721,3
-Will Troy,Mercy,Mercy,4MB87UHsD18uievFjjo737,0.386,0.237,1,-9.117,1,0.0367,0.0,0.147,0.0498,104.373,234962,4
-The 1975,"I like it when you sleep, for you are so beautiful yet so unaware of it",Somebody Else,5hc71nKsUgtwQ3z52KEKQk,0.61,0.788,0,-5.724,1,0.0585,0.0142,0.153,0.472,101.045,347520,4
-Balu Brigada,OH! Not Again,OH! Not Again,5RtmIaz3UUmpdtpFJkfYT5,0.647,0.442,9,-8.051,0,0.0271,0.102,0.121,0.543,90.003,178627,4
-Zach Heckendorf,Deeper Meaning,Deeper Meaning,2K7NWakXsWXtGBHKGZTMec,0.81,0.566,11,-10.906,1,0.374,0.381,0.131,0.915,75.017,166400,4
-Chelsea Cutler,Your Shirt,Your Shirt,6zdg9ovHEPx9EblJcc7FGf,0.433,0.478,2,-6.641,1,0.0725,0.0,0.32,0.173,179.98,230000,4
-Kayla Rae,Blue,Blue,2YSpZDK4tYNy9AS3rKDTZl,0.817,0.508,0,-7.207,0,0.0873,2.14e-06,0.127,0.589,88.019,166894,4
-PIAO,Haunted by Potential,Haunted by Potential,6VzmUPRsALYM7FLfTs8GwF,0.604,0.234,0,-9.96,1,0.0683,0.0,0.108,0.299,121.066,218219,3
-Laila Mach,nyc streets,nyc streets,38pPXsbPxak4UIqXDhzB8g,0.408,0.252,5,-8.806,1,0.0352,0.0,0.12,0.309,81.233,228441,4
-Katy for Kings,Fabricated,Fabricated,0Zq7eJrwaAZyyBf1yOyFop,0.388,0.17,3,-12.037,1,0.0737,0.0,0.128,0.174,170.256,169588,4
-Tate McRae,that way (with Jeremy Zucker),that way - with Jeremy Zucker,6W4SftknKhWj0iFoHN7aYU,0.394,0.398,0,-10.202,1,0.219,0.0,0.313,0.361,78.438,174300,3
-Rachel Bochner,Drunk Crier,Drunk Crier,4wFg10eSPhxvxxJZUnYS2r,0.643,0.426,6,-10.222,1,0.0977,0.0,0.0871,0.488,147.141,183855,4
-Clara Lars,Illusions,Don't Leave,02UTM1ZydZuEOTtA93WC74,0.624,0.43,2,-11.663,0,0.0366,0.000524,0.134,0.19,129.968,191787,4
-Lorde,Melodrama,Supercut,6K8VQ84MqhsoakN5MjrnVR,0.562,0.437,0,-10.229,1,0.052,2.18e-05,0.0806,0.15,124.852,277506,4
-James Arthur,YOU,Car's Outside,0otRX6Z89qKkHkQ9OqJpKt,0.338,0.562,9,-7.181,1,0.029,0.0,0.107,0.259,149.907,248373,4
-Adele,25,All I Ask,05TOt5Vz4StdjMpEdFPlvB,0.591,0.28,4,-5.494,1,0.0283,0.0,0.124,0.348,141.916,271800,4
-JJ,Sad Songs 2 Suck My Dick 2,Operation,1eESWyzhdJ9xK43bEKkyC2,0.621,0.741,11,-5.363,0,0.0279,3.96e-06,0.232,0.529,130.999,196031,4
-Ayra Starr,Ayra Starr,DITR,1iEH453kVmEcwgVKtbvylS,0.769,0.361,6,-11.782,0,0.148,0.0,0.0852,0.327,137.051,132820,4
-L.i.E,Ghost,Ghost,5MsIX8vwTUsvGeQ4WlDe0l,0.767,0.506,11,-7.246,0,0.0405,2.72e-06,0.207,0.383,116.982,168023,4
-Tate McRae,i used to think i could fly,feel like shit,03zuGqxMwUFFmCwusq0WKE,0.519,0.383,7,-7.174,1,0.0495,0.0,0.124,0.157,144.565,203480,4
-Hugo Basclain,Drunk,Drunk,45a1YuX82cUwd1wQgrPJY2,0.529,0.612,5,-8.738,1,0.048,0.000407,0.093,0.115,125.091,203923,4
-REUNIØN,Caves,Caves,7h5z7yXzxzJ7rKeZdxF6jU,0.436,0.238,1,-16.369,0,0.0441,0.00849,0.0977,0.173,137.953,209062,4
-moon tang,i hate u,i hate u,1SMS6ig5qiNbjYfm3du2rM,0.737,0.538,6,-6.845,0,0.0635,8.01e-06,0.174,0.571,91.044,169767,4
-Jordan Doww,Had Enough,Had Enough,1YW8cH08NDqG3NYvnfcO9P,0.391,0.535,6,-6.143,1,0.0399,0.000381,0.179,0.209,148.774,222599,4
-Conan Gray,Kid Krow,Heather,4xqrdfXkTW4T0RauPLv3WA,0.357,0.425,5,-7.301,1,0.0333,0.0,0.322,0.27,102.078,198040,3
-Charlie Puth,CHARLIE,Loser,1BCXUbnU0486n4eeTyyVIj,0.698,0.623,8,-7.845,0,0.037,0.0856,0.179,0.625,102.002,204376,4
-TYNSKY,Stop The Party,Stop The Party,1b8xQNwScunmwlmVrUsIlp,0.3,0.29,7,-10.464,1,0.0309,0.000202,0.115,0.0397,61.213,212377,4
-Tamzene,Called You Out,Called You Out,2I0hkWJEy3BhVBvkWsnW5S,0.312,0.187,5,-11.662,0,0.0645,0.000384,0.131,0.0734,175.779,155841,3
-Larissa Lambert,80/20 Rule,80/20 Rule,3yARdeBjuFZZYoJcsJshpR,0.507,0.526,8,-8.924,0,0.0575,0.0,0.219,0.301,129.225,178000,4
-Jeremy Zucker,brent,you were good to me,4CxFN5zON70B3VOPBYbd6P,0.561,0.0848,2,-15.099,1,0.0404,2.62e-05,0.112,0.206,102.128,219147,4
-Katey Brooks,Before You Say Goodbye,Before You Say Goodbye,3iXwfg4pR7ZMiWh8qzHxZK,0.446,0.363,3,-9.384,1,0.0689,0.0,0.0963,0.193,149.851,202091,4
-Ocean Tisdall,Crying Room,Crying Room,18ptv8Z3oMOkHs53w5Fb2l,0.622,0.555,1,-8.925,1,0.18,1.36e-05,0.134,0.338,75.052,169747,4
-Bruno Mars,Unorthodox Jukebox,When I Was Your Man,0nJW01T7XtvILxQgC5J7Wh,0.612,0.28,0,-8.648,1,0.0434,0.0,0.088,0.387,72.795,213827,4
-LANY,Malibu Nights,Malibu Nights,0Eqg0CQ7bK3RQIMPw1A7pl,0.559,0.422,11,-11.89,1,0.195,1.99e-06,0.0853,0.191,74.002,286928,4
-SHEREEN,Relapse,Relapse,3t4uyvpEPqqGRR9hWL7wOw,0.464,0.268,4,-9.296,1,0.0413,0.0,0.119,0.467,67.058,197879,4
-Jess Benko,"Do You Love Me, or Are You Just Lonely?",A Soulmate Who Wasn’t Meant to Be,0gOz9JUXsaKVzLTSmFDtdo,0.571,0.0274,9,-20.274,0,0.0649,6.43e-06,0.322,0.087,124.209,316556,3
-Sufjan Stevens,Carrie & Lowell,Fourth of July,5Qnrgqy1pAm9GyNQOgyVFz,0.435,0.104,6,-22.39,0,0.0445,0.33,0.119,0.162,120.484,279316,4
-Rihanna,ANTI (Deluxe),Close To You,6D2tzc8kRnZb7P1lNwMBLH,0.494,0.17,10,-11.368,1,0.0337,0.0,0.139,0.145,80.098,223213,4
-Post Malone,Stoney (Deluxe),I Fall Apart,75ZvA4QfFiZvzhj2xkaWAh,0.556,0.538,8,-5.408,0,0.0382,0.0,0.196,0.291,143.95,223347,4
-Alicia Keys,The Diary Of Alicia Keys,If I Ain't Got You,3XVBdLihbNbxUwZosxcGuJ,0.609,0.444,7,-9.129,1,0.106,6.86e-06,0.104,0.166,118.402,228707,3
-NEVE,guy friends,guy friends,65ADzGXf5dSdiH5s1uy7RZ,0.586,0.574,2,-7.091,1,0.0454,0.0,0.104,0.206,163.964,185214,4
-Tadhg Daly,All I Know,All I Know,3esXPgOL5ph4Zi8SF6xg5Q,0.746,0.47,8,-7.557,1,0.0342,3.54e-05,0.12,0.363,121.962,172153,4
-Skuff Micksun,Bruises,Bruises,0Y8m8rpA5IhfbdFW3Z0FpG,0.605,0.668,4,-6.951,0,0.107,0.0,0.109,0.0957,119.149,144000,4
-Hanniou,sorry,sorry,7EcUaKyjR0WlujOxkpUxh1,0.797,0.528,5,-7.354,1,0.0483,1.43e-05,0.0919,0.633,107.985,154514,4
-John Mayer,Continuum,Slow Dancing in a Burning Room,2jdAk8ATWIL3dwT47XpRfu,0.667,0.361,1,-8.69,0,0.0273,0.00506,0.0805,0.29,134.018,242000,5
-NEVE,Not Like This,Not Like This,5grd5zeMl1nKVxwYiDjTUb,0.762,0.663,0,-4.019,1,0.0475,0.0,0.0979,0.513,120.073,205915,4
-Tove Lo,"How Long (From ""Euphoria"" An HBO Original Series)","How Long - From""Euphoria"" An HBO Original Series",05eZlxyjbkHMPCnunUasCS,0.668,0.687,7,-7.129,0,0.058,0.000822,0.149,0.468,97.025,199314,4
-Conan Gray,Kid Krow,Maniac,6KfoDhO4XUWSbnyKjNp9c4,0.628,0.639,8,-5.46,1,0.0435,0.0,0.354,0.493,108.045,185773,4
-Lauren Spencer Smith,Flowers,Flowers,6Z165JvPnS8PYvGW8oLGLc,0.684,0.449,3,-9.738,1,0.611,0.0,0.0881,0.341,66.165,157373,4
-JAE KIM,Love Kills,Love Kills,1eaEWs5d6ujp0FdBykDjxR,0.567,0.289,9,-12.783,1,0.229,0.0,0.168,0.0932,68.601,290786,4
-carolesdaughter,Violent,Violent,7CFfqRW50ffULvBv7lfIIg,0.797,0.755,2,-5.393,1,0.0293,2.26e-06,0.124,0.411,129.955,135878,4
-Lenn,dreams are a nightmare,dreams are a nightmare,0c5NGR7ZooGimUzAY5jzj2,0.686,0.492,0,-8.037,0,0.0479,5.09e-05,0.105,0.248,139.968,193714,4
-Rosa,Tunnels,Tunnels,36EULE9RzfcFSSB04Ieg90,0.503,0.283,9,-12.076,0,0.0719,1e-05,0.105,0.303,155.385,143100,4
-mxmtoon,the masquerade,prom dress,2xCGBWfzTe8l2kvHpgvB6M,0.56,0.674,10,-6.048,1,0.0446,0.0,0.123,0.421,119.942,197933,4
-Taylor Swift,folklore,illicit affairs,2NmsngXHeC1GQ9wWrzhOMf,0.559,0.31,10,-10.445,1,0.0338,0.0,0.106,0.46,119.845,190898,4
-James Arthur,Back from the Edge,Can I Be Him,0VhgEqMTNZwYL1ARDLLNCX,0.696,0.543,11,-6.164,1,0.0489,0.0,0.0939,0.479,107.969,246880,4
-Halsey,Die 4 Me,Die 4 Me,6VYAzAQGFsfEAwdorQaZuU,0.694,0.743,7,-4.267,0,0.0833,0.0,0.275,0.554,145.048,215021,4
-John Mayer,Continuum,Gravity,3SktMqZmo3M9zbB7oKMIF7,0.753,0.326,7,-9.883,1,0.0342,0.00131,0.24,0.237,123.799,245827,3
-Adele,30,I Drink Wine,6v0UJD4a2FtleHeSYVX02A,0.437,0.565,10,-5.596,1,0.0466,0.0,0.119,0.306,115.389,376169,4
-Delacey,Man On The Moon,Man On The Moon,7E6jdcJTGDpYmjHFnXu3vG,0.463,0.381,7,-10.755,0,0.0417,0.000187,0.156,0.216,115.992,200952,4
-Jeremy Zucker,glisten,better off,7bdYxWPCs46dQ0XLwySOyv,0.708,0.322,8,-12.46,0,0.0371,9.24e-05,0.137,0.46,98.892,193947,4
-Kyle Meagher,Trainwreck,Trainwreck,4UJgNlHQYutGJsYKF9CbLN,0.754,0.474,0,-7.172,0,0.043,0.0,0.102,0.68,99.0,168921,4
-Hueston,Down to My Grave,Down to My Grave,2U7BKUJfq3uewvHxYNnXO2,0.518,0.121,2,-10.69,1,0.0348,1.06e-05,0.0995,0.0476,141.628,248477,4
-Tate McRae,i used to think i could fly,hate myself,1bXm6XU3SYSqQGLTRhUSfm,0.47,0.279,7,-8.179,1,0.206,0.0,0.056,0.118,76.01,173307,4
-girl in red,summer depression,summer depression,3SEZEyvEALlomED5xFeqOs,0.693,0.308,9,-15.635,1,0.0442,0.476,0.127,0.677,129.943,151693,4
-gnash,me,feelings fade,4jnO4ztskhv3YkqgFnewtD,0.654,0.235,2,-11.292,0,0.159,0.0,0.0891,0.061,88.903,240000,4
-Jordan Doww,Landslide,Landslide,4R33piRpHBFZ92ZLL5lCah,0.419,0.345,7,-13.202,1,0.0453,0.00525,0.0894,0.394,149.836,176400,4
-LANY,mama's boy (deluxe),heart won't let me - stripped,7uANMVttqDIdNySaMvVOhh,0.681,0.456,7,-10.048,1,0.0588,0.0,0.116,0.111,121.892,197596,4
-Luke Alvin,Playing Cards with the Devil,Playing Cards with the Devil,4Yxd7QY2hJYQN9HCyKzXcZ,0.669,0.774,1,-6.637,1,0.0581,0.0,0.128,0.585,164.959,149818,4
+artist,album,track_name,track_id,danceability,energy,key,loudness,mode,speechiness,acousticness,instrumentalness,liveness,valence,tempo,duration_ms,time_signature
+Frank Ocean,Blonde,Ivy,2ZWlPOoWh0626oTaHrnl2a,0.575,0.386,9,-9.584,0,0.037,0.785,0.000289,0.229,0.466,116.408,249191,4
+Giveon,TAKE TIME,Like I Want You,6qBFSepqLCuh5tehehc1bd,0.678,0.355,10,-7.757,0,0.0627,0.759,7.06e-05,0.114,0.438,119.772,260776,3
+Drake,Take Care (Deluxe),Marvins Room,047fCsbO4NdmwCBn8pcUXl,0.492,0.26,9,-17.341,0,0.0921,0.646,0.00178,0.0705,0.312,111.519,347227,5
+Joji,Nectar,Afterthought,1ggYjU6zdFHgANcku82boU,0.668,0.547,1,-8.024,1,0.0353,0.398,0.0766,0.0931,0.192,83.5,194871,4
+Lykke Li,sex money feelings die (slowed version),sex money feelings die - slowed version,0dkvbYmXYEPK7gGMdytmfI,0.797,0.44,5,-6.587,0,0.0594,0.471,1.57e-06,0.0849,0.436,111.014,168811,4
+Mariah Carey,Memoirs of an imperfect Angel,It's A Wrap,0SgbP5ZZOsUiHlE8EfeHma,0.626,0.357,2,-7.166,0,0.0631,0.354,0.0,0.0552,0.401,179.869,238867,3
+Arctic Monkeys,AM,Why'd You Only Call Me When You're High?,086myS9r57YsLbJpU0TgK9,0.691,0.631,2,-6.478,1,0.0368,0.0483,1.13e-05,0.104,0.8,92.004,161124,4
+Cigarettes After Sex,Cry,Cry,0Qr61NXlyAeQaADO5xn3rI,0.409,0.399,7,-10.456,1,0.0275,0.763,0.654,0.112,0.161,142.823,256800,4
+The 1975,"I like it when you sleep, for you are so beautiful yet so unaware of it",Somebody Else,5hc71nKsUgtwQ3z52KEKQk,0.61,0.788,0,-5.724,1,0.0585,0.195,0.0142,0.153,0.472,101.045,347520,4
+Post Malone,Stoney (Deluxe),I Fall Apart,75ZvA4QfFiZvzhj2xkaWAh,0.556,0.538,8,-5.408,0,0.0382,0.0689,0.0,0.196,0.291,143.95,223347,4
+Joji,Nectar,Ew,3Nc86B5XmDlG1KuEeSLD8x,0.48,0.373,10,-9.297,1,0.0278,0.804,0.067,0.12,0.0376,114.078,207710,4
+Taylor Swift,folklore,august,3hUxzQpSfdDqwM3ZTFQY0K,0.532,0.623,5,-9.208,1,0.0331,0.538,7.28e-05,0.0925,0.403,89.937,261923,4
+Conan Gray,Kid Krow,Heather,4xqrdfXkTW4T0RauPLv3WA,0.357,0.425,5,-7.301,1,0.0333,0.584,0.0,0.322,0.27,102.078,198040,3
+Various Artists,The Twilight Saga: Breaking Dawn - Part 1 (Original Motion Picture Soundtrack),It Will Rain,0RUGuh2uSNFJpGMSsD1F5C,0.576,0.835,2,-6.826,1,0.0486,0.337,0.0,0.082,0.476,150.017,257720,4
+Alicia Keys,The Diary Of Alicia Keys,If I Ain't Got You,3XVBdLihbNbxUwZosxcGuJ,0.609,0.444,7,-9.129,1,0.106,0.603,6.86e-06,0.104,0.166,118.402,228707,3
+Joji,Daylight,Daylight,6Ed1q0X8oSKSm4IIhiQbYg,0.528,0.749,7,-7.571,1,0.0479,0.00488,9.6e-05,0.0949,0.729,163.944,163906,4
+Libianca,People,People,26b3oVLrRUaaybJulow9kz,0.573,0.422,10,-7.621,0,0.0678,0.551,1.31e-05,0.102,0.693,124.357,184791,5
+Rex Orange County,Pony,It's Not The Same Anymore,7vRia9rlEuTDQxkfXIKySi,0.666,0.317,5,-10.644,1,0.0327,0.873,3.74e-05,0.111,0.359,117.676,386200,4
+Q,"Soul,PRESENT",TODAY,5AeOFOHwU2EMu9iCubF5H0,0.494,0.406,0,-8.472,0,0.0559,0.848,5.63e-06,0.0765,0.0853,159.957,241667,4
+The Script,The Script,Breakeven,1fyysXwSGNtMeqMBLwW3SI,0.63,0.694,10,-4.501,1,0.0242,0.144,0.0,0.0835,0.49,94.034,261427,4
+Joji,Nectar,Run,1zmgEIHE0eXH0IhBGuoTkP,0.448,0.72,7,-3.954,1,0.0332,0.0427,0.000292,0.614,0.361,157.919,195000,3
+Conan Gray,Kid Krow,Maniac,6KfoDhO4XUWSbnyKjNp9c4,0.628,0.639,8,-5.46,1,0.0435,0.00162,0.0,0.354,0.493,108.045,185773,4
+Bruno Mars,Unorthodox Jukebox,When I Was Your Man,0nJW01T7XtvILxQgC5J7Wh,0.612,0.28,0,-8.648,1,0.0434,0.932,0.0,0.088,0.387,72.795,213827,4
+Sufjan Stevens,Carrie & Lowell,Fourth of July,5Qnrgqy1pAm9GyNQOgyVFz,0.435,0.104,6,-22.39,0,0.0445,0.973,0.33,0.119,0.162,120.484,279316,4
+Adele,25,Love In The Dark,7B5Npv8NjjTCzk8PLpU66h,0.331,0.341,9,-6.057,0,0.0309,0.528,0.0,0.109,0.152,109.821,285935,4
+keshi,always,drunk,6D6HVKe7Qu3imn4zzJD0W9,0.691,0.389,4,-8.247,1,0.0367,0.765,0.0,0.0941,0.306,104.952,227032,4
+Lord Huron,Strange Trails,The Night We Met,0QZ5yyl6B6utIWkxeBDxQN,0.545,0.366,2,-9.51,1,0.0378,0.969,0.267,0.641,0.1,86.997,208212,3
+mxmtoon,the masquerade,prom dress,2xCGBWfzTe8l2kvHpgvB6M,0.56,0.674,10,-6.048,1,0.0446,0.698,0.0,0.123,0.421,119.942,197933,4
+Beyoncé,B'Day Deluxe Edition,Irreplaceable,6RX5iL93VZ5fKmyvNXvF1r,0.447,0.694,7,-4.637,0,0.382,0.0293,5.46e-06,0.167,0.509,175.868,227853,4
+Conan Gray,Kid Krow,Wish You Were Sober,0kn2gu8Pd03DiYHzRvX2Xk,0.701,0.728,2,-5.226,1,0.0468,0.0178,0.0,0.17,0.696,91.071,168880,4
+Lorde,Melodrama,Supercut,6K8VQ84MqhsoakN5MjrnVR,0.562,0.437,0,-10.229,1,0.052,0.219,2.18e-05,0.0806,0.15,124.852,277506,4
+Billie Eilish,"WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",listen before i go,0tMSssfxAL2oV8Vri0mFHE,0.319,0.0561,0,-23.023,1,0.045,0.935,0.00384,0.388,0.082,79.764,242652,3
+Labrinth,Jealous - EP,Jealous,4G92yYrUs0cvY7G41YRI0z,0.439,0.153,1,-8.95,1,0.0479,0.874,0.0,0.107,0.104,116.76,287693,3
+Usher,Confessions (Expanded Edition),Burn,7z3N2W7Xz1t2G2sAO8wFVH,0.796,0.477,1,-7.161,1,0.108,0.314,0.0,0.12,0.685,119.928,231933,4
+James Arthur,YOU,Car's Outside,0otRX6Z89qKkHkQ9OqJpKt,0.338,0.562,9,-7.181,1,0.029,0.039,0.0,0.107,0.259,149.907,248373,4
+Sam Smith,In The Lonely Hour,I'm Not The Only One,7795WJLVKJoAyVoOtCWqXN,0.677,0.485,5,-5.795,1,0.0361,0.529,2.04e-05,0.0766,0.493,82.001,239317,4
+Jeremy Zucker,brent,you were good to me,4CxFN5zON70B3VOPBYbd6P,0.561,0.0848,2,-15.099,1,0.0404,0.913,2.62e-05,0.112,0.206,102.128,219147,4
+Harry Styles,Fine Line,To Be So Lonely,5JiH89mHrv9oWHlD0T326z,0.758,0.436,0,-7.269,1,0.0418,0.618,1.61e-05,0.335,0.605,104.959,192080,4
+Adele,25,All I Ask,05TOt5Vz4StdjMpEdFPlvB,0.591,0.28,4,-5.494,1,0.0283,0.889,0.0,0.124,0.348,141.916,271800,4
+The Weeknd,"My Dear Melancholy,",Privilege,0Nwar8rweBUyfyuoyjjUvk,0.404,0.564,11,-7.013,0,0.0344,0.915,0.00252,0.134,0.371,93.631,170573,4
+blackbear,deadroses,idfc,6y6jbcPG4Yn3Du4moXaenr,0.63,0.5,1,-8.755,0,0.0611,0.611,4.04e-05,0.114,0.315,144.871,245172,4
+James Bay,Chaos And The Calm,Let It Go,13HVjjWUZFaWilh2QUJKsP,0.546,0.311,1,-10.396,1,0.0288,0.818,1.65e-05,0.107,0.246,147.464,260533,4
+Jeremy Zucker,glisten,all the kids are depressed,75ls0gurX68lUmMjE7QcsE,0.773,0.437,9,-8.281,1,0.0963,0.836,2.42e-05,0.544,0.707,103.861,169973,4
+Lorde,Melodrama,Liability,6Kkt27YmFyIFrcX3QXFi2o,0.587,0.229,10,-11.254,0,0.128,0.92,0.0,0.1,0.379,75.67,171728,4
+girl in red,summer depression,summer depression,3SEZEyvEALlomED5xFeqOs,0.693,0.308,9,-15.635,1,0.0442,0.645,0.476,0.127,0.677,129.943,151693,4
+Billie Eilish,everything i wanted,everything i wanted,3ZCTVFBt2Brf31RLEnCkWJ,0.704,0.225,6,-14.454,0,0.0994,0.902,0.657,0.106,0.243,120.006,245426,4
+John Mayer,Continuum,Gravity,3SktMqZmo3M9zbB7oKMIF7,0.753,0.326,7,-9.883,1,0.0342,0.731,0.00131,0.24,0.237,123.799,245827,3
+Bon Iver,"For Emma, Forever Ago",Skinny Love,3B3eOgLJSqPEA0RfboIQVM,0.592,0.263,4,-14.029,0,0.0568,0.845,5.68e-06,0.127,0.109,76.366,238520,4
+LANY,Malibu Nights,Malibu Nights,0Eqg0CQ7bK3RQIMPw1A7pl,0.559,0.422,11,-11.89,1,0.195,0.701,1.99e-06,0.0853,0.191,74.002,286928,4
+Taylor Swift,Red (Taylor's Version),All Too Well (10 Minute Version) (Taylor's Version) (From The Vault),5enxwA8aAbwZbf5qCHORXi,0.631,0.518,0,-8.771,1,0.0303,0.274,0.0,0.088,0.205,93.023,613027,4
+The Script,The Script,The Man Who Can't Be Moved,4AFwnrH5atiJoAd5xS5QtR,0.605,0.629,10,-5.051,1,0.0278,0.434,0.0,0.097,0.308,99.893,241373,4
+Sleeping At Last,Turning Page,Turning Page,2kfGoV9a5dbSKCNmUWH2ZF,0.307,0.371,3,-8.498,1,0.0288,0.923,0.0253,0.11,0.189,115.241,255893,3
+Lauren Spencer Smith,Flowers,Flowers,6Z165JvPnS8PYvGW8oLGLc,0.684,0.449,3,-9.738,1,0.611,0.869,0.0,0.0881,0.341,66.165,157373,4
+Powfu,death bed (coffee for your head),death bed (coffee for your head),7eJMfftS33KTjuF7lTsMCx,0.726,0.431,8,-8.765,0,0.135,0.731,0.0,0.696,0.348,144.026,173333,4
+Adele,25,When We Were Young,7GgWAITsYJaRM3r50rfh5w,0.376,0.595,3,-5.936,1,0.0496,0.303,0.0,0.095,0.265,144.361,290900,4
+Kodaline,In A Perfect World (Expanded Edition),All I Want,0NlGoUyOJSuSHmngoibVAs,0.188,0.411,0,-9.733,1,0.0484,0.174,0.153,0.0843,0.159,187.376,305747,3
+Billie Eilish,"WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",when the party's over,43zdsphuZLzwA9k4DJhU0I,0.367,0.111,4,-14.084,1,0.0972,0.978,3.97e-05,0.0897,0.198,82.642,196077,4
+Olivia Dean,The Hardest Part (Acoustic),The Hardest Part,3KsQ9CtgCFlWWnSpehB5dv,0.769,0.53,5,-6.048,1,0.0411,0.344,0.0,0.108,0.388,94.014,176040,4
+FINNEAS,Blood Harmony (Deluxe),Break My Heart Again,0DGh73t9eaZA3X3ZXHf4Qe,0.402,0.151,4,-14.228,0,0.04,0.907,0.0,0.0941,0.489,144.071,238013,4
+Benson Boone,In The Stars,In The Stars,1ei3hzQmrgealgRKFxIcWn,0.362,0.54,10,-6.031,1,0.0528,0.338,0.0,0.139,0.3,78.007,216410,3
+Harry Styles,Harry Styles,Sign of the Times,5Ohxk2dO5COHF1krpoPigN,0.516,0.595,5,-4.63,1,0.0313,0.0275,0.0,0.109,0.222,119.972,340707,4
+John Mayer,Continuum,Slow Dancing in a Burning Room,2jdAk8ATWIL3dwT47XpRfu,0.667,0.361,1,-8.69,0,0.0273,0.575,0.00506,0.0805,0.29,134.018,242000,5
+carolesdaughter,Violent,Violent,7CFfqRW50ffULvBv7lfIIg,0.797,0.755,2,-5.393,1,0.0293,0.331,2.26e-06,0.124,0.411,129.955,135878,4
+Sasha Alex Sloan,Dancing With Your Ghost,Dancing With Your Ghost,1TQXIltqoZ5XXyfCbAeSQQ,0.629,0.328,11,-8.284,1,0.029,0.768,2.5e-05,0.103,0.389,74.953,197732,4
+Adele,30,I Drink Wine,6v0UJD4a2FtleHeSYVX02A,0.437,0.565,10,-5.596,1,0.0466,0.697,0.0,0.119,0.306,115.389,376169,4
+Alessia Cara,The Pains Of Growing,Out Of Love,4WzhjxvLP95y7AMDy0Atwb,0.481,0.267,7,-9.249,1,0.0339,0.8,0.0,0.249,0.137,117.64,227693,3
+The Cinematic Orchestra,Ma Fleur,To Build A Home,3AqPL1n1wKc5DVFFnYuJhp,0.264,0.128,9,-15.443,1,0.034,0.885,0.352,0.105,0.0774,148.499,370667,4
+James Arthur,Back from the Edge,Can I Be Him,0VhgEqMTNZwYL1ARDLLNCX,0.696,0.543,11,-6.164,1,0.0489,0.308,0.0,0.0939,0.479,107.969,246880,4
+Billie Eilish,lovely (with Khalid),lovely (with Khalid),0u2P5u6lvoDfwTYjAADbn4,0.351,0.296,4,-10.109,0,0.0333,0.934,0.0,0.095,0.12,115.284,200186,4
+Jess Benko,"Do You Love Me, or Are You Just Lonely?",A Soulmate Who Wasn’t Meant to Be,0gOz9JUXsaKVzLTSmFDtdo,0.571,0.0274,9,-20.274,0,0.0649,0.948,6.43e-06,0.322,0.087,124.209,316556,3
+Tate McRae,i used to think i could fly,feel like shit,03zuGqxMwUFFmCwusq0WKE,0.519,0.383,7,-7.174,1,0.0495,0.572,0.0,0.124,0.157,144.565,203480,4
+Coldplay,X&Y,Fix You,7LVHVU3tWfcxj5aiPFEW4Q,0.209,0.417,3,-8.74,1,0.0338,0.164,0.00196,0.113,0.124,138.178,295533,4
+Sam Smith,The Thrill Of It All (Special Edition),Too Good At Goodbyes,1mXVgsBdtIVeCLJnSnmtdV,0.681,0.372,5,-8.237,1,0.0432,0.64,0.0,0.169,0.476,91.873,201000,4
+Ruth B.,Lost Boy,Lost Boy,4h0zU3O9R5xzuTmNO7dNDU,0.71,0.0565,7,-15.099,1,0.0534,0.965,0.0,0.0889,0.348,123.994,275280,4
+Meghan Trainor,Title (Deluxe),Like I'm Gonna Lose You (feat. John Legend),2YlZnw2ikdb837oKMKjBkW,0.63,0.53,0,-7.259,1,0.0434,0.4,0.0,0.177,0.417,108.038,225053,3
+James Bay,Chaos And The Calm,Hold Back The River,7tmtOEDxPN7CWaQWBsG1DY,0.715,0.715,5,-7.364,1,0.0904,0.0526,0.0,0.0936,0.506,134.923,238747,4
+Lauv,~how i'm feeling~,Who,0pSqYDTjY1Xt86usTQslAx,0.632,0.337,11,-8.0,0,0.033,0.558,0.0,0.104,0.0982,141.701,180413,3
+Tom Odell,Long Way Down (Deluxe),Another Love,3JvKfv6T31zO0ini8iNItO,0.445,0.537,4,-8.532,0,0.04,0.695,1.65e-05,0.0944,0.131,122.769,244360,4
+NF,Perception,Let You Down,52okn5MNA47tk87PeZJLEL,0.662,0.714,5,-5.68,0,0.121,0.312,0.0,0.179,0.464,147.997,212120,4
+Tate McRae,you broke me first,you broke me first,45bE4HXI0AwGZXfZtMp8JR,0.667,0.373,4,-9.389,1,0.05,0.785,0.0,0.0906,0.0823,124.148,169266,4
+James Arthur,Back from the Edge,Train Wreck,55Am8neGJkdj2ADaM3aw5H,0.311,0.485,6,-5.726,0,0.0365,0.701,0.0,0.0726,0.225,77.355,208827,4
+Maroon 5,Red Pill Blues (Deluxe),Wait,6AvfZXpbb6r35DfF7gHPRq,0.655,0.603,8,-5.014,1,0.0555,0.0959,0.0,0.107,0.452,126.088,190643,4
+BoyWithUke,Serotonin Dreams,Toxic,3M214U0mwSm041GsQR3nrO,0.609,0.619,11,-5.677,1,0.311,0.749,0.0,0.264,0.689,179.71,168067,4
+Calum Scott,Only Human (Deluxe),Dancing On My Own,2BOqDYLOJBiMOXShCV1neZ,0.681,0.174,1,-8.745,1,0.0315,0.837,3.35e-05,0.0983,0.231,112.672,260285,4
+Jeremy Zucker,glisten,better off,7bdYxWPCs46dQ0XLwySOyv,0.708,0.322,8,-12.46,0,0.0371,0.747,9.24e-05,0.137,0.46,98.892,193947,4
+Tate McRae,chaotic,chaotic,2bdqU7C4softKNcMYDFi96,0.412,0.382,2,-7.023,0,0.0497,0.59,0.0,0.0931,0.318,81.493,178721,3
+X Ambassadors,VHS,Unsteady,7lGKEWMXVWWTt3X71Bv44I,0.389,0.665,0,-6.169,1,0.0644,0.178,0.000732,0.116,0.199,117.055,193547,4
+Sasha Alex Sloan,Loser,Older,3kywzyEr7V106Un5cDyh12,0.628,0.298,11,-9.539,1,0.0713,0.732,0.0,0.116,0.166,63.762,184893,4
+Dean Lewis,A Place We Knew,Half A Man,1ugQtcwmKOXvKAYzhjncmv,0.507,0.204,0,-11.575,1,0.0504,0.855,0.0,0.143,0.343,77.765,179120,4
+Charlie Puth,That’s Not How This Works (feat. Dan + Shay),That’s Not How This Works (feat. Dan + Shay),28a0aMV1OKoyNiCJuNsWrY,0.584,0.576,9,-4.557,1,0.0519,0.507,0.0,0.212,0.432,170.026,165620,4
+Lewis Capaldi,Divinely Uninspired To A Hellish Extent,Hold Me While You Wait,60iSKGrGazRzICtMjADNSM,0.688,0.53,11,-5.507,1,0.0333,0.443,0.0,0.0995,0.162,106.958,205687,4
+Haley Reinhart,Better,Can't Help Falling in Love,6yIHGmQLJxWAUZ1ZkENemN,0.41,0.0485,0,-13.918,1,0.038,0.947,0.0,0.108,0.247,137.97,173175,4
+OneRepublic,Dreaming Out Loud,Apologize,77rlwv75irCcg50920G04u,0.656,0.584,8,-6.034,1,0.0297,0.0371,0.0,0.0888,0.0993,117.999,185013,4
+Post Malone,Twelve Carat Toothache (Deluxe),Waiting For Never,753lkDSNs2u188xbl8Vrnx,0.593,0.834,10,-3.738,1,0.0424,0.115,0.0,0.191,0.555,151.944,196987,4
+One Direction,Midnight Memories (Deluxe),You & I,2afCBiru10AFckfOa49wIa,0.574,0.329,1,-6.829,1,0.0274,0.22,0.0,0.0986,0.356,130.993,237933,4
+Phoebe Bridgers,Stranger in the Alps,Funeral,3rJDsZjIaCfJQSqRUvl0BM,0.218,0.263,11,-14.416,1,0.0376,0.947,0.00028,0.0919,0.307,170.724,232373,4
+Adele,21,Turning Tables,4oy98QoABnGKpvapDkI525,0.353,0.446,0,-6.044,0,0.0285,0.95,1.35e-05,0.132,0.211,155.476,250000,4
+gnash,us,"i hate u, i love u (feat. olivia o'brien)",7vRriwrloYVaoAe3a9wJHe,0.492,0.275,6,-13.4,0,0.3,0.687,0.0,0.101,0.18,92.6,251034,4
+Charlie Puth,CHARLIE,Loser,1BCXUbnU0486n4eeTyyVIj,0.698,0.623,8,-7.845,0,0.037,0.623,0.0856,0.179,0.625,102.002,204376,4
+Tom Odell,Long Way Down (Deluxe),Heal,4KlL5Bwlm4yHYxr0B2rHci,0.445,0.179,1,-12.938,1,0.0396,0.952,0.00056,0.107,0.119,72.246,193080,4

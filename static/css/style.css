@@ -303,7 +303,14 @@
     font-weight: 600;
   }
   .spotify-playlists .list .item .grad1 {
-    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+    background-image: linear-gradient(to right, rgb(236, 188, 36), #896afb);
+    width: 100%;
+    height: 150px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  .spotify-playlists .list .item .grad2 {
+    background-image: linear-gradient(to right, #d8f3dc, #081c15);
     width: 100%;
     height: 150px;
     border-radius: 6px;

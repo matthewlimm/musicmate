@@ -1,6 +1,10 @@
 function pausePlay(input) {
     console.log(input);
     pauseButtons = document.getElementsByClassName('fa fa-pause')
+    for(i=0;i<pauseButtons.length;i++)
+    {
+        pauseButtons[i].className = 'fa fa-play';
+    }
     if(typeof input === 'string' || input instanceof String)
     {
       var playButton = document.getElementById(input).querySelector('span');
@@ -8,10 +12,6 @@ function pausePlay(input) {
       return;
     }
     var playButton = input.parentElement.querySelector('span');
-    for(i=0;i<pauseButtons.length;i++)
-    {
-        pauseButtons[i].className = 'fa fa-play';
-    }
     if(input.checked)
     {
         playButton.className = "fa fa-pause";
