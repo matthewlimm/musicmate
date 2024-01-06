@@ -190,7 +190,7 @@ def toptracks():
     user = sp.user(sp.me()['id'])
 
     toptracks = sp.current_user_top_tracks()['items']
-    pprint(toptracks)
+    #pprint(toptracks)
     def analyze_artists(toptracks):
         # Create empty dataframe
         tracks_features_list = ["artist","album","track_name", "track_image_url", "track_url"]
@@ -205,7 +205,7 @@ def toptracks():
             track_features["album"] = track["album"]["name"]
             track_features["track_name"] = track["name"]
             track_features["track_image_url"] = sp.track(track["id"])['album']['images'][0]['url']
-            track_features["track_url"] = track["external_urls"]["spotify"][0]
+            track_features["track_url"] = track["external_urls"]["spotify"]
             
             # Concat the dfs
             track_features_df = pd.DataFrame(track_features, index = [0])
@@ -214,6 +214,7 @@ def toptracks():
         return tracks_df
     
     tracks = analyze_artists(toptracks)
+    pprint(tracks)
 
     return render_template('toptracks.html',columns=[tracks.columns.values], rows=[list(tracks.values.tolist())],user=user)
 
@@ -308,6 +309,10 @@ def savePlaylist():
     sp = spotipy.Spotify(auth=token_info['access_token'])
     prediction_table = request.form['save_button']
     prediction_table = np.array(eval(prediction_table))
+
+    if len(prediction_table) == 0:
+        return "Prediction playlist is empty!"
+
     prediction_table = pd.DataFrame(data=prediction_table,columns=['artist','album','track_name','track_id','track_image_url','danceability','energy','key','loudness','mode','speechiness','instrumentalness','liveness','valence','tempo','duration_ms','time_signature','prediction'])
 
     if prediction_table['prediction'][0] == 'Happy':
