@@ -4,17 +4,18 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <title>Spotify Clone</title>
+        <title>Music Mate</title>
+        <link rel="icon" type="image/x-icon" href="/static/favicon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/static/css/style.css">
     </head>
 <body>
     <div class="sidebar">
       <div class="logo">
-        <a href="#">
-          <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Green.png" alt="Logo" />
+        <a href="{{ url_for('dashboard') }}">
+          <img src="/static/logo.png" alt="Logo" />
         </a>
       </div>
 
@@ -28,14 +29,14 @@
           </li>
 
           <li>
-            <a href="#">
+            <a href="{{ url_for('about') }}">
               <span class="fa fa-search"></span>
               <span>About</span>
             </a>
           </li>
 
           <li>
-            <a href="#">
+            <a href="https://github.com/MjlDoesGitHub/musicmate" target="_blank">
               <span class="fa fas fa-book"></span>
               <span>Repository</span>
             </a>
@@ -53,7 +54,7 @@
           </li>
 
           <li>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/matthewjlim25/" target="_blank">
               <span class="fa fas fa-heart"></span>
               <span>Say Hi on LinkedIn</span>
             </a>
@@ -91,16 +92,20 @@
 			</div>
         </div>
       </div>
-
       <div class="spotify-headers">
         <h2>About</h2>
-        <p>Hi there, {{user['display_name']}}!</p>
-
       </div>
-
       <div class="spotify-playlists">
-        <h2>Header one</h2>
-        <p>Testing one two three...</p>
+        <h2>Welcome to Music Mate, {{user['display_name']}}!</h2>
+        <p>Music Mate is your ultimate companion for unraveling the mysteries of your Spotify listening habits. Are you curious about the patterns hidden within your favorite tunes? With Music Mate, you can dive deep into the realm of your music preferences like never before.</p>
+          
+        <p>Imagine having a personal music analyst at your fingertips, ready to dissect your songs and provide insights into your mood and preferences. That's exactly what Music Mate offers. My interactive Flask website serves as the gateway to a world of musical discovery, where you can gain valuable insights into your listening habits.</p>
+          
+        <p>At the heart of Music Mate lies a powerful Random Forest model, meticulously crafted to classify the mood of your songs based on key features. Through a sophisticated machine learning pipeline, I've harnessed the power of Python, Pandas, Seaborn, and Scikit Learn to bring you accurate mood predictions.</p>
+          
+        <p>But Music Mate is not just about prediction – it's about understanding. My model doesn't just spit out results; it takes you on a journey of exploration. From exploratory data analysis to feature engineering, hyperparameter tuning, and model evaluation, every step of the process is carefully designed to provide you with meaningful insights into your music preferences.</p>
+          
+        <p>So, whether you're curious about the tunes that lift your spirits or the ones that resonate with your melancholy moods, Music Mate is here to guide you. Welcome aboard, and let the musical exploration begin!</p>
         <hr>
       </div>
 
