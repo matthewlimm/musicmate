@@ -1,5 +1,6 @@
 from flask import Flask, request, url_for, session, redirect, render_template
 import spotipy
+from spotipy.exceptions import SpotifyException
 from spotipy.oauth2 import SpotifyOAuth
 import os
 from dotenv import load_dotenv, dotenv_values
@@ -33,6 +34,12 @@ def login():
     auth_url = sp_oauth.get_authorize_url()
     print(auth_url)
     return redirect(auth_url)
+
+@app.route('/logout')
+def logout():
+    # Clear the session data to log the user out
+    session.clear()
+    return redirect(url_for('index'))  # Redirect to the homepage or login page
 
 @app.route('/redirect')
 def redirectPage():
@@ -78,27 +85,35 @@ def dashboard():
     sp = spotipy.Spotify(auth=token_info['access_token'])
     user = sp.user(sp.me()['id'])
 
-    def analyze_playlist(playlist):
-        # Create empty dataframe
-        playlist_features_list = ["danceability","energy","valence",]
+    def analyze_playlist(saved_tracks):
+        playlist_features_list = ["danceability", "energy", "valence"]
         playlist_df = pd.DataFrame(columns=playlist_features_list)
         
-        # Loop through every track in the playlist, extract features and append the features to the playlist df
         for track in saved_tracks:
-            # Create empty dict
             playlist_features = {}
-            # Get metadata
             playlist_features["track_id"] = track["track"]["id"]
             
-            # Get audio features
-            audio_features = sp.audio_features(playlist_features["track_id"])[0]
+            # Attempt to get audio features with retry on 429
+            audio_features = None
+            while audio_features is None:
+                try:
+                    audio_features = sp.audio_features(playlist_features["track_id"])[0]
+                except SpotifyException as e:
+                    if e.http_status == 429:
+                        retry_after = int(e.headers.get("Retry-After", 1))  # Default to 1 second if not specified
+                        print(f"Rate limit exceeded. Retrying after {retry_after} seconds...")
+                        time.sleep(retry_after)
+                    else:
+                        raise e
+            
+            # Add features to playlist_features dictionary
             for feature in playlist_features_list:
                 playlist_features[feature] = audio_features[feature]
             
-            # Concat the dfs
-            track_df = pd.DataFrame(playlist_features, index = [0])
-            playlist_df = pd.concat([playlist_df, track_df], ignore_index = True)
-    
+            # Concat the data
+            track_df = pd.DataFrame(playlist_features, index=[0])
+            playlist_df = pd.concat([playlist_df, track_df], ignore_index=True)
+
         return playlist_df
     
     def get_top_artist_picture():
@@ -163,10 +178,10 @@ def topartists():
             artist_features = {}
 
             # Get metadata
-            artist_features['artist'] = artist['name'] 
-            artist_features['artist_genre'] = artist['genres'][0]
-            artist_features['artist_image_url'] = artist['images'][0]['url']
-            artist_features['artist_url'] = artist['external_urls']['spotify']
+            artist_features['artist'] = artist['name'] if 'name' in artist else 'unknown artist'
+            artist_features['artist_genre'] = artist['genres'][0] if artist.get('genres') else 'unknown genre'
+            artist_features['artist_image_url'] = artist['images'][0]['url'] if artist.get('images') else None
+            artist_features['artist_url'] = artist['external_urls']['spotify'] if 'external_urls' in artist and 'spotify' in artist['external_urls'] else None
             
             # Concat the dfs
             artists_features_df = pd.DataFrame(artist_features, index = [0])
@@ -201,11 +216,14 @@ def toptracks():
             track_features = {}
 
             # Get metadata
-            track_features["artist"] = track["artists"][0]["name"]
-            track_features["album"] = track["album"]["name"]
-            track_features["track_name"] = track["name"]
-            track_features["track_image_url"] = sp.track(track["id"])['album']['images'][0]['url']
-            track_features["track_url"] = track["external_urls"]["spotify"]
+            track_features["artist"] = track["artists"][0]["name"] if track["artists"] else "unknown artist"
+            track_features["album"] = track["album"]["name"] if "album" in track and "name" in track["album"] else "unknown album"
+            track_features["track_name"] = track["name"] if "name" in track else "unknown track"
+            track_features["track_image_url"] = (
+                sp.track(track["id"])["album"]["images"][0]["url"]
+                if "album" in sp.track(track["id"]) and sp.track(track["id"])["album"].get("images")
+                else None
+            )
             
             # Concat the dfs
             track_features_df = pd.DataFrame(track_features, index = [0])
@@ -382,4 +400,7 @@ def create_spotify_oauth():
         client_id=client_id,
         client_secret=client_secret,
         redirect_uri=url_for('redirectPage',_external=True),
-        scope='user-library-read playlist-modify-public playlist-read-private playlist-modify-private user-top-read')
+        scope='user-library-read playlist-modify-public playlist-read-private playlist-modify-private user-top-read',
+        cache_path=None,  # Disable caching
+        show_dialog=True  # Force re-authentication dialog
+        )

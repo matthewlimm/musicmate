@@ -55,3 +55,22 @@ function preview(URL) {
       source.start();
     }
   }
+
+  function toggleDropdown(event) {
+    // Stop the click from propagating to the window (which would close the dropdown)
+    event.stopPropagation();
+
+    // Toggle the display of the dropdown content
+    const dropdownContent = event.currentTarget.querySelector('.dropdown-content');
+    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.closest('.user-button')) {
+        const dropdowns = document.querySelectorAll('.dropdown-content');
+        dropdowns.forEach(dropdown => {
+            dropdown.style.display = 'none';
+        });
+    }
+}

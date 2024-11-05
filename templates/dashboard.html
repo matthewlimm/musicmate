@@ -84,18 +84,17 @@
         </div>
 
         <div class="navbar">
-			<div class="user-button">
-				<button type="button">
-          <img class="user-profile-picture" src="{{user['images'][0]['url']}}" />{{user['display_name']}}
-          <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/60/60995.png" style="filter: invert(1);" />
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-			</div>
-        </div>
+          <div class="user-button" onclick="toggleDropdown(event)">
+              <button type="button">
+                  <img class="user-profile-picture" src="{{ user['images'][0]['url'] }}" />{{ user['display_name'] }}
+                  <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/60/60995.png" style="filter: invert(1);" />
+              </button>
+              <div class="dropdown-content">
+                  <!-- Updated to direct to the logout route -->
+                  <a href="{{ url_for('logout') }}">Log out</a>
+              </div>
+          </div>
+      </div>
       </div>
 
       <div class="spotify-headers">
@@ -203,7 +202,7 @@
         </div>
       </div>
 
-      <div class="spotify-playlists">
+      <!-- <div class="spotify-playlists">
         <h2>Recommender</h2>
         <div class="list">
           <form action="#" method="GET" onsubmit="pausePlay(this.id)" id='#'>
@@ -234,7 +233,7 @@
         </div>
 
         <hr>
-      </div>
+      </div> -->
 
       <footer>
         <p>Made with ☕ by Matthew Lim California, US.</p>
