@@ -30,6 +30,9 @@ if __name__ == '__main__':
 
 @app.route('/login')
 def login():
+    cache_file = '.cache'
+    if os.path.exists(cache_file):
+        os.remove(cache_file)
     sp_oauth = create_spotify_oauth()
     auth_url = sp_oauth.get_authorize_url()
     print(auth_url)
@@ -117,25 +120,41 @@ def dashboard():
         return playlist_df
     
     def get_top_artist_picture():
-        return sp.current_user_top_artists()['items'][0]['images'][0]['url']
-    
+        top_artists = sp.current_user_top_artists()['items']
+        if top_artists:
+            return top_artists[0]['images'][0]['url'] if top_artists[0].get('images') else "path/to/default_artist_image.jpg"
+        else:
+            return "path/to/default_artist_image.jpg"  # Provide a default image URL
+
     def get_top_track_picture():
-        return sp.current_user_top_tracks()['items'][0]['album']['images'][0]['url']
-    
+        top_tracks = sp.current_user_top_tracks()['items']
+        if top_tracks:
+            return top_tracks[0]['album']['images'][0]['url'] if top_tracks[0]['album'].get('images') else "path/to/default_track_image.jpg"
+        else:
+            return "path/to/default_track_image.jpg"  # Provide a default image URL
+
     # Calculate average percentages of the happy, energy, and danceability
     def calc_happy(playlist_df):
-        return playlist_df['valence'].mean()
+        return playlist_df['valence'].mean(skipna=True) if not playlist_df.empty else 0
+
     def calc_energy(playlist_df):
-        return playlist_df['energy'].mean()
+        return playlist_df['energy'].mean(skipna=True) if not playlist_df.empty else 0
+
     def calc_danceable(playlist_df):
-        return playlist_df['danceability'].mean()
+        return playlist_df['danceability'].mean(skipna=True) if not playlist_df.empty else 0
+
     
     saved_tracks = sp.current_user_saved_tracks(50)['items']
     playlist_df = analyze_playlist(saved_tracks)
 
-    happy_percent = round(calc_happy(playlist_df)*100)
-    energy_percent = round(calc_energy(playlist_df)*100)
-    danceable_percent = round(calc_danceable(playlist_df)*100)
+    if playlist_df.empty or playlist_df[['valence', 'energy', 'danceability']].isna().all().all():
+        # Handle the case where there's no valid data
+        happy_percent = energy_percent = danceable_percent = 0
+    else:
+        # Calculate percentages as before
+        happy_percent = round(calc_happy(playlist_df) * 100)
+        energy_percent = round(calc_energy(playlist_df) * 100)
+        danceable_percent = round(calc_danceable(playlist_df) * 100)
     
     top_artist_picture = get_top_artist_picture()
     top_track_picture = get_top_track_picture()

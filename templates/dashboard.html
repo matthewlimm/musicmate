@@ -86,11 +86,15 @@
         <div class="navbar">
           <div class="user-button" onclick="toggleDropdown(event)">
               <button type="button">
-                  <img class="user-profile-picture" src="{{ user['images'][0]['url'] }}" />{{ user['display_name'] }}
+                  {% if user['images'] and user['images'][0]['url'] %}
+                      <img class="user-profile-picture" src="{{ user['images'][0]['url'] }}" />
+                  {% else %}
+                      <img class="user-profile-picture" src="path/to/default_profile_image.jpg" />
+                  {% endif %}
+                  {{ user['display_name'] }}
                   <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/60/60995.png" style="filter: invert(1);" />
               </button>
               <div class="dropdown-content">
-                  <!-- Updated to direct to the logout route -->
                   <a href="{{ url_for('logout') }}">Log out</a>
               </div>
           </div>
