@@ -84,12 +84,18 @@
         </div>
 
         <div class="navbar">
-			<div class="user-button">
-				<button type="button">
-          <img class="user-profile-picture" src="{{user['images'][0]['url']}}" />{{user['display_name']}}
-          <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/60/60995.png" style="filter: invert(1);" />
-        </button>
-			</div>
+          <div class="user-button">
+            <button type="button">
+              {% if user['images'] and user['images']|length > 0 %}
+                <img class="user-profile-picture" src="{{ user['images'][0]['url'] }}" />
+              {% else %}
+                <img class="user-profile-picture" src="default-profile-picture.png" /> <!-- Use a default image here if needed -->
+              {% endif %}
+              {{ user['display_name'] }}
+              <img class="arrow" src="https://cdn-icons-png.flaticon.com/512/60/60995.png" style="filter: invert(1);" />
+            </button>
+          </div>
+          
         </div>
       </div>
 
