@@ -101,65 +101,54 @@
       <div class="spotify-top">
         <h2>Top Tracks</h2>
         <p>Here are the top 3 tracks that dominate your listening recently...</p>
-
+    
         <div class="list">
-        {% for row in rows[0][1:2] %}
-        <label class="item" style="width:250px;background-color:#606060">
-          <a href="{{row[4]}}" target="_blank">
-          <img src="{{row[3]}}" style="height:250px" />
-          <h2 style="font-size:24px">2. {{row[2]}} by {{row[0]}}</h2>
-          <h4>{{row[1]}}</h4>
-          </a>
-        </label>
+        {% for row in rows[1:2] %}
+            <label class="item" style="width:250px;background-color:#606060">
+                <a href="{{ row['track_url'] }}" target="_blank">
+                    <img src="{{ row['track_image_url'] }}" style="height:250px" />
+                    <h2 style="font-size:24px">2. {{ row['track_name'] }} by {{ row['artist'] }}</h2>
+                    <h4>{{ row['album'] }}</h4>
+                </a>
+            </label>
         {% endfor %}
-        {% for row in rows[0][0:1] %}
-        <label class="item" style="width:350px;background-color:#6e5a18">
-          <a href="{{row[4]}}" target="_blank">
-          <img src="{{row[3]}}" style="height:350px" />
-          <h2>1. {{row[2]}} by {{row[0]}}</h2>
-          <h4>{{row[1]}}</h4>
-          </a>
-        </label>
+        {% for row in rows[0:1] %}
+            <label class="item" style="width:350px;background-color:#6e5a18">
+                <a href="{{ row['track_url'] }}" target="_blank">
+                    <img src="{{ row['track_image_url'] }}" style="height:350px" />
+                    <h2>1. {{ row['track_name'] }} by {{ row['artist'] }}</h2>
+                    <h4>{{ row['album'] }}</h4>
+                </a>
+            </label>
         {% endfor %}
-        {% for row in rows[0][2:3] %}
-        <label class="item" style="width:150px;background-color:#4f3d1a">
-          <a href="{{row[4]}}" target="_blank">
-          <img src="{{row[3]}}" style="height:150px" />
-          <h2 style="font-size:16px">3. {{row[2]}} by {{row[0]}}</h2>
-          <h4>{{row[1]}}</h4>
-          </a>
-        </label>
+        {% for row in rows[2:3] %}
+            <label class="item" style="width:150px;background-color:#4f3d1a">
+                <a href="{{ row['track_url'] }}" target="_blank">
+                    <img src="{{ row['track_image_url'] }}" style="height:150px" />
+                    <h2 style="font-size:16px">3. {{ row['track_name'] }} by {{ row['artist'] }}</h2>
+                    <h4>{{ row['album'] }}</h4>
+                </a>
+            </label>
         {% endfor %}
         </div>
+    </div>
 
+    <div class="spotify-playlists">
+      <h2>Other Favorites</h2>
+      <p>Don't forget these tracks you've been listening to...</p>
+  
+      <div class="list">
+          {% for row in rows[3:] %}
+              <label class="item">
+                  <a href="{{ row['track_url'] }}" target="_blank">
+                      <img src="{{ row['track_image_url'] }}" />
+                      <h4>{{ row['track_name'] }} by {{ row['artist'] }}</h4>
+                      <p>{{ row['album'] }}</p>
+                  </a>
+              </label>
+          {% endfor %}
       </div>
-
-      <div class="spotify-playlists">
-        <h2>Other Favorites</h2>
-        <p>Don't forget these tracks you've been listening to...</p>
-
-        <div class="list">
-
-          <!-- Key
-        rows[0] = Track dataframe
-        row[4] = track_features
-        row[3] = track_image_url
-        row[2] = track_name
-        row[1] = album
-        row[0] = artist -->
-        {% for row in rows[0][3:] %}
-        <label class="item">
-          <a href="{{row[4]}}" target="_blank">
-          <img src="{{row[3]}}" />
-          <h4>{{row[2]}} by {{row[0]}}</h4>
-          <p>{{row[1]}}</p>
-          </a>
-        </label>
-        {% endfor %}
-      </div>
-
-      <hr>
-      </div>
+  </div>
 
       <footer>
         <p>Made with ☕ by Matthew Lim California, US.</p>

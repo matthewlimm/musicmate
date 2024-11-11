@@ -84,82 +84,71 @@ def dashboard():
     except:
         print('User Not Logged In!')
         return redirect('/')
-    # at this part, we ensured the token info is up-to-date / fresh
-    sp = spotipy.Spotify(auth=token_info['access_token'])
-    user = sp.user(sp.me()['id'])
 
-    def analyze_playlist(saved_tracks):
-        playlist_features_list = ["danceability", "energy", "valence"]
-        playlist_df = pd.DataFrame(columns=playlist_features_list)
+    # Define 'user' consistently
+    user = session.get("user")  # Retrieve cached user info if available
+
+    # Check if user data and other metrics are cached
+    user_data_cache = session.get("user_data_cache")
+
+    if not user_data_cache or not user:
+        sp = spotipy.Spotify(auth=token_info['access_token'])
         
-        for track in saved_tracks:
-            playlist_features = {}
-            playlist_features["track_id"] = track["track"]["id"]
-            
-            # Attempt to get audio features with retry on 429
-            audio_features = None
-            while audio_features is None:
-                try:
-                    audio_features = sp.audio_features(playlist_features["track_id"])[0]
-                except SpotifyException as e:
-                    if e.http_status == 429:
-                        retry_after = int(e.headers.get("Retry-After", 1))  # Default to 1 second if not specified
-                        print(f"Rate limit exceeded. Retrying after {retry_after} seconds...")
-                        time.sleep(retry_after)
-                    else:
-                        raise e
-            
-            # Add features to playlist_features dictionary
-            for feature in playlist_features_list:
-                playlist_features[feature] = audio_features[feature]
-            
-            # Concat the data
-            track_df = pd.DataFrame(playlist_features, index=[0])
-            playlist_df = pd.concat([playlist_df, track_df], ignore_index=True)
+        # Fetch user profile data and cache it
+        user = sp.user(sp.me()['id'])
+        session["user"] = user  # Cache user info
 
-        return playlist_df
-    
-    def get_top_artist_picture():
-        top_artists = sp.current_user_top_artists()['items']
-        if top_artists:
-            return top_artists[0]['images'][0]['url'] if top_artists[0].get('images') else "path/to/default_artist_image.jpg"
+        # Fetch and cache additional dashboard data as needed
+        top_artists = sp.current_user_top_artists(limit=1)['items']
+        top_tracks = sp.current_user_top_tracks(limit=1)['items']
+        saved_tracks = sp.current_user_saved_tracks(limit=50)['items']
+
+        # Prepare data for display
+        top_artist_picture = (
+            top_artists[0]['images'][0]['url'] if top_artists and top_artists[0].get('images') else "default_artist_image.jpg"
+        )
+        top_track_picture = (
+            top_tracks[0]['album']['images'][0]['url'] if top_tracks and top_tracks[0]['album'].get('images') else "default_track_image.jpg"
+        )
+
+        # Calculate track metrics (e.g., happiness, energy, danceability)
+        track_ids = [track["track"]["id"] for track in saved_tracks]
+        if track_ids:
+            audio_features = sp.audio_features(track_ids)
+            playlist_df = pd.DataFrame(audio_features)[["danceability", "energy", "valence"]].dropna()
+            happy_percent = round(playlist_df['valence'].mean() * 100)
+            energy_percent = round(playlist_df['energy'].mean() * 100)
+            danceable_percent = round(playlist_df['danceability'].mean() * 100)
         else:
-            return "path/to/default_artist_image.jpg"  # Provide a default image URL
+            happy_percent = energy_percent = danceable_percent = 0
 
-    def get_top_track_picture():
-        top_tracks = sp.current_user_top_tracks()['items']
-        if top_tracks:
-            return top_tracks[0]['album']['images'][0]['url'] if top_tracks[0]['album'].get('images') else "path/to/default_track_image.jpg"
-        else:
-            return "path/to/default_track_image.jpg"  # Provide a default image URL
-
-    # Calculate average percentages of the happy, energy, and danceability
-    def calc_happy(playlist_df):
-        return playlist_df['valence'].mean(skipna=True) if not playlist_df.empty else 0
-
-    def calc_energy(playlist_df):
-        return playlist_df['energy'].mean(skipna=True) if not playlist_df.empty else 0
-
-    def calc_danceable(playlist_df):
-        return playlist_df['danceability'].mean(skipna=True) if not playlist_df.empty else 0
-
-    
-    saved_tracks = sp.current_user_saved_tracks(50)['items']
-    playlist_df = analyze_playlist(saved_tracks)
-
-    if playlist_df.empty or playlist_df[['valence', 'energy', 'danceability']].isna().all().all():
-        # Handle the case where there's no valid data
-        happy_percent = energy_percent = danceable_percent = 0
+        # Cache data for session reuse
+        user_data_cache = {
+            "happy_percent": happy_percent,
+            "energy_percent": energy_percent,
+            "danceable_percent": danceable_percent,
+            "top_artist_picture": top_artist_picture,
+            "top_track_picture": top_track_picture
+        }
+        session["user_data_cache"] = user_data_cache
     else:
-        # Calculate percentages as before
-        happy_percent = round(calc_happy(playlist_df) * 100)
-        energy_percent = round(calc_energy(playlist_df) * 100)
-        danceable_percent = round(calc_danceable(playlist_df) * 100)
-    
-    top_artist_picture = get_top_artist_picture()
-    top_track_picture = get_top_track_picture()
+        # Retrieve cached values if present
+        happy_percent = user_data_cache["happy_percent"]
+        energy_percent = user_data_cache["energy_percent"]
+        danceable_percent = user_data_cache["danceable_percent"]
+        top_artist_picture = user_data_cache["top_artist_picture"]
+        top_track_picture = user_data_cache["top_track_picture"]
 
-    return render_template('dashboard.html',user=user,happy_percent=happy_percent,energy_percent=energy_percent,danceable_percent=danceable_percent,top_artist_picture=top_artist_picture,top_track_picture=top_track_picture)
+    # Pass data to template
+    return render_template(
+        'dashboard.html',
+        user=user,
+        happy_percent=happy_percent,
+        energy_percent=energy_percent,
+        danceable_percent=danceable_percent,
+        top_artist_picture=top_artist_picture,
+        top_track_picture=top_track_picture
+    )
 
 @app.route('/about')
 def about():
@@ -175,6 +164,52 @@ def about():
     return render_template('about.html',user=user)
 
 @app.route('/topartists')
+def topartists():
+    try:
+        token_info = get_token()
+    except:
+        print('User Not Logged In!')
+        return redirect('/')
+
+    # Check if the top artists data is already cached in the session
+    top_artists_cache = session.get("top_artists_cache")
+
+    if not top_artists_cache:
+        sp = spotipy.Spotify(auth=token_info['access_token'])
+        user = sp.user(sp.me()['id'])
+
+        # Fetch top artists from Spotify API
+        try:
+            top_artists = sp.current_user_top_artists(limit=20)['items']
+        except SpotifyException as e:
+            print("Spotify API error:", e)
+            return redirect('/')
+
+        # Structure artist data for template rendering
+        artist_data = [
+            {
+                "artist": artist["name"],
+                "artist_genre": artist["genres"][0] if artist.get("genres") else "unknown genre",
+                "artist_image_url": artist["images"][0]["url"] if artist.get("images") else "default_artist_image.jpg",
+                "artist_url": artist["external_urls"]["spotify"]
+            }
+            for artist in top_artists
+        ]
+
+        # Cache the structured data in the session
+        session["top_artists_cache"] = artist_data
+    else:
+        # Use cached data if available
+        artist_data = top_artists_cache
+
+    # Pass the artist data directly to the template
+    return render_template(
+        'topartists.html',
+        columns=["artist", "artist_genre", "artist_image_url", "artist_url"],
+        rows=artist_data,
+        user=session.get('user')
+    )
+
 def topartists():
     try:
         token_info = get_token()
@@ -219,41 +254,47 @@ def toptracks():
     except:
         print('User Not Logged In!')
         return redirect('/')
-    # at this part, we ensured the token info is up-to-date / fresh
-    sp = spotipy.Spotify(auth=token_info['access_token'])
-    user = sp.user(sp.me()['id'])
 
-    toptracks = sp.current_user_top_tracks()['items']
-    #pprint(toptracks)
-    def analyze_artists(toptracks):
-        # Create empty dataframe
-        tracks_features_list = ["artist","album","track_name", "track_image_url", "track_url"]
-        tracks_df = pd.DataFrame(columns=tracks_features_list)
-
-        for track in toptracks:
-            # Create empty dict
-            track_features = {}
-
-            # Get metadata
-            track_features["artist"] = track["artists"][0]["name"] if track["artists"] else "unknown artist"
-            track_features["album"] = track["album"]["name"] if "album" in track and "name" in track["album"] else "unknown album"
-            track_features["track_name"] = track["name"] if "name" in track else "unknown track"
-            track_features["track_image_url"] = (
-                sp.track(track["id"])["album"]["images"][0]["url"]
-                if "album" in sp.track(track["id"]) and sp.track(track["id"])["album"].get("images")
-                else None
-            )
-            
-            # Concat the dfs
-            track_features_df = pd.DataFrame(track_features, index = [0])
-            tracks_df = pd.concat([tracks_df, track_features_df], ignore_index = True)
-            
-        return tracks_df
+    # Check if top tracks data is already cached
+    top_tracks_cache = session.get("top_tracks_cache")
     
-    tracks = analyze_artists(toptracks)
-    pprint(tracks)
+    # If not cached, fetch the data from Spotify API
+    if not top_tracks_cache:
+        sp = spotipy.Spotify(auth=token_info['access_token'])
+        user = sp.user(sp.me()['id'])
+        
+        # Fetch top tracks from Spotify API
+        try:
+            top_tracks = sp.current_user_top_tracks(limit=20)['items']
+        except SpotifyException as e:
+            print("Spotify API error:", e)
+            return redirect('/')
 
-    return render_template('toptracks.html',columns=[tracks.columns.values], rows=[list(tracks.values.tolist())],user=user)
+        # Extract relevant data for each track
+        track_data = []
+        for track in top_tracks:
+            track_info = {
+                "artist": track["artists"][0]["name"] if track["artists"] else "Unknown Artist",
+                "album": track["album"]["name"] if track.get("album") and "name" in track["album"] else "Unknown Album",
+                "track_name": track["name"] if "name" in track else "Unknown Track",
+                "track_image_url": track["album"]["images"][0]["url"] if track["album"].get("images") else "default_track_image.jpg",
+                "track_url": track["external_urls"]["spotify"] if track.get("external_urls") else None
+            }
+            track_data.append(track_info)
+        
+        # Cache the processed data in session
+        session["top_tracks_cache"] = track_data
+    else:
+        # Use cached data if available
+        track_data = top_tracks_cache
+
+    # Render template with track data
+    return render_template(
+        'toptracks.html',
+        columns=["artist", "album", "track_name", "track_image_url", "track_url"],
+        rows=track_data,
+        user=session.get('user')
+    )
 
 @app.route('/happyvsad')
 def happyvsad():
@@ -262,79 +303,96 @@ def happyvsad():
     except:
         print('User Not Logged In!')
         return redirect('/')
-    # at this part, we ensured the token info is up-to-date / fresh
-    sp = spotipy.Spotify(auth=token_info['access_token'])
-    user = sp.user(sp.me()['id'])
 
-    playlists = []
-    iter = 0
-    while True:
-        items = sp.current_user_playlists(limit=50,offset=iter * 50)['items']
-        iter += 1
-        playlists += items
-        if(len(items) < 50):
-            break
-    pprint(playlists)
-    return render_template('happyvsad.html',user=user,playlists=playlists) # data is list
+    # Check for cached playlists in session
+    playlists_cache = session.get("playlists_cache")
+    
+    if not playlists_cache:
+        sp = spotipy.Spotify(auth=token_info['access_token'])
+        user = sp.user(sp.me()['id'])
+        
+        # Fetch user playlists with pagination for large collections
+        playlists = []
+        offset = 0
+        while True:
+            response = sp.current_user_playlists(limit=50, offset=offset)
+            playlists.extend(response['items'])
+            if len(response['items']) < 50:
+                break
+            offset += 50
+        
+        # Extract relevant playlist data for template
+        playlists_data = [
+            {
+                "id": playlist['id'],
+                "name": playlist['name'],
+                "description": playlist['description'] or "no description available",
+                "image_url": playlist['images'][0]['url'] if playlist['images'] else "default-playlist-image.jpg"
+            }
+            for playlist in playlists
+        ]
+        
+        # Cache the data in session
+        session["playlists_cache"] = playlists_data
+    else:
+        playlists_data = playlists_cache
 
-@app.route('/happyvsadpred',methods=['POST'])
+    return render_template('happyvsad.html', user=session.get('user'), playlists=playlists_data)
+
+
+@app.route('/happyvsadpred', methods=['POST'])
 def predict():
     try:
-            token_info = get_token()
+        token_info = get_token()
     except:
         print('User Not Logged In!')
         return redirect('/')
-    # at this part, we ensured the token info is up-to-date / fresh
+
     sp = spotipy.Spotify(auth=token_info['access_token'])
-    
-    user = sp.current_user
-    selected_playlist_id = [str(x) for x in request.form.values()][0]
-    print('\nSelected Playlist ID: ' + selected_playlist_id)
+    selected_playlist_id = request.form.get('playlist')
 
-    def analyze_playlist(user, playlist_id):
-        # Create empty dataframe
-        playlist_features_list = ["artist","album","track_name", "track_id","track_image_url","danceability","energy","key","loudness","mode", "speechiness","instrumentalness","liveness","valence","tempo", "duration_ms","time_signature"]
-        playlist_df = pd.DataFrame(columns=playlist_features_list)
-        
-        # Loop through every track in the playlist, extract features and append the features to the playlist df
-        playlist = sp.user_playlist_tracks(user, selected_playlist_id)["items"]
-        for track in playlist:
-            # Create empty dict
-            playlist_features = {}
-            # Get metadata
-            playlist_features["artist"] = track["track"]["album"]["artists"][0]["name"]
-            playlist_features["album"] = track["track"]["album"]["name"]
-            playlist_features["track_name"] = track["track"]["name"]
-            playlist_features["track_id"] = track["track"]["id"]
-            playlist_features["track_image_url"] = sp.track(track["track"]["id"])['album']['images'][0]['url']
-            
-            # Get audio features
-            audio_features = sp.audio_features(playlist_features["track_id"])[0]
-            for feature in playlist_features_list[5:]:
-                playlist_features[feature] = audio_features[feature]
-            
-            # Concat the dfs
-            track_df = pd.DataFrame(playlist_features, index = [0])
-            playlist_df = pd.concat([playlist_df, track_df], ignore_index = True)
-            
-        return playlist_df
-    
-    def classify_playlist(user, playlist_id):
-        playlist_pred_df = analyze_playlist(user, playlist_id)
-        playlist_predictions = model.predict(playlist_pred_df.drop(['artist','album','track_name','track_id','track_image_url'],axis=1))
-        playlist_pred_df['prediction'] = playlist_predictions
-        playlist_pred_df['prediction'] = playlist_pred_df['prediction'].replace(1, 'Happy')
-        playlist_pred_df['prediction'] = playlist_pred_df['prediction'].replace(2, 'Sad')
-        return playlist_pred_df
-    
-    predictions = classify_playlist(user, selected_playlist_id)
-    print(predictions)
-    happy_predictions = predictions[predictions['prediction'] == 'Happy']
-    sad_predictions = predictions[predictions['prediction'] == 'Sad']
+    # Retrieve cached user info for use in the template
+    user = session.get('user')
 
-    user = sp.user(sp.me()['id'])
-    return render_template('happyvsadpred.html',columns=[happy_predictions.columns.values,sad_predictions.columns.values], rows=[list(happy_predictions.values.tolist()),list(sad_predictions.values.tolist())],user=user,selected_playlist_id=selected_playlist_id)
-    
+    # Fetch playlist tracks in one request
+    playlist_tracks = sp.playlist_tracks(selected_playlist_id)["items"]
+    track_ids = [track["track"]["id"] for track in playlist_tracks if track["track"]]
+
+    # Fetch audio features in batch
+    audio_features = sp.audio_features(track_ids)
+    playlist_df = pd.DataFrame(audio_features).dropna()
+
+    # Predict track moods in batch
+    feature_columns = ["danceability", "energy", "key", "loudness", "mode", "speechiness", "instrumentalness", "liveness", "valence", "tempo", "duration_ms", "time_signature"]
+    predictions = model.predict(playlist_df[feature_columns])
+    playlist_df["prediction"] = predictions
+
+    # Split tracks by prediction (1=Happy, 2=Sad) and prepare data for template
+    happy_tracks = playlist_df[playlist_df["prediction"] == 1]
+    sad_tracks = playlist_df[playlist_df["prediction"] == 2]
+
+    # Compile data for rendering
+    def format_track_data(tracks, original_tracks):
+        return [
+            {
+                "artist": next(track["track"]["artists"][0]["name"] for track in original_tracks if track["track"]["id"] == row["id"]),
+                "album": next(track["track"]["album"]["name"] for track in original_tracks if track["track"]["id"] == row["id"]),
+                "track_name": next(track["track"]["name"] for track in original_tracks if track["track"]["id"] == row["id"]),
+                "track_image_url": next(track["track"]["album"]["images"][0]["url"] for track in original_tracks if track["track"]["id"] == row["id"])
+            }
+            for _, row in tracks.iterrows()
+        ]
+
+    happy_data = format_track_data(happy_tracks, playlist_tracks)
+    sad_data = format_track_data(sad_tracks, playlist_tracks)
+
+    return render_template(
+        'happyvsadpred.html',
+        user=user,
+        rows=[happy_data, sad_data]
+    )
+
+# TODO: fix this post-optimization methods for happyvsadpred
 @app.route("/saveplaylist", methods=['GET', 'POST'])
 def savePlaylist():
     try:
@@ -420,6 +478,6 @@ def create_spotify_oauth():
         client_secret=client_secret,
         redirect_uri=url_for('redirectPage',_external=True),
         scope='user-library-read playlist-modify-public playlist-read-private playlist-modify-private user-top-read',
-        cache_path=None,  # Disable caching
-        show_dialog=True  # Force re-authentication dialog
+        #cache_path=None,  # Disable caching
+        #show_dialog=True  # Force re-authentication dialog
         )

@@ -100,60 +100,48 @@
 
     <div class="spotify-playlists">
       <h2>Happy versus Sad</h2>
-
+  
       <div class="list">
-
-        <!-- Key
-			rows[0] = Happy dataframe
-			rows[1] = Sad dataframe
-
-			row[4] = track_image_url
-			row[2] = track_name
-			row[0] = artist
-			row[1] = album -->
-        {% for row in rows[0] %}
-        <label class="item" style="border: 6px solid #fc5c7d; width: 154px">
-          <img src="{{row[4]}}" />
-          <div class="play">
-            <span class="fa fa-play" id="play-button"></span>
-          </div>
-          <h4>{{row[2]}}</h4>
-          <p>{{row[0]}}</p>
-          <!-- <p>{{row[1]}}</p>  -->
-        </label>
-        {% endfor %}
-
-        {% for row in rows[1] %}
-        <label class="item" style="border: 6px solid #6a82fb; width: 154px">
-          <img src="{{row[4]}}" />
-          <div class="play">
-            <span class="fa fa-play" id="play-button" onclick="preview()"></span>
-          </div>
-          <h4>{{row[2]}}</h4>
-          <p>{{row[0]}}</p>
-          <!-- <p>{{row[1]}}</p>  -->
-        </label>
-        {% endfor %}
-
-        <form action="{{ url_for('savePlaylist') }}" method="POST">
-          <label class="item-predict">
-            <button type="submit" name="save_button" value='{{rows[0]}}'>
-              <h2>Generate New <span style=color:#fc5c7d>Happy</span> Playlist</h2>
-            </button>
+          <!-- Happy Tracks -->
+          {% for row in rows[0] %}
+          <label class="item" style="border: 6px solid #fc5c7d; width: 154px">
+              <img src="{{ row['track_image_url'] }}" />
+              <div class="play">
+                  <span class="fa fa-play" id="play-button"></span>
+              </div>
+              <h4>{{ row['track_name'] }}</h4>
+              <p>{{ row['artist'] }}</p>
           </label>
-
-          <label class="item-predict">
-            <button type="submit" name="save_button" value='{{rows[1]}}'>
-              <h2>Generate New <span style=color:#6a82fb>Sad</span> Playlist</h2>
-            </button>
+          {% endfor %}
+  
+          <!-- Sad Tracks -->
+          {% for row in rows[1] %}
+          <label class="item" style="border: 6px solid #6a82fb; width: 154px">
+              <img src="{{ row['track_image_url'] }}" />
+              <div class="play">
+                  <span class="fa fa-play" id="play-button" onclick="preview()"></span>
+              </div>
+              <h4>{{ row['track_name'] }}</h4>
+              <p>{{ row['artist'] }}</p>
           </label>
-        </form>
-
+          {% endfor %}
+  
+          <form action="{{ url_for('savePlaylist') }}" method="POST">
+              <label class="item-predict">
+                  <button type="submit" name="save_button" value='{{ rows[0] }}'>
+                      <h2>Generate New <span style="color:#fc5c7d">Happy</span> Playlist</h2>
+                  </button>
+              </label>
+  
+              <label class="item-predict">
+                  <button type="submit" name="save_button" value='{{ rows[1] }}'>
+                      <h2>Generate New <span style="color:#6a82fb">Sad</span> Playlist</h2>
+                  </button>
+              </label>
+          </form>
       </div>
-
-      <hr>
-    </div>
-
+  </div>
+  
     <footer>
       <p>Made with ☕ by Matthew Lim California, US.</p>
     </footer>

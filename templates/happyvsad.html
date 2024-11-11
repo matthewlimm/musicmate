@@ -101,34 +101,34 @@
 
       <div class="spotify-playlists">
         <h2>Happy versus Sad</h2>
-
-        <form action="{{ url_for('predict') }}" method="POST">
-          <div class="list">
-          
-            {% for playlist in playlists %}
-           <label class="item">
-              <input type="radio" name="playlist" value={{playlist.id}} required="required" onchange="pausePlay(this)">
-              <img src="{{playlist.images[0]['url']}}" />
-              <div class="play">
-                <span class="fa fa-play" id="play-button"></span>
-              </div>
-              <h4>{{playlist.name}}</h4>
-              <p>{{playlist.description}}</p>
-              </input>
-            </label>
-            {% endfor %}
     
-            <label class="item-predict">
-            <button type="submit">
-              <h2>Predict</h2>
-            </button>
-            </label>
-
-          </div>
+        <form action="{{ url_for('predict') }}" method="POST">
+            <div class="list">
+            
+                {% for playlist in playlists %}
+                <label class="item">
+                    <input type="radio" name="playlist" value="{{ playlist['id'] }}" required="required" onchange="pausePlay(this)">
+                    <img src="{{ playlist['image_url'] }}" loading="lazy" alt="{{ playlist['name'] }} cover image" />
+                    <div class="play">
+                        <span class="fa fa-play" id="play-button"></span>
+                    </div>
+                    <h4>{{ playlist['name']|safe }}</h4>
+                    <p>{{ playlist['description']|safe }}</p>
+                </label>
+                {% endfor %}
+    
+                <label class="item-predict">
+                    <button type="submit">
+                        <h2>Predict</h2>
+                    </button>
+                </label>
+    
+            </div>
         </form>
         
         <hr>
-      </div>
+    </div>
+    
 
       <footer>
         <p>Made with ☕ by Matthew Lim California, US.</p>
