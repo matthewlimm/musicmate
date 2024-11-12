@@ -9,6 +9,12 @@ import pickle
 import pandas as pd
 import numpy as np
 from pprint import pprint
+import concurrent.futures
+import json
+import time
+from flask import Flask, request, redirect, render_template
+import spotipy
+from spotipy.oauth2 import SpotifyOAuth
 
 app = Flask(__name__)
 
@@ -354,6 +360,10 @@ def predict():
     # Retrieve cached user info for use in the template
     user = session.get('user')
 
+    # Fetch playlist details (title and image)
+    playlist = sp.playlist(selected_playlist_id)
+    playlist_name = playlist['name']
+
     # Fetch playlist tracks in one request
     playlist_tracks = sp.playlist_tracks(selected_playlist_id)["items"]
     track_ids = [track["track"]["id"] for track in playlist_tracks if track["track"]]
@@ -389,77 +399,113 @@ def predict():
     return render_template(
         'happyvsadpred.html',
         user=user,
-        rows=[happy_data, sad_data]
+        rows=[happy_data, sad_data],
+        playlist_name=playlist_name  # Pass the playlist name to the template
     )
 
-# TODO: fix this post-optimization methods for happyvsadpred
-@app.route("/saveplaylist", methods=['GET', 'POST'])
+@app.route("/saveplaylist", methods=['POST'])
 def savePlaylist():
     try:
-        token_info = get_token()
+        token_info = get_token()  # Assuming `get_token` retrieves Spotify OAuth token
     except:
         print('User Not Logged In!')
         return redirect('/')
-    # at this part, we ensured the token info is up-to-date / fresh
+
     sp = spotipy.Spotify(auth=token_info['access_token'])
-    prediction_table = request.form['save_button']
-    prediction_table = np.array(eval(prediction_table))
 
-    if len(prediction_table) == 0:
-        return "Prediction playlist is empty!"
+    # Retrieve the 'save_button' data
+    save_button_value = request.form.get('save_button', '')
+    print(f"Received save_button data: {save_button_value}")  # Debugging
 
-    prediction_table = pd.DataFrame(data=prediction_table,columns=['artist','album','track_name','track_id','track_image_url','danceability','energy','key','loudness','mode','speechiness','instrumentalness','liveness','valence','tempo','duration_ms','time_signature','prediction'])
+    try:
+        # Parse the JSON data
+        prediction_table = json.loads(save_button_value)
+    except json.JSONDecodeError as e:
+        print(f"JSON Decode Error: {e}")
+        return "Invalid JSON data received.", 400
 
-    if prediction_table['prediction'][0] == 'Happy':
-        prediction = 'Happy'
-        print('Selected Happy Playlist for Import')
-    else:
-        prediction = 'Sad'
-        print('Selected Sad Playlist for Import')
-    track_ids = prediction_table.drop(['artist','album','track_name','track_image_url','danceability','energy','key','loudness','mode','speechiness','instrumentalness','liveness','valence','tempo','duration_ms','time_signature','prediction'],axis=1)
-    track_ids = track_ids.values.tolist()
-    track_ids = list(np.concatenate(track_ids).flat)
+    # Access the nested 'data' key in the parsed JSON
+    track_data = prediction_table.get('data', [])
+    playlist_type = prediction_table.get('type', 'Unknown')  # Get the playlist type (Happy, Sad, etc.)
+    base_playlist_name = prediction_table.get('playlist_name', 'Playlist')  # Get the playlist name from the input or use 'vibes' as default
+
+    if not track_data:
+        return "No track data found in the request.", 400
+
+    # Ensure the necessary fields are present in each track
+    required_fields = ['artist', 'album', 'track_name', 'track_image_url']
+    for track in track_data:
+        missing_fields = [field for field in required_fields if field not in track]
+        if missing_fields:
+            print(f"Missing fields in track: {missing_fields}")
+            return f"Missing data fields: {', '.join(missing_fields)}", 400
     
-    user_id = sp.me()['id']
-    if prediction == 'Happy':
-        playlist_name = "My Happy Playlist"
-    else:
-        playlist_name = "My Sad Playlist"
+    # Parallelize the track searching using ThreadPoolExecutor
+    def search_for_track(track):
+        query = f"track:{track['track_name']} artist:{track['artist']}"
+        results = sp.search(query, type='track', limit=1)
+        if results['tracks']['items']:
+            return results['tracks']['items'][0]['id']
+        else:
+            print(f"Track not found on Spotify: {track['track_name']} by {track['artist']}")
+            return None
 
+    track_ids = []
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        track_ids = list(executor.map(search_for_track, track_data))
+
+    if not any(track_ids):  # Ensure at least one track was found
+        return "No tracks found on Spotify.", 400
+
+    user_id = sp.me()['id']
+    
+    # Modify the playlist name based on the selected type
+    playlist_name = f"{base_playlist_name} ({playlist_type.lower()})"  # e.g., "vibes (sad)" or "vibes (happy)"
+
+    # Check if the playlist already exists
     def getPlaylistID(user_id, playlist_name):
         playlist_id = ''
-        playlists = sp.user_playlists(user_id)
-        for playlist in playlists['items']:  # iterate through playlists I follow
-            if playlist['name'] == playlist_name:  # filter for newly created playlist
-                playlist_id = playlist['id']
-        print(playlist_id)
+        playlists = sp.current_user_playlists(limit=50)
+        while playlists:
+            for playlist in playlists['items']:
+                if playlist['name'] == playlist_name:
+                    return playlist['id']
+            if playlists['next']:
+                playlists = sp.next(playlists)
+            else:
+                break
         return playlist_id
     
+    # Check if a playlist with the given name already exists
     check_existing_playlist_id = getPlaylistID(user_id, playlist_name)
-    if check_existing_playlist_id != '':
-        return "Playlist already exists"
+    if check_existing_playlist_id:
+        return "Playlist already exists", 400
     
-    # create empty playlist with name and description
-    sp.user_playlist_create(user=user_id,name=playlist_name,public=False,description="Generated by Matthew Lim.")
-    # get playlist id of empty playlist
-    playlist_id = getPlaylistID(user_id, playlist_name)
+    # Create a new playlist if it doesn't exist
+    new_playlist = sp.user_playlist_create(user=user_id, name=playlist_name, public=False, description="Generated by Music Mate.")
+    playlist_id = new_playlist['id']
     
-    # pass tracks of previous track ids
-    print('Track IDs to Pass Through Spotify API')
-    pprint(track_ids)
-    sp.user_playlist_add_tracks(user_id, playlist_id, track_ids)
-
+    # Filter out None values (tracks that weren't found)
+    track_ids = [track_id for track_id in track_ids if track_id is not None]
+    
+    # Add tracks to the newly created playlist in batches
+    BATCH_SIZE = 100  # Maximum number of tracks per request
+    for i in range(0, len(track_ids), BATCH_SIZE):
+        sp.user_playlist_add_tracks(user_id, playlist_id, track_ids[i:i + BATCH_SIZE])
+    
+    # Optionally, fetch updated playlists
     playlists = []
     iter = 0
     while True:
-        items = sp.current_user_playlists(limit=50,offset=iter * 50)['items']
+        items = sp.current_user_playlists(limit=50, offset=iter * 50)['items']
         iter += 1
         playlists += items
-        if(len(items) < 50):
+        if len(items) < 50:
             break
-
+    
     user = sp.user(sp.me()['id'])
-    return render_template('saveplaylist.html',user=user,prediction=prediction,playlists=playlists)
+    return render_template('saveplaylist.html', user=user, playlists=playlists, new_playlist_id=playlist_id, prediction=playlist_type)
+
 
 def get_token():
     token_info = session.get(TOKEN_INFO, None) # if token value DNE, return none

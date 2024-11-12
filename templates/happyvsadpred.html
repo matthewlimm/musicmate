@@ -99,7 +99,8 @@
     </div>
 
     <div class="spotify-playlists">
-      <h2>Happy versus Sad</h2>
+      <!-- Modify the title to include the playlist name dynamically -->
+      <h2>Happy versus Sad: {{ playlist_name }}</h2>
   
       <div class="list">
           <!-- Happy Tracks -->
@@ -127,18 +128,20 @@
           {% endfor %}
   
           <form action="{{ url_for('savePlaylist') }}" method="POST">
-              <label class="item-predict">
-                  <button type="submit" name="save_button" value='{{ rows[0] }}'>
-                      <h2>Generate New <span style="color:#fc5c7d">Happy</span> Playlist</h2>
-                  </button>
-              </label>
-  
-              <label class="item-predict">
-                  <button type="submit" name="save_button" value='{{ rows[1] }}'>
-                      <h2>Generate New <span style="color:#6a82fb">Sad</span> Playlist</h2>
-                  </button>
-              </label>
-          </form>
+            <label class="item-predict">
+                <button type="submit" name="save_button" value='{{ {"data": rows[0], "type": "Happy", "playlist_name": playlist_name} | tojson | safe }}'>
+                    <h2>Generate New <span style="color:#fc5c7d">Happy</span> Playlist</h2>
+                </button>
+            </label>
+        
+            <label class="item-predict">
+                <button type="submit" name="save_button" value='{{ {"data": rows[1], "type": "Sad", "playlist_name": playlist_name} | tojson | safe }}'>
+                    <h2>Generate New <span style="color:#6a82fb">Sad</span> Playlist</h2>
+                </button>
+            </label>
+        </form>
+        
+        
       </div>
   </div>
   

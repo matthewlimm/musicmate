@@ -69,7 +69,7 @@
             <a href="#">Legal</a>
           </li>
           <li>
-            <a href="https://developer.spotify.com/">Not Affiliated with Spoitfy</a>
+            <a href="https://developer.spotify.com/">Not Affiliated with Spotify</a>
           </li>
         </ul>
       </div>
@@ -97,20 +97,21 @@
       <h2>My {{prediction}} Playlist Successfully Saved!</h2>
 
       <div class="list">
-        <label class="item" style="border: 6px solid #1DB954; width: 154px">
-          <img src="{{playlists[0].images[0]['url']}}" />
-            <h4>{{playlists[0].name}}</h4>
-            <p>{{playlists[0].description}}</p>
-        </label>
-
-        {% for playlist in playlists[1:] %}
-           <label class="item">
-                <img src="{{playlist.images[0]['url']}}" />
-                <h4>{{playlist.name}}</h4>
-                <p>{{playlist.description}}</p>
+        <!-- Loop through the playlists and find the newly created playlist by its ID -->
+        {% for playlist in playlists %}
+          {% if playlist.id == new_playlist_id %}
+            <!-- Wrap the playlist in an anchor tag to make it linkable -->
+            
+            <label class="item highlight">
+              <a href="https://open.spotify.com/playlist/{{playlist.id}}" target="_blank">
+              <img src="{{playlist.images[0]['url']}}" />
+              <h4>{{playlist.name}}</h4>
+              <p>{{playlist.description}}</p>
+            </a>
             </label>
-            {% endfor %}
-
+            
+          {% endif %}
+        {% endfor %}
       </div>
 
       <hr>
